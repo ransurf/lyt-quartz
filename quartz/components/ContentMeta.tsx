@@ -11,12 +11,14 @@ interface ContentMetaOptions {
    * Whether to display reading time
    */
   showReadingTime: boolean
-  showComma: boolean
+  showAuthor: boolean
+  showSeparator: boolean
 }
 
 const defaultOptions: ContentMetaOptions = {
   showReadingTime: true,
-  showComma: true,
+  showAuthor: true,
+  showSeparator: true,
 }
 
 export default ((opts?: Partial<ContentMetaOptions>) => {
@@ -28,10 +30,19 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
 
     if (text) {
       const segments: (string | JSX.Element)[] = []
+      debugger;
+
+      console.log('fileData', fileData)
 
       if (fileData.dates) {
         segments.push(formatDate(getDate(cfg, fileData)!, cfg.locale))
       }
+
+      if (options.showAuthor) {
+        segments.push('by ' + fileData.frontmatter?.author ?? 'Nick Milo')
+      }
+
+      segments.push()
 
       // Display reading time if enabled
       if (options.showReadingTime) {
@@ -45,7 +56,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
       const segmentsElements = segments.map((segment) => <span>{segment}</span>)
 
       return (
-        <p show-comma={options.showComma} class={classNames(displayClass, "content-meta")}>
+        <p show-comma={options.showSeparator} class={classNames(displayClass, "content-meta")}>
           {segmentsElements}
         </p>
       )
