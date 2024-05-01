@@ -28,9 +28,10 @@ function calculatePropertyEmoji(key: string) {
 }
 
 function createPropertyElement(key: string, value: any) {
+  const emoji = calculatePropertyEmoji(key);
   return (
     <div class="properties-row">
-      <span class="property-key">{key} {calculatePropertyEmoji(key)}</span>: <span class="property-value">{value}</span>
+      <span class="property-key">{key}{emoji ? ` ${emoji}` : ''}:</span> <span class="property-value">{value}</span>
     </div>
   )
 }
@@ -46,8 +47,11 @@ export default (() => {
 
     if (Object.keys(fileData.frontmatter ?? {}).length > 0) {
       for (const [key, value] of Object.entries(fileData.frontmatter ?? {})) {
-        if (key.includes("draft") || key.includes("title") || key.includes("tags")) {
-        } // Add properties you want to ignore here
+        const excludedProperties = ["draft", "title", "tags", "publishDate"]; // Add properties you want to ignore here
+
+        if (excludedProperties.includes(key)) {
+          // Ignore excluded properties
+        }
         else {
           if (!value) return null;
           var linkedElements = []

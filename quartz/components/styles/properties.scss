@@ -1,8 +1,9 @@
-div.properties {
-
+span.properties {
+    &-key {
+        font-weight: bold;
+    }
 }
 
-//if properties-key, do bold
-.properties-key {
+.property-key {
     font-weight: bold;
 }

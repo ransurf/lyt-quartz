@@ -30,19 +30,10 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
 
     if (text) {
       const segments: (string | JSX.Element)[] = []
-      debugger;
-
-      console.log('fileData', fileData)
 
       if (fileData.dates) {
         segments.push(formatDate(getDate(cfg, fileData)!, cfg.locale))
       }
-
-      if (options.showAuthor) {
-        segments.push('by ' + fileData.frontmatter?.author ?? 'Nick Milo')
-      }
-
-      segments.push()
 
       // Display reading time if enabled
       if (options.showReadingTime) {
@@ -51,6 +42,10 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
           minutes: Math.ceil(minutes),
         })
         segments.push(displayedTime)
+      }
+
+      if (options.showAuthor) {
+        segments.push('by Nick Milo')
       }
 
       const segmentsElements = segments.map((segment) => <span>{segment}</span>)
