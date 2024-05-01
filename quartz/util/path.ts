@@ -293,3 +293,17 @@ function _addRelativeToStart(s: string): string {
 
   return s
 }
+
+
+// Source: https://github.com/natashayasi/quartz
+export function _stripSlashes(s: string, onlyStripPrefix?: boolean): string {
+  if (s.startsWith("/")) {
+    s = s.substring(1)
+  }
+
+  if (!onlyStripPrefix && s.endsWith("/")) {
+    s = s.slice(0, -1)
+  }
+
+  return s
+}
