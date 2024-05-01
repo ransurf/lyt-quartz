@@ -1,7 +1,5 @@
 ---
 publishDate: 2024-04-25
-category:
-- Essays
 ---
 Have you ever walked in a Japanese garden?
 
