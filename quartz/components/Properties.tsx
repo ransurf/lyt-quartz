@@ -28,10 +28,10 @@ function calculatePropertyEmoji(key: string) {
 }
 
 function createPropertyElement(key: string, value: any) {
-  const emoji = calculatePropertyEmoji(key);
+  // const emoji = calculatePropertyEmoji(key);
   return (
     <div class="properties-row">
-      <span class="property-key">{key}{emoji ? ` ${emoji}` : ''}:</span> <span class="property-value">{value}</span>
+      <span class="property-key">{key}:</span> <span class="property-value">{value}</span>
     </div>
   )
 }
