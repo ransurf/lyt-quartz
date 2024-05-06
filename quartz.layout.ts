@@ -28,20 +28,28 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Search(),
     // Component.Darkmode(),
     Component.DesktopOnly(
+      Component.RecentNotes({
+        title: "Recent Writing",
+        limit: 4,
+        filter: (f) =>
+          f.slug!.startsWith("blogs/") && f.slug! !== "blogs/index" && !f.frontmatter?.noindex,
+        linkToMore: "blogs/" as SimpleSlug,
+      }),
+    ),
     Component.RecentNotes({
-      title: "Recent Writing",
+      title: "Related Writing",
+      path: "maps",
       limit: 4,
       filter: (f) =>
-        f.slug!.startsWith("blogs/") && f.slug! !== "blogs/index" && !f.frontmatter?.noindex,
+        Boolean(f.slug!.startsWith("blogs/") && f.slug! !== "blogs/index" && f.frontmatter?.tags?.includes("thinking")),
       linkToMore: "blogs/" as SimpleSlug,
     }),
-  ),
   Component.DesktopOnly(
     Component.RecentNotes({
-      title: "Recent Notes",
+      title: "Recent Ideas",
       limit: 2,
-      filter: (f) => f.slug!.startsWith("thoughts/"),
-      linkToMore: "thoughts/" as SimpleSlug,
+      filter: (f) => f.slug!.startsWith("ideas/"),
+      linkToMore: "ideas/" as SimpleSlug,
     }),
     ),
 
@@ -62,6 +70,15 @@ export const defaultListPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     // Component.Darkmode(),
+    // if in tag can see related writings on the side
+    Component.RecentNotes({
+      title: "Related Writing",
+      path: "tags",
+      limit: 4,
+      filter: (f) =>
+        Boolean(f.slug!.startsWith("blogs/") && f.slug! !== "blogs/index" && f.frontmatter?.tags?.includes("thinking")),
+      linkToMore: "blogs/" as SimpleSlug,
+    }),
     Component.DesktopOnly(Component.Explorer()),
   ],
   right: [],

@@ -1,7 +1,5 @@
 ---
 publishDate: 2024-04-25
-category:
-- Announcements
 ---
 
 You started writing...then stopped.

@@ -1,5 +1,7 @@
 ---
 publishDate: 2024-04-25
+tags:
+  - thinking
 ---
 Have you ever walked in a Japanese garden?
 
