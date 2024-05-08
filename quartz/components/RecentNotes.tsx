@@ -33,7 +33,7 @@ export default ((userOpts?: Partial<Options>) => {
     cfg,
   }: QuartzComponentProps) => {
     // check if folder is found in the slug
-    const shouldRender = userOpts?.path ?? fileData.slug?.split("/")[0] ?? ""
+    const shouldRender = userOpts?.path ? fileData.slug?.startsWith(userOpts.path) : false;
     if (!shouldRender) return null
     const opts = { ...defaultOptions(cfg), ...userOpts }
     const pages = allFiles.filter(opts.filter).sort(opts.sort)

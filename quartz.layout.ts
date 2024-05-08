@@ -5,7 +5,9 @@ import { SimpleSlug } from "./quartz/util/path"
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [],
+  header: [
+    Component.PageTitle(),
+  ],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/jackyzha0/quartz",
@@ -23,9 +25,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.TagList(),
   ],
   left: [
-    Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    Component.Search(),
     // Component.Darkmode(),
     Component.DesktopOnly(
       Component.RecentNotes({
@@ -36,14 +36,16 @@ export const defaultContentPageLayout: PageLayout = {
         linkToMore: "blogs/" as SimpleSlug,
       }),
     ),
-    Component.RecentNotes({
-      title: "Related Writing",
-      path: "maps",
-      limit: 4,
-      filter: (f) =>
-        Boolean(f.slug!.startsWith("blogs/") && f.slug! !== "blogs/index" && f.frontmatter?.tags?.includes("thinking")),
-      linkToMore: "blogs/" as SimpleSlug,
-    }),
+    Component.DesktopOnly(
+      Component.RecentNotes({
+        title: "Related Writing",
+        path: "maps",
+        limit: 4,
+        filter: (f) =>
+          Boolean(f.slug!.startsWith("blogs/") && f.slug! !== "blogs/index" && f.frontmatter?.tags?.includes("thinking")),
+        linkToMore: "blogs/" as SimpleSlug,
+      }),
+    ),
   Component.DesktopOnly(
     Component.RecentNotes({
       title: "Recent Ideas",
@@ -51,9 +53,10 @@ export const defaultContentPageLayout: PageLayout = {
       filter: (f) => f.slug!.startsWith("ideas/"),
       linkToMore: "ideas/" as SimpleSlug,
     }),
-    ),
-
-    Component.DesktopOnly(Component.Explorer()),
+  ),
+  Component.DesktopOnly(
+    Component.Search()
+  ),
   ],
   right: [
     Component.Graph(),
@@ -68,18 +71,16 @@ export const defaultListPageLayout: PageLayout = {
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    Component.Search(),
     // Component.Darkmode(),
     // if in tag can see related writings on the side
     Component.RecentNotes({
       title: "Related Writing",
-      path: "tags",
+      path: "maps",
       limit: 4,
       filter: (f) =>
-        Boolean(f.slug!.startsWith("blogs/") && f.slug! !== "blogs/index" && f.frontmatter?.tags?.includes("thinking")),
+        Boolean(f.slug!.startsWith("blogs/") && f.slug! !== "blogs/index" && f.frontmatter?.categories?.includes("thinking")),
       linkToMore: "blogs/" as SimpleSlug,
     }),
-    Component.DesktopOnly(Component.Explorer()),
   ],
   right: [],
 }
