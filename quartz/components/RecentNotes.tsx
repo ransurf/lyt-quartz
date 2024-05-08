@@ -10,6 +10,8 @@ import { classNames } from "../util/lang"
 
 interface Options {
   title?: string
+  // must match the folder name to render
+  path?: string
   limit: number
   linkToMore: SimpleSlug | false
   filter: (f: QuartzPluginData) => boolean
@@ -30,6 +32,9 @@ export default ((userOpts?: Partial<Options>) => {
     displayClass,
     cfg,
   }: QuartzComponentProps) => {
+    // check if folder is found in the slug
+    const shouldRender = userOpts?.path ? fileData.slug?.startsWith(userOpts.path) : true;
+    if (!shouldRender) return null
     const opts = { ...defaultOptions(cfg), ...userOpts }
     const pages = allFiles.filter(opts.filter).sort(opts.sort)
     const remaining = Math.max(0, pages.length - opts.limit)
@@ -56,7 +61,7 @@ export default ((userOpts?: Partial<Options>) => {
                       <Date date={getDate(cfg, page)!} locale={cfg.locale} />
                     </p>
                   )}
-                  <ul class="tags">
+                  {/* <ul class="tags">
                     {tags.map((tag) => (
                       <li>
                         <a
@@ -67,7 +72,7 @@ export default ((userOpts?: Partial<Options>) => {
                         </a>
                       </li>
                     ))}
-                  </ul>
+                  </ul> */}
                 </div>
               </li>
             )

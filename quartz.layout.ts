@@ -1,11 +1,14 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 import { SimpleSlug } from "./quartz/util/path"
+import { byAlphabetical } from "./quartz/components/PageList"
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [],
+  header: [
+    Component.PageTitle(),
+  ],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/jackyzha0/quartz",
@@ -23,31 +26,50 @@ export const defaultContentPageLayout: PageLayout = {
     Component.TagList(),
   ],
   left: [
-    Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    Component.Search(),
     // Component.Darkmode(),
     Component.DesktopOnly(
+      Component.RecentNotes({
+        title: "Recent Writing",
+        limit: 4,
+        filter: (f) =>
+          f.slug!.startsWith("writings/") && f.slug! !== "writings/index" && !f.frontmatter?.noindex,
+        linkToMore: "writings/" as SimpleSlug,
+      }),
+    ),
+    Component.DesktopOnly(
+      Component.RecentNotes({
+        title: "Related Writing",
+        path: "maps",
+        limit: 4,
+        filter: (f) =>
+          Boolean(f.slug!.startsWith("writings/") && f.slug! !== "writings/index" && f.frontmatter?.tags?.includes("thinking")),
+        linkToMore: "writings/" as SimpleSlug,
+      }),
+    ),
+  Component.DesktopOnly(
     Component.RecentNotes({
-      title: "Recent Writing",
-      limit: 4,
-      filter: (f) =>
-        f.slug!.startsWith("blogs/") && f.slug! !== "blogs/index" && !f.frontmatter?.noindex,
-      linkToMore: "blogs/" as SimpleSlug,
+      title: "Recent Ideas",
+      limit: 2,
+      filter: (f) => f.slug!.startsWith("ideas/"),
+      linkToMore: "ideas/" as SimpleSlug,
     }),
   ),
   Component.DesktopOnly(
-    Component.RecentNotes({
-      title: "Recent Notes",
-      limit: 2,
-      filter: (f) => f.slug!.startsWith("thoughts/"),
-      linkToMore: "thoughts/" as SimpleSlug,
-    }),
-    ),
-
-    Component.DesktopOnly(Component.Explorer()),
+    Component.Search()
+  ),
   ],
   right: [
+    Component.DesktopOnly(
+      Component.RecentNotes({
+        title: "All Categories",
+        path: "maps",
+        limit: 5,
+        filter: (f) =>
+          Boolean(f.slug!.startsWith("maps/") && f.slug! !== "maps/index"),
+        sort: byAlphabetical(),
+      }),
+    ),
     Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
@@ -60,9 +82,16 @@ export const defaultListPageLayout: PageLayout = {
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    Component.Search(),
     // Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer()),
+    // if in tag can see related writings on the side
+    Component.RecentNotes({
+      title: "Related Writing",
+      path: "maps",
+      limit: 4,
+      filter: (f) =>
+        Boolean(f.slug!.startsWith("writings/") && f.slug! !== "writings/index" && f.frontmatter?.categories?.includes("thinking")),
+      linkToMore: "writings/" as SimpleSlug,
+    }),
   ],
   right: [],
 }

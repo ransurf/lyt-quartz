@@ -1,5 +1,5 @@
 ---
-title: "LYT Ideaverse"
+title: " "
 ---
 The safe trail ends. A forest stands before you. 
 

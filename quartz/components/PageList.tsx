@@ -25,6 +25,15 @@ export function byDateAndAlphabetical(
   }
 }
 
+//alphabetical order
+export function byAlphabetical(): (f1: QuartzPluginData, f2: QuartzPluginData) => number {
+  return (f1, f2) => {
+    const f1Title = f1.frontmatter?.title.toLowerCase() ?? ""
+    const f2Title = f2.frontmatter?.title.toLowerCase() ?? ""
+    return f1Title.localeCompare(f2Title)
+  }
+}
+
 type Props = {
   limit?: number
 } & QuartzComponentProps
