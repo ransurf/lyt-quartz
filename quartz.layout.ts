@@ -32,8 +32,8 @@ export const defaultContentPageLayout: PageLayout = {
         title: "Recent Writing",
         limit: 4,
         filter: (f) =>
-          f.slug!.startsWith("blogs/") && f.slug! !== "blogs/index" && !f.frontmatter?.noindex,
-        linkToMore: "blogs/" as SimpleSlug,
+          f.slug!.startsWith("writings/") && f.slug! !== "writings/index" && !f.frontmatter?.noindex,
+        linkToMore: "writings/" as SimpleSlug,
       }),
     ),
     Component.DesktopOnly(
@@ -42,8 +42,8 @@ export const defaultContentPageLayout: PageLayout = {
         path: "maps",
         limit: 4,
         filter: (f) =>
-          Boolean(f.slug!.startsWith("blogs/") && f.slug! !== "blogs/index" && f.frontmatter?.tags?.includes("thinking")),
-        linkToMore: "blogs/" as SimpleSlug,
+          Boolean(f.slug!.startsWith("writings/") && f.slug! !== "writings/index" && f.frontmatter?.tags?.includes("thinking")),
+        linkToMore: "writings/" as SimpleSlug,
       }),
     ),
   Component.DesktopOnly(
@@ -78,8 +78,8 @@ export const defaultListPageLayout: PageLayout = {
       path: "maps",
       limit: 4,
       filter: (f) =>
-        Boolean(f.slug!.startsWith("blogs/") && f.slug! !== "blogs/index" && f.frontmatter?.categories?.includes("thinking")),
-      linkToMore: "blogs/" as SimpleSlug,
+        Boolean(f.slug!.startsWith("writings/") && f.slug! !== "writings/index" && f.frontmatter?.categories?.includes("thinking")),
+      linkToMore: "writings/" as SimpleSlug,
     }),
   ],
   right: [],
