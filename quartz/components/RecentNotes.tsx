@@ -33,7 +33,7 @@ export default ((userOpts?: Partial<Options>) => {
     cfg,
   }: QuartzComponentProps) => {
     // check if folder is found in the slug
-    const shouldRender = userOpts?.path ? fileData.slug?.startsWith(userOpts.path) : false;
+    const shouldRender = userOpts?.path ? fileData.slug?.startsWith(userOpts.path) : true;
     if (!shouldRender) return null
     const opts = { ...defaultOptions(cfg), ...userOpts }
     const pages = allFiles.filter(opts.filter).sort(opts.sort)
@@ -61,7 +61,7 @@ export default ((userOpts?: Partial<Options>) => {
                       <Date date={getDate(cfg, page)!} locale={cfg.locale} />
                     </p>
                   )}
-                  <ul class="tags">
+                  {/* <ul class="tags">
                     {tags.map((tag) => (
                       <li>
                         <a
@@ -72,7 +72,7 @@ export default ((userOpts?: Partial<Options>) => {
                         </a>
                       </li>
                     ))}
-                  </ul>
+                  </ul> */}
                 </div>
               </li>
             )
