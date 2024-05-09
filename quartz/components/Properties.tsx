@@ -5,6 +5,8 @@ import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import style from "./styles/properties.scss"
 import { JSX } from "preact/jsx-runtime"
 
+const priorityPropertiesList = ["up", "related"]
+
 function createLinkedElement(fileData: any, opts: any, value: string) {
   let cleanedValue = value.replace(/['"\[\]]+/g, "")
   let href = transformLink(fileData.slug!, cleanedValue, opts)
@@ -29,8 +31,18 @@ function calculatePropertyEmoji(key: string) {
 
 function createPropertyElement(key: string, value: any) {
   // const emoji = calculatePropertyEmoji(key);
+
   return (
     <div class="properties-row">
+      <span class="property-key">{key}:</span> <span class="property-value">{value}</span>
+    </div>
+  )
+}
+
+function createPriorityPropertyElement(key: string, value: any) {
+  // const emoji = calculatePropertyEmoji(key);
+  return (
+    <div class="properties-row priority">
       <span class="property-key">{key}:</span> <span class="property-value">{value}</span>
     </div>
   )
@@ -44,10 +56,11 @@ export default (() => {
     }
 
     var propertiesElements = []
+    var priorityPropertiesElements = []
 
     if (Object.keys(fileData.frontmatter ?? {}).length > 0) {
       for (const [key, value] of Object.entries(fileData.frontmatter ?? {})) {
-        const excludedProperties = ["draft", "title", "tags", "publishDate"]; // Add properties you want to ignore here
+        const excludedProperties = ["draft", "title", "tags", "publishDate", "created"]; // Add properties you want to ignore here
 
         if (excludedProperties.includes(key)) {
           // Ignore excluded properties
@@ -74,14 +87,26 @@ export default (() => {
               }
             }
           }
-
-          propertiesElements.push(createPropertyElement(key, linkedElements))
+          if (priorityPropertiesList.includes(key)) {
+            priorityPropertiesElements.push(createPriorityPropertyElement(key, linkedElements))
+          } else {
+            propertiesElements.push(createPropertyElement(key, linkedElements))
+          }
         }
       }
+      // sort 
+      priorityPropertiesElements.sort((a, b) => {
+        const indexA = priorityPropertiesList.indexOf(a.props.children[0].props.children);
+        const indexB = priorityPropertiesList.indexOf(b.props.children[0].props.children);
+        return indexA - indexB;
+      });
     }
 
     return (
       <div class="properties-container">
+        <div class="properties-container priority">
+          {priorityPropertiesElements}
+        </div>
         {propertiesElements}
       </div>
     )

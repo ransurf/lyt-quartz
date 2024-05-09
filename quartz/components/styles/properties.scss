@@ -4,6 +4,18 @@ span.properties {
     }
 }
 
+div.properties-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
 .property-key {
     font-weight: bold;
+
+    &-priority {
+        color: var(--gray);
+    }
 }
+
