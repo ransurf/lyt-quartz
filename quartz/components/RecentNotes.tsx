@@ -13,6 +13,7 @@ interface Options {
   // must match the folder name to render
   path?: string
   limit: number
+  showDates?: boolean
   linkToMore: SimpleSlug | false
   filter: (f: QuartzPluginData) => boolean
   sort: (f1: QuartzPluginData, f2: QuartzPluginData) => number
@@ -21,6 +22,7 @@ interface Options {
 const defaultOptions = (cfg: GlobalConfiguration): Options => ({
   limit: 3,
   linkToMore: false,
+  showDates: false,
   filter: () => true,
   sort: byDateAndAlphabetical(cfg),
 })
@@ -56,7 +58,7 @@ export default ((userOpts?: Partial<Options>) => {
                       </a>
                     </h3>
                   </div>
-                  {page.dates && (
+                  {userOpts?.showDates && page.dates && (
                     <p class="meta">
                       <Date date={getDate(cfg, page)!} locale={cfg.locale} />
                     </p>
