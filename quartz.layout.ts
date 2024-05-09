@@ -44,7 +44,7 @@ export const defaultContentPageLayout: PageLayout = {
         path: "maps",
         limit: 4,
         filter: (f) =>
-          Boolean(f.slug!.startsWith("writings/") && f.slug! !== "writings/index" && f.frontmatter?.tags?.includes("thinking")),
+          Boolean(f.slug!.startsWith("writings/") && f.slug! !== "writings/index"),
         linkToMore: "writings/" as SimpleSlug,
       }),
     ),
