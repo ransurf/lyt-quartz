@@ -64,9 +64,9 @@ export default (() => {
 
         if (excludedProperties.includes(key)) {
           // Ignore excluded properties
-        }
-        else {
-          if (!value) return null;
+        } else if (!value) {
+          // Ignore empty properties
+        } else {
           var linkedElements = []
           var propertyType = Object.prototype.toString.call(value)
 
@@ -86,6 +86,8 @@ export default (() => {
                 linkedElements.push(entry)
               }
             }
+          } else if (propertyType === "[object String]") {
+            linkedElements.push(value)
           }
           if (priorityPropertiesList.includes(key)) {
             priorityPropertiesElements.push(createPriorityPropertyElement(key, linkedElements))
