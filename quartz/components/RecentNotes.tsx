@@ -13,6 +13,7 @@ interface Options {
   // must match the folder name to render
   path?: string
   limit: number
+  showDates?: boolean
   linkToMore: SimpleSlug | false
   filter: (f: QuartzPluginData) => boolean
   sort: (f1: QuartzPluginData, f2: QuartzPluginData) => number
@@ -21,6 +22,7 @@ interface Options {
 const defaultOptions = (cfg: GlobalConfiguration): Options => ({
   limit: 3,
   linkToMore: false,
+  showDates: false,
   filter: () => true,
   sort: byDateAndAlphabetical(cfg),
 })
@@ -38,13 +40,14 @@ export default ((userOpts?: Partial<Options>) => {
     const opts = { ...defaultOptions(cfg), ...userOpts }
     const pages = allFiles.filter(opts.filter).sort(opts.sort)
     const remaining = Math.max(0, pages.length - opts.limit)
+
     return (
       <div class={classNames(displayClass, "recent-notes")}>
         <h3>{opts.title ?? i18n(cfg.locale).components.recentNotes.title}</h3>
         <ul class="recent-ul">
           {pages.slice(0, opts.limit).map((page) => {
             const title = page.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title
-            const tags = page.frontmatter?.tags ?? []
+            const topics = page.frontmatter?.topic ?? []
 
             return (
               <li class="recent-li">
@@ -56,19 +59,20 @@ export default ((userOpts?: Partial<Options>) => {
                       </a>
                     </h3>
                   </div>
-                  {page.dates && (
+                  {userOpts?.showDates && page.dates && (
                     <p class="meta">
                       <Date date={getDate(cfg, page)!} locale={cfg.locale} />
                     </p>
                   )}
+                  {/* Show related categories of a writing */}
                   {/* <ul class="tags">
-                    {tags.map((tag) => (
+                    {topics.map((topic) => (
                       <li>
                         <a
-                          class="internal tag-link"
-                          href={resolveRelative(fileData.slug!, `tags/${tag}` as FullSlug)}
+                          class="internal link"
+                          href={resolveRelative(fileData.slug!, `maps/${topic}` as FullSlug)}
                         >
-                          {tag}
+                          {topic}
                         </a>
                       </li>
                     ))}

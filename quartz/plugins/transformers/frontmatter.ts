@@ -86,12 +86,12 @@ declare module "vfile" {
       title: string
     } & Partial<{
         tags: string[]
+        topic: string[]
         aliases: string[]
         description: string
         publish: boolean
         draft: boolean
         lang: string
-        categories: string[]
         enableToc: string
         cssclasses: string[]
       }>
