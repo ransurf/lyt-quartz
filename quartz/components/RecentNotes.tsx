@@ -40,13 +40,14 @@ export default ((userOpts?: Partial<Options>) => {
     const opts = { ...defaultOptions(cfg), ...userOpts }
     const pages = allFiles.filter(opts.filter).sort(opts.sort)
     const remaining = Math.max(0, pages.length - opts.limit)
+
     return (
       <div class={classNames(displayClass, "recent-notes")}>
         <h3>{opts.title ?? i18n(cfg.locale).components.recentNotes.title}</h3>
         <ul class="recent-ul">
           {pages.slice(0, opts.limit).map((page) => {
             const title = page.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title
-            const tags = page.frontmatter?.tags ?? []
+            const topics = page.frontmatter?.topic ?? []
 
             return (
               <li class="recent-li">
@@ -63,14 +64,15 @@ export default ((userOpts?: Partial<Options>) => {
                       <Date date={getDate(cfg, page)!} locale={cfg.locale} />
                     </p>
                   )}
+                  {/* Show related categories of a writing */}
                   {/* <ul class="tags">
-                    {tags.map((tag) => (
+                    {topics.map((topic) => (
                       <li>
                         <a
-                          class="internal tag-link"
-                          href={resolveRelative(fileData.slug!, `tags/${tag}` as FullSlug)}
+                          class="internal link"
+                          href={resolveRelative(fileData.slug!, `maps/${topic}` as FullSlug)}
                         >
-                          {tag}
+                          {topic}
                         </a>
                       </li>
                     ))}
