@@ -32,6 +32,7 @@ export type QuartzComponentConstructor<Options extends object | undefined = unde
 
 
 export enum ComponentIds {
-  ContentMeta = "CONTENT_META",
   AboutAuthor = "ABOUT_AUTHOR",
+  ContentMeta = "CONTENT_META",
+  RecentNotes = "RECENT_NOTES",
 }

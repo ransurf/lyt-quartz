@@ -198,7 +198,7 @@ export function renderPage(
   const LeftComponent = (
     <div class="left sidebar">
       {left.map((BodyComponent) => (
-        <BodyComponent {...componentData} />
+        conditionalFilterLeftComponent(BodyComponent)
       ))}
     </div>
   )
@@ -210,6 +210,13 @@ export function renderPage(
       ))}
     </div>
   )
+
+  function conditionalFilterLeftComponent(BodyComponent: QuartzComponent) {
+    // if (BodyComponent.id === ComponentIds.RecentNotes) {
+    //   return slug.startsWith("writings/") ? <BodyComponent {...componentData} /> : null
+    // }
+    return <BodyComponent {...componentData} />
+  }
 
   function conditionalFilterRightComponent(BodyComponent: QuartzComponent) {
     if (BodyComponent.id === ComponentIds.AboutAuthor) {
