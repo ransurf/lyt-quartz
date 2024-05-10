@@ -8,6 +8,7 @@ import { visit } from "unist-util-visit"
 import { Root, Element, ElementContent } from "hast"
 import { GlobalConfiguration } from "../cfg"
 import { i18n } from "../i18n"
+import { ComponentIds } from "./types"
 
 interface RenderComponents {
   head: QuartzComponent
@@ -197,7 +198,7 @@ export function renderPage(
   const LeftComponent = (
     <div class="left sidebar">
       {left.map((BodyComponent) => (
-        <BodyComponent {...componentData} />
+        conditionalFilterLeftComponent(BodyComponent)
       ))}
     </div>
   )
@@ -205,10 +206,31 @@ export function renderPage(
   const RightComponent = (
     <div class="right sidebar">
       {right.map((BodyComponent) => (
-        <BodyComponent {...componentData} />
+        conditionalFilterRightComponent(BodyComponent)
       ))}
     </div>
   )
+
+  function conditionalFilterLeftComponent(BodyComponent: QuartzComponent) {
+    // if (BodyComponent.id === ComponentIds.RecentNotes) {
+    //   return slug.startsWith("writings/") ? <BodyComponent {...componentData} /> : null
+    // }
+    return <BodyComponent {...componentData} />
+  }
+
+  function conditionalFilterRightComponent(BodyComponent: QuartzComponent) {
+    if (BodyComponent.id === ComponentIds.AboutAuthor) {
+      return slug.startsWith("writings/") ? <BodyComponent {...componentData} /> : null
+    }
+    return <BodyComponent {...componentData} />
+  }
+
+  function conditionalFilterBodyComponent(BodyComponent: QuartzComponent) {
+    if (BodyComponent.id === ComponentIds.ContentMeta) {
+      return slug.startsWith("writings/") ? <BodyComponent {...componentData} /> : null
+    }
+    return <BodyComponent {...componentData} />
+  }
 
   const lang = componentData.fileData.frontmatter?.lang ?? cfg.locale?.split("-")[0] ?? "en"
   const doc = (
@@ -227,7 +249,7 @@ export function renderPage(
                 </Header>
                 <div class="popover-hint">
                   {beforeBody.map((BodyComponent) => (
-                    <BodyComponent {...componentData} />
+                    conditionalFilterBodyComponent(BodyComponent)
                   ))}
                 </div>
               </div>

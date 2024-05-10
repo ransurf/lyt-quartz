@@ -40,6 +40,10 @@ export interface Translation {
     graph: {
       title: string
     }
+    aboutAuthor: {
+      title: string
+      description: string
+    }
     recentNotes: {
       title: string
       seeRemainingMore: (variables: { remaining: number }) => string

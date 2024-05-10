@@ -7,6 +7,7 @@ import { Date, getDate } from "./Date"
 import { GlobalConfiguration } from "../cfg"
 import { i18n } from "../i18n"
 import { classNames } from "../util/lang"
+import { ComponentIds } from "./types"
 
 interface Options {
   title?: string
@@ -93,6 +94,7 @@ export default ((userOpts?: Partial<Options>) => {
     )
   }
 
+  RecentNotes.id = ComponentIds.RecentNotes
   RecentNotes.css = style
   return RecentNotes
 }) satisfies QuartzComponentConstructor
