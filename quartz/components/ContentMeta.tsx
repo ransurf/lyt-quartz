@@ -5,6 +5,7 @@ import { classNames } from "../util/lang"
 import { i18n } from "../i18n"
 import { JSX } from "preact"
 import style from "./styles/contentMeta.scss"
+import { ComponentIds } from "./types"
 
 interface ContentMetaOptions {
   /**
@@ -60,7 +61,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
     }
   }
 
-  ContentMetadata.id = "ContentMetadata"
+  ContentMetadata.id = ComponentIds.ContentMeta
   ContentMetadata.css = style
 
   return ContentMetadata
