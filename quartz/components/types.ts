@@ -19,6 +19,7 @@ export type QuartzComponentProps = {
   }
 
 export type QuartzComponent = ComponentType<QuartzComponentProps> & {
+  id?: string
   css?: string
   beforeDOMLoaded?: string
   afterDOMLoaded?: string

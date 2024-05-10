@@ -210,6 +210,13 @@ export function renderPage(
     </div>
   )
 
+  function conditionalFilterBodyComponent(BodyComponent: QuartzComponent) {
+    if (BodyComponent.id === "ContentMetadata") {
+      return slug.startsWith("writings/") ? <BodyComponent {...componentData} /> : null
+    }
+    return <BodyComponent {...componentData} />
+  }
+
   const lang = componentData.fileData.frontmatter?.lang ?? cfg.locale?.split("-")[0] ?? "en"
   const doc = (
     <html lang={lang}>
@@ -227,7 +234,7 @@ export function renderPage(
                 </Header>
                 <div class="popover-hint">
                   {beforeBody.map((BodyComponent) => (
-                    <BodyComponent {...componentData} />
+                    conditionalFilterBodyComponent(BodyComponent)
                   ))}
                 </div>
               </div>

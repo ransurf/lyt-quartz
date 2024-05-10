@@ -60,6 +60,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
     }
   }
 
+  ContentMetadata.id = "ContentMetadata"
   ContentMetadata.css = style
 
   return ContentMetadata
