@@ -64,7 +64,7 @@ export default (() => {
 
         if (excludedProperties.includes(key)) {
           // Ignore excluded properties
-        } else if (!value) {
+        } else if (!value || Object.keys(value).length === 0) {
           // Ignore empty properties
         } else {
           var linkedElements = []
