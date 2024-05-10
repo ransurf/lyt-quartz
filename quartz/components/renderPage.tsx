@@ -8,6 +8,7 @@ import { visit } from "unist-util-visit"
 import { Root, Element, ElementContent } from "hast"
 import { GlobalConfiguration } from "../cfg"
 import { i18n } from "../i18n"
+import { ComponentIds } from "./types"
 
 interface RenderComponents {
   head: QuartzComponent
@@ -205,13 +206,20 @@ export function renderPage(
   const RightComponent = (
     <div class="right sidebar">
       {right.map((BodyComponent) => (
-        <BodyComponent {...componentData} />
+        conditionalFilterRightComponent(BodyComponent)
       ))}
     </div>
   )
 
+  function conditionalFilterRightComponent(BodyComponent: QuartzComponent) {
+    if (BodyComponent.id === ComponentIds.AboutAuthor) {
+      return slug.startsWith("writings/") ? <BodyComponent {...componentData} /> : null
+    }
+    return <BodyComponent {...componentData} />
+  }
+
   function conditionalFilterBodyComponent(BodyComponent: QuartzComponent) {
-    if (BodyComponent.id === "ContentMetadata") {
+    if (BodyComponent.id === ComponentIds.ContentMeta) {
       return slug.startsWith("writings/") ? <BodyComponent {...componentData} /> : null
     }
     return <BodyComponent {...componentData} />

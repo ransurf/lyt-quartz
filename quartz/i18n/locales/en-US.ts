@@ -38,6 +38,10 @@ export default {
     graph: {
       title: "Graph View",
     },
+    aboutAuthor: {
+      title: "About the author",
+      description: "Nick Milo has spent the last 15 years harnessing the power of digital notes to achieve remarkable feats. He's used digital notes as a tool to calm his thoughts and gain a clearer understanding of the world around him.",
+    },
     recentNotes: {
       title: "Recent Notes",
       seeRemainingMore: ({ remaining }) => `See ${remaining} more →`,
@@ -69,7 +73,7 @@ export default {
     folderContent: {
       folder: "Folder",
       itemsUnderFolder: ({ count }) =>
-        count === 1 ? "1 item under this folder." : `${count} items under this folder.`,
+        count === 1 ? "1 item" : `${count} items`,
     },
     tagContent: {
       tag: "Tag",

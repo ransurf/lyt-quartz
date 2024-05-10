@@ -21,6 +21,7 @@ import MobileOnly from "./MobileOnly"
 import RecentNotes from "./RecentNotes"
 import Breadcrumbs from "./Breadcrumbs"
 import Properties from "./Properties"
+import AboutAuthor from "./AboutAuthor"
 
 export {
   ArticleTitle,
@@ -45,5 +46,6 @@ export {
   NotFound,
   Breadcrumbs,
   Properties,
-  PathOnly
+  PathOnly,
+  AboutAuthor
 }

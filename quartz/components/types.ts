@@ -4,6 +4,7 @@ import { QuartzPluginData } from "../plugins/vfile"
 import { GlobalConfiguration } from "../cfg"
 import { Node } from "hast"
 import { BuildCtx } from "../util/ctx"
+import AboutAuthor from "./AboutAuthor"
 
 export type QuartzComponentProps = {
   ctx: BuildCtx
@@ -28,3 +29,9 @@ export type QuartzComponent = ComponentType<QuartzComponentProps> & {
 export type QuartzComponentConstructor<Options extends object | undefined = undefined> = (
   opts: Options,
 ) => QuartzComponent
+
+
+export enum ComponentIds {
+  ContentMeta = "CONTENT_META",
+  AboutAuthor = "ABOUT_AUTHOR",
+}

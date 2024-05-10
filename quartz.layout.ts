@@ -62,6 +62,7 @@ export const defaultContentPageLayout: PageLayout = {
   ),
   ],
   right: [
+    Component.AboutAuthor(),
     Component.DesktopOnly(
       Component.RecentNotes({
         title: "All Categories",
