@@ -49,7 +49,10 @@ function createPriorityPropertyElement(key: string, value: any) {
 }
 
 export default (() => {
-  function PropertiesWithWorkingLinks({ fileData, allFiles }: QuartzComponentProps): JSX.Element | null {
+  function PropertiesWithWorkingLinks({
+    fileData,
+    allFiles,
+  }: QuartzComponentProps): JSX.Element | null {
     const opts: TransformOptions = {
       strategy: "shortest",
       allSlugs: allFiles.map((fp) => fp.slug as FullSlug),
@@ -60,7 +63,7 @@ export default (() => {
 
     if (Object.keys(fileData.frontmatter ?? {}).length > 0) {
       for (const [key, value] of Object.entries(fileData.frontmatter ?? {})) {
-        const excludedProperties = ["draft", "title", "tags", "publishDate", "created"]; // Add properties you want to ignore here
+        const excludedProperties = ["draft", "title", "tags", "publishDate", "created"] // Add properties you want to ignore here
 
         if (excludedProperties.includes(key)) {
           // Ignore excluded properties
@@ -70,13 +73,13 @@ export default (() => {
           var linkedElements = []
           var propertyType = Object.prototype.toString.call(value)
 
-          if ((propertyType === "[object String]" && (value as string).includes("[["))) {
+          if (propertyType === "[object String]" && (value as string).includes("[[")) {
             //Check if it's a string or string array
-            linkedElements.push(createLinkedElement(fileData, opts, (value as string)))
+            linkedElements.push(createLinkedElement(fileData, opts, value as string))
           } else if (propertyType === "[object Array]") {
             for (const [index, arrayItem] of Object.entries(value ?? {})) {
               // Check if it's an array
-              var entry = (value as Array<any>)[Number(index)];
+              var entry = (value as Array<any>)[Number(index)]
               if (entry.includes("[[")) {
                 if (Number(index) > 0) {
                   linkedElements.push(", ")
@@ -96,19 +99,19 @@ export default (() => {
           }
         }
       }
-      // sort 
+      // sort
       priorityPropertiesElements.sort((a, b) => {
-        const indexA = priorityPropertiesList.indexOf(a.props.children[0].props.children);
-        const indexB = priorityPropertiesList.indexOf(b.props.children[0].props.children);
-        return indexA - indexB;
-      });
+        const indexA = priorityPropertiesList.indexOf(a.props.children[0].props.children)
+        const indexB = priorityPropertiesList.indexOf(b.props.children[0].props.children)
+        return indexA - indexB
+      })
     }
 
     return (
       <div class="properties-container">
-        <div class="properties-container priority">
-          {priorityPropertiesElements}
-        </div>
+        {priorityPropertiesElements && (
+          <div class="properties-container priority">{priorityPropertiesElements}</div>
+        )}
         {propertiesElements}
       </div>
     )
