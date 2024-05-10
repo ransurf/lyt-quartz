@@ -8,11 +8,12 @@ div.properties-container {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
-    margin-bottom: 0.5rem;
+    margin: 0.5rem 0;
 }
 
 .property-key {
     font-weight: bold;
+    color: var(--darkgray);
 
     &-priority {
         color: var(--gray);
