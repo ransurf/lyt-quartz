@@ -47,9 +47,11 @@ export default ((userOpts?: Partial<Options>) => {
       let href = transformLink(fileData.slug!, cleanedValue, opts)
     
       return (
-        <a href={href} class="internal">
-          {cleanedValue}
-        </a>
+        <h3>
+          <a href={href} class="internal">
+            {cleanedValue}
+          </a>
+        </h3>
       )
     }
 
@@ -82,26 +84,26 @@ export default ((userOpts?: Partial<Options>) => {
       <div class={classNames(displayClass, "related-notes")}>
         <h3>{opts.title ?? i18n(cfg.locale).components.relatedNotes.title}</h3>
         <ul class="related-ul">
-        <li class="related-li">
-                <div class="section">
-                  <div class="desc">
-                    {linkedElements}
-                  </div>
-                  {/* Show related categories of a writing */}
-                  {/* <ul class="tags">
-                    {topics.map((topic) => (
-                      <li>
-                        <a
-                          class="internal link"
-                          href={resolveRelative(fileData.slug!, `maps/${topic}` as FullSlug)}
-                        >
-                          {topic}
-                        </a>
-                      </li>
-                    ))}
-                  </ul> */}
+          <li class="related-li">
+              <div class="section">
+                <div class="desc">
+                  {linkedElements}
                 </div>
-            </li>
+                {/* Show related categories of a writing */}
+                {/* <ul class="tags">
+                  {topics.map((topic) => (
+                    <li>
+                      <a
+                        class="internal link"
+                        href={resolveRelative(fileData.slug!, `maps/${topic}` as FullSlug)}
+                      >
+                        {topic}
+                      </a>
+                    </li>
+                  ))}
+                </ul> */}
+              </div>
+          </li>
         </ul>
         {opts.linkToMore && (
           <p>
