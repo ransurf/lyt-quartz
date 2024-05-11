@@ -60,11 +60,11 @@ export default (() => {
     }
 
     var propertiesElements = []
-    var priorityPropertiesElements = []
+    // var priorityPropertiesElements = []
 
     if (Object.keys(fileData.frontmatter ?? {}).length > 0) {
       for (const [key, value] of Object.entries(fileData.frontmatter ?? {})) {
-        const includedProperties = ["u["] // Add properties you want to ignore here
+        const includedProperties = ["up", "related"] // Add properties you want to ignore here
 
         if (!includedProperties.includes(key)) {
           // Ignore excluded properties
