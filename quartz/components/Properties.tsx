@@ -4,8 +4,9 @@ import { FullSlug, _stripSlashes, TransformOptions, transformLink } from "../uti
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import style from "./styles/properties.scss"
 import { JSX } from "preact/jsx-runtime"
+import { ComponentIds } from "./types"
 
-const priorityPropertiesList = ["up", "related"]
+// const priorityPropertiesList = ["up", "related"]
 
 function createLinkedElement(fileData: any, opts: any, value: string) {
   let cleanedValue = value.replace(/['"\[\]]+/g, "")
@@ -39,14 +40,14 @@ function createPropertyElement(key: string, value: any) {
   )
 }
 
-function createPriorityPropertyElement(key: string, value: any) {
-  // const emoji = calculatePropertyEmoji(key);
-  return (
-    <div class="properties-row priority">
-      <span class="property-key">{key}:</span> <span class="property-value">{value}</span>
-    </div>
-  )
-}
+// function createPriorityPropertyElement(key: string, value: any) {
+//   // const emoji = calculatePropertyEmoji(key);
+//   return (
+//     <div class="properties-row priority">
+//       <span class="property-key">{key}:</span> <span class="property-value">{value}</span>
+//     </div>
+//   )
+// }
 
 export default (() => {
   function PropertiesWithWorkingLinks({
@@ -63,11 +64,11 @@ export default (() => {
 
     if (Object.keys(fileData.frontmatter ?? {}).length > 0) {
       for (const [key, value] of Object.entries(fileData.frontmatter ?? {})) {
-        const excludedProperties = ["draft", "title", "tags", "publishDate", "created"] // Add properties you want to ignore here
+        const includedProperties = ["u["] // Add properties you want to ignore here
 
-        if (excludedProperties.includes(key)) {
+        if (!includedProperties.includes(key)) {
           // Ignore excluded properties
-        } else if (!value || Object.keys(value).length === 0) {
+        } else if (!value) {
           // Ignore empty properties
         } else {
           var linkedElements = []
@@ -92,32 +93,33 @@ export default (() => {
           } else if (propertyType === "[object String]") {
             linkedElements.push(value)
           }
-          if (priorityPropertiesList.includes(key)) {
-            priorityPropertiesElements.push(createPriorityPropertyElement(key, linkedElements))
-          } else {
-            propertiesElements.push(createPropertyElement(key, linkedElements))
-          }
+          // if (priorityPropertiesList.includes(key)) {
+          //   priorityPropertiesElements.push(createPriorityPropertyElement(key, linkedElements))
+          // } else {
+          propertiesElements.push(createPropertyElement(key, linkedElements))
+          // }
         }
       }
       // sort
-      priorityPropertiesElements.sort((a, b) => {
-        const indexA = priorityPropertiesList.indexOf(a.props.children[0].props.children)
-        const indexB = priorityPropertiesList.indexOf(b.props.children[0].props.children)
-        return indexA - indexB
-      })
+      // priorityPropertiesElements.sort((a, b) => {
+      //   const indexA = priorityPropertiesList.indexOf(a.props.children[0].props.children)
+      //   const indexB = priorityPropertiesList.indexOf(b.props.children[0].props.children)
+      //   return indexA - indexB
+      // })
     }
 
     return (
       <div class="properties-container">
-        {priorityPropertiesElements && (
+        {/* {priorityPropertiesElements && (
           <div class="properties-container priority">{priorityPropertiesElements}</div>
-        )}
+        )} */}
         {propertiesElements}
       </div>
     )
   }
 
   PropertiesWithWorkingLinks.css = style
+  PropertiesWithWorkingLinks.id = ComponentIds.Properties
   return PropertiesWithWorkingLinks
 }) satisfies QuartzComponentConstructor
 

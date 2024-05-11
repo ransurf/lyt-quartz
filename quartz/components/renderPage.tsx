@@ -228,6 +228,12 @@ export function renderPage(
   function conditionalFilterBodyComponent(BodyComponent: QuartzComponent) {
     if (BodyComponent.id === ComponentIds.ContentMeta) {
       return slug.startsWith("writings/") ? <BodyComponent {...componentData} /> : null
+    } else if (BodyComponent.id === ComponentIds.Breadcrumbs) {
+      return !slug.startsWith("writings/") ? <BodyComponent {...componentData} /> : null
+    } else if (BodyComponent.id === ComponentIds.Properties) {
+      return !slug.startsWith("writings/") ? <BodyComponent {...componentData} /> : null
+    } else if (BodyComponent.id === ComponentIds.Graph) {
+      return !slug.startsWith("writings/") ? <BodyComponent {...componentData} /> : null
     }
     return <BodyComponent {...componentData} />
   }

@@ -3,6 +3,7 @@ import breadcrumbsStyle from "./styles/breadcrumbs.scss"
 import { FullSlug, SimpleSlug, joinSegments, resolveRelative } from "../util/path"
 import { QuartzPluginData } from "../plugins/vfile"
 import { classNames } from "../util/lang"
+import { ComponentIds } from "./types"
 
 type CrumbData = {
   displayName: string
@@ -40,9 +41,19 @@ const defaultOptions: BreadcrumbOptions = {
   showCurrentPage: true,
 }
 
+function formatName(name: string): string {
+  // if writings, notes, or maps, capitalize
+  // pull it from array
+  const capitalizable = ["writings", "notes", "maps"]
+  if (capitalizable.includes(name)) {
+    return name.charAt(0).toUpperCase() + name.slice(1)
+  }
+  return name
+}
+
 function formatCrumb(displayName: string, baseSlug: FullSlug, currentSlug: SimpleSlug): CrumbData {
   return {
-    displayName: displayName.replaceAll("-", " "),
+    displayName: formatName(displayName.replaceAll("-", " ")),
     path: resolveRelative(baseSlug, currentSlug),
   }
 }
@@ -133,6 +144,7 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
       </nav>
     )
   }
+  Breadcrumbs.id = ComponentIds.Breadcrumbs
   Breadcrumbs.css = breadcrumbsStyle
 
   return Breadcrumbs
