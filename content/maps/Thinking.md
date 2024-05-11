@@ -8,6 +8,7 @@ related:
 created: 2023-08-18
 tags:
   - map
+empty:
 ---
 It's time to give ***"thinking"*** the space it deserves. Let's cultivate this inherently rich endeavor.
 
