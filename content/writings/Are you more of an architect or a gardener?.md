@@ -1,6 +1,9 @@
 ---
 publishDate: 2024-04-25
-topic: "[[Thinking]]"
+up:
+  - "[[Thinking]]"
+related:
+  - "[[5 Paralyzing Pitfalls For Writing]]"
 ---
 Have you ever walked in a Japanese garden?
 

@@ -73,6 +73,24 @@ export const defaultContentPageLayout: PageLayout = {
         sort: byAlphabetical(),
       }),
     ),
+    Component.DesktopOnly(
+      Component.RelatedNotes({
+        title: "Related Maps",
+        path: "writings",
+        limit: 4,
+        field: "up",
+        linkToMore: "maps/" as SimpleSlug,
+      }),
+    ),
+    Component.DesktopOnly(
+      Component.RelatedNotes({
+        title: "Related Writing",
+        path: "writings",
+        limit: 4,
+        field: "related",
+        linkToMore: "writings/" as SimpleSlug,
+      }),
+    ),
     Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),

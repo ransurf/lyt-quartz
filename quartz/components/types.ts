@@ -38,4 +38,5 @@ export enum ComponentIds {
   Graph = "GRAPH",
   Properties = "PROPERTIES",
   RecentNotes = "RECENT_NOTES",
+  RelatedNotes = "RELATED_NOTES",
 }

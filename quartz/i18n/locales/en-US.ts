@@ -42,9 +42,13 @@ export default {
       title: "About the author",
       description: "Nick Milo has spent the last 15 years harnessing the power of digital notes to achieve remarkable feats. He's used digital notes as a tool to calm his thoughts and gain a clearer understanding of the world around him.",
     },
+    relatedNotes: {
+      title: "Related Notes",
+      seeAll: "See all →",
+    },
     recentNotes: {
       title: "Recent Notes",
-      seeRemainingMore: ({ remaining }) => `See ${remaining} more →`,
+      seeRemainingMore: ({ remaining }) => `See ${remaining} more →`
     },
     transcludes: {
       transcludeOf: ({ targetSlug }) => `Transclude of ${targetSlug}`,
