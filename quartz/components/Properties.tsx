@@ -66,7 +66,7 @@ export default (() => {
     allFiles,
   }: QuartzComponentProps): JSX.Element | null {
     const opts: TransformOptions = {
-      strategy: "relative",
+      strategy: "shortest",
       allSlugs: allFiles.map((fp) => fp.slug as FullSlug),
     }
 
