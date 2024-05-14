@@ -1,3 +1,5 @@
+//icon only search thanks to https://github.dev/DigitalGardeningCollective/front-porch
+
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import style from "./styles/search.scss"
 // @ts-ignore
@@ -20,8 +22,6 @@ export default ((userOpts?: Partial<SearchOptions>) => {
     return (
       <div class={classNames(displayClass, "search")}>
         <div id="search-icon">
-          <p>{i18n(cfg.locale).components.search.title}</p>
-          <div></div>
           <svg
             tabIndex={0}
             aria-labelledby="title desc"
