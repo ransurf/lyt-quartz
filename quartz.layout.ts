@@ -38,16 +38,16 @@ export const defaultContentPageLayout: PageLayout = {
         linkToMore: "writings/" as SimpleSlug,
       }),
     ),
-    Component.DesktopOnly(
-      Component.RecentNotes({
-        title: "Related Writing",
-        path: "maps",
-        limit: 4,
-        filter: (f) =>
-          Boolean(f.slug!.startsWith("writings/") && f.slug! !== "writings/index"),
-        linkToMore: "writings/" as SimpleSlug,
-      }),
-    ),
+    // Component.DesktopOnly(
+    //   Component.RecentNotes({
+    //     title: "Related Writing",
+    //     path: "maps",
+    //     limit: 4,
+    //     filter: (f) =>
+    //       Boolean(f.slug!.startsWith("writings/") && f.slug! !== "writings/index"),
+    //     linkToMore: "writings/" as SimpleSlug,
+    //   }),
+    // ),
   Component.DesktopOnly(
     Component.RecentNotes({
       title: "Recent Notes",
