@@ -22,6 +22,8 @@ import RecentNotes from "./RecentNotes"
 import Breadcrumbs from "./Breadcrumbs"
 import Properties from "./Properties"
 import AboutAuthor from "./AboutAuthor"
+import RelatedNotes from "./RelatedNotes"
+import Navbar from "./Navbar"
 
 export {
   ArticleTitle,
@@ -47,5 +49,7 @@ export {
   Breadcrumbs,
   Properties,
   PathOnly,
-  AboutAuthor
+  AboutAuthor,
+  RelatedNotes,
+  Navbar
 }

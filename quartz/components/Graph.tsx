@@ -4,6 +4,7 @@ import script from "./scripts/graph.inline"
 import style from "./styles/graph.scss"
 import { i18n } from "../i18n"
 import { classNames } from "../util/lang"
+import { ComponentIds } from "./types"
 
 export interface D3Config {
   drag: boolean
@@ -99,6 +100,7 @@ export default ((opts?: GraphOptions) => {
   }
 
   Graph.css = style
+  Graph.id = ComponentIds.Graph
   Graph.afterDOMLoaded = script
 
   return Graph

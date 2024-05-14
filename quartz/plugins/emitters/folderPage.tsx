@@ -33,6 +33,10 @@ export const FolderPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOpt
   const Header = HeaderConstructor()
   const Body = BodyConstructor()
 
+  const capitalizeFolder = (folder: string) => {
+    return folder.charAt(0).toUpperCase() + folder.slice(1)
+  }
+
   return {
     name: "FolderPage",
     getQuartzComponents() {
@@ -76,7 +80,7 @@ export const FolderPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOpt
           defaultProcessedContent({
             slug: joinSegments(folder, "index") as FullSlug,
             frontmatter: {
-              title: `${folder}`,
+              title: `${capitalizeFolder(folder)}`,
               tags: [],
             },
           }),

@@ -43,7 +43,11 @@ export interface Translation {
     aboutAuthor: {
       title: string
       description: string
-    }
+    },
+    relatedNotes: {
+      title: string
+      seeAll: string
+    },
     recentNotes: {
       title: string
       seeRemainingMore: (variables: { remaining: number }) => string

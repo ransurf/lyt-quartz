@@ -7,7 +7,8 @@ import { byAlphabetical } from "./quartz/components/PageList"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [
-    Component.PageTitle(),
+    // Component.PageTitle(),
+    Component.Navbar(),
   ],
   footer: Component.Footer({
     links: {
@@ -38,23 +39,23 @@ export const defaultContentPageLayout: PageLayout = {
         linkToMore: "writings/" as SimpleSlug,
       }),
     ),
-    Component.DesktopOnly(
-      Component.RecentNotes({
-        title: "Related Writing",
-        path: "maps",
-        limit: 4,
-        filter: (f) =>
-          Boolean(f.slug!.startsWith("writings/") && f.slug! !== "writings/index"),
-        linkToMore: "writings/" as SimpleSlug,
-      }),
-    ),
+    // Component.DesktopOnly(
+    //   Component.RecentNotes({
+    //     title: "Related Writing",
+    //     path: "maps",
+    //     limit: 4,
+    //     filter: (f) =>
+    //       Boolean(f.slug!.startsWith("writings/") && f.slug! !== "writings/index"),
+    //     linkToMore: "writings/" as SimpleSlug,
+    //   }),
+    // ),
   Component.DesktopOnly(
     Component.RecentNotes({
-      title: "Recent Ideas",
+      title: "Recent Notes",
       showDates: true,
       limit: 2,
-      filter: (f) => f.slug!.startsWith("ideas/"),
-      linkToMore: "ideas/" as SimpleSlug,
+      filter: (f) => f.slug!.startsWith("notes/"),
+      linkToMore: "notes/" as SimpleSlug,
     }),
   ),
   Component.DesktopOnly(
@@ -71,6 +72,24 @@ export const defaultContentPageLayout: PageLayout = {
         filter: (f) =>
           Boolean(f.slug!.startsWith("maps/") && f.slug! !== "maps/index"),
         sort: byAlphabetical(),
+      }),
+    ),
+    Component.DesktopOnly(
+      Component.RelatedNotes({
+        title: "Related Maps",
+        path: "writings",
+        limit: 4,
+        field: "up",
+        linkToMore: "maps/" as SimpleSlug,
+      }),
+    ),
+    Component.DesktopOnly(
+      Component.RelatedNotes({
+        title: "Related Writing",
+        path: "writings",
+        limit: 4,
+        field: "related",
+        linkToMore: "writings/" as SimpleSlug,
       }),
     ),
     Component.Graph(),
