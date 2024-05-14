@@ -13,10 +13,6 @@
     cursor: pointer;
     white-space: nowrap;
 
-    & > div {
-      flex-grow: 1;
-    }
-
     & > p {
       display: inline;
       padding: 0 1rem;
