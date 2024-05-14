@@ -31,6 +31,11 @@ nav.navbar, *::before, *::after {
 
 }
 
+nav.navbar img.lyt-logo {
+	margin: 0px;
+	width: 142px;
+}
+
 nav.navbar,
 nav.navbar::before,
 nav.navbar::after,
@@ -63,7 +68,7 @@ nav.navbar {
 
 	// Media Query for Desktop
 	@include largescreen {
-		padding: 1rem 2.5rem;
+		padding: 1rem;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
