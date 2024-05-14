@@ -7,7 +7,8 @@ import { byAlphabetical } from "./quartz/components/PageList"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [
-    Component.PageTitle(),
+    // Component.PageTitle(),
+    Component.Navbar(),
   ],
   footer: Component.Footer({
     links: {
@@ -57,9 +58,9 @@ export const defaultContentPageLayout: PageLayout = {
       linkToMore: "notes/" as SimpleSlug,
     }),
   ),
-  Component.DesktopOnly(
-    Component.Search()
-  ),
+  // Component.DesktopOnly(
+  //   Component.Search()
+  // ),
   ],
   right: [
     Component.AboutAuthor(),

@@ -197,17 +197,13 @@ export function renderPage(
 
   const LeftComponent = (
     <div class="left sidebar">
-      {left.map((BodyComponent) => (
-        conditionalFilterLeftComponent(BodyComponent)
-      ))}
+      {left.map((BodyComponent) => conditionalFilterLeftComponent(BodyComponent))}
     </div>
   )
 
   const RightComponent = (
     <div class="right sidebar">
-      {right.map((BodyComponent) => (
-        conditionalFilterRightComponent(BodyComponent)
-      ))}
+      {right.map((BodyComponent) => conditionalFilterRightComponent(BodyComponent))}
     </div>
   )
 
@@ -243,20 +239,18 @@ export function renderPage(
     <html lang={lang}>
       <Head {...componentData} />
       <body data-slug={slug}>
+        <Header {...componentData}>
+          {header.map((HeaderComponent) => (
+            <HeaderComponent {...componentData} />
+          ))}
+        </Header>
         <div id="quartz-root" class="page">
           <Body {...componentData}>
             {LeftComponent}
             <div class="center">
               <div class="page-header">
-                <Header {...componentData}>
-                  {header.map((HeaderComponent) => (
-                    <HeaderComponent {...componentData} />
-                  ))}
-                </Header>
                 <div class="popover-hint">
-                  {beforeBody.map((BodyComponent) => (
-                    conditionalFilterBodyComponent(BodyComponent)
-                  ))}
+                  {beforeBody.map((BodyComponent) => conditionalFilterBodyComponent(BodyComponent))}
                 </div>
               </div>
               <Content {...componentData} />
