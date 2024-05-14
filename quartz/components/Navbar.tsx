@@ -33,7 +33,7 @@ export default (() => {
         <div class="navbrand">
           <h1>
             <a href={slug?.startsWith("garden") ? "/garden" : "/index.html"} class="brand">
-              <img className="lyt-logo" src={`../../static/lyt-navbar-logo.png`} alt={`LYT Home`} />
+              <img className="lyt-logo" src={`/static/lyt-navbar-logo.png`} alt={`LYT Home`} />
             </a>
           </h1>
 
