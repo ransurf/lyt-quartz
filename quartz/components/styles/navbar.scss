@@ -18,7 +18,7 @@ $box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
 nav.navbar,
 nav.navbar::before,
 nav.navbar::after,
-nav.navbar *, *::before, *::after {
+nav.navbar, *::before, *::after {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
@@ -28,6 +28,16 @@ nav.navbar *, *::before, *::after {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
+
+}
+
+nav.navbar,
+nav.navbar::before,
+nav.navbar::after,
+nav.navbar > ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 // Elements

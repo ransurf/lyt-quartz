@@ -58,9 +58,9 @@ export const defaultContentPageLayout: PageLayout = {
       linkToMore: "notes/" as SimpleSlug,
     }),
   ),
-  // Component.DesktopOnly(
-  //   Component.Search()
-  // ),
+  Component.DesktopOnly(
+    Component.Search()
+  ),
   ],
   right: [
     Component.AboutAuthor(),

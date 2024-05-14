@@ -10,7 +10,6 @@ export default (() => {
     function NavbarComponent(componentData: QuartzComponentProps) {        
         const { fileData, cfg } = componentData;
         const SearchComponent = Component.Search();
-        const DarkModeComponent = Component.Darkmode();
         // const RSSComponent = Component.RSS();
         const { slug } = fileData;
 
