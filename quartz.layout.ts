@@ -11,9 +11,33 @@ export const sharedPageComponents: SharedLayout = {
     Component.Navbar(),
   ],
   footer: Component.Footer({
-    links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
+    columns: [
+    {
+      title: "Resources",
+      links: [
+        { title: "Ideaverse", link: "https://start.linkingyourthinking.com/ideaverse-for-obsidian" },
+        { title: "Obsidian Flight School", link: "https://www.linkingyourthinking.com/obsidian-flight-school" },
+        { title: "How to Work a Book", link: "https://www.linkingyourthinking.com/how-to-work-a-book" },
+        { title: "LYT Workshop", link: "https://www.linkingyourthinking.com/workshop" },
+        { title: "Writing Original Works", link: "https://www.linkingyourthinking.com/wow-workshop" },
+      ]
     },
+    {
+      title: "Socials",
+      links: [
+        { title: "Youtube", link: "https://linkingyourthinking.com/youtube" },
+        { title: "Podcast", link: "https://podcast.linkingyourthinking.com/" },
+        { title: "Twitter", link: "https://twitter.com/the_LYT_way" },
+      ]
+    },
+    {
+      title: "Company",
+      links: [
+        { title: "Contact Us", link: "contact" },
+        { title: "About LYT", link: "about" },
+      ]
+    }
+  ]
   }),
 }
 

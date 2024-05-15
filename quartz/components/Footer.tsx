@@ -4,27 +4,48 @@ import { version } from "../../package.json"
 import { i18n } from "../i18n"
 
 interface Options {
-  links: Record<string, string>
+  columns: {
+    title: string
+    links: {
+      title: string
+      link: string
+    }[]
+  }[]
 }
 
 export default ((opts?: Options) => {
   const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
     const year = new Date().getFullYear()
-    const links = opts?.links ?? []
+    const columns = opts?.columns ?? []
     return (
-      <footer class={`${displayClass ?? ""}`}>
-        <hr />
-        <p>
-          {i18n(cfg.locale).components.footer.createdWith}{" "}
-          <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}
-        </p>
-        <ul>
-          {Object.entries(links).map(([text, link]) => (
-            <li>
-              <a href={link}>{text}</a>
-            </li>
-          ))}
-        </ul>
+      <footer className={`${displayClass ?? ""}`}>
+        <div className="footer-container">
+          <a href={"/index.html"} class="brand">
+            <img className="lyt-logo" src={`/static/lyt-navbar-logo.png`} alt={`LYT Home`} />
+          </a>
+          <div className="footer-columns">
+            {columns.map((column, index) => (
+              <ul className="footer-column" key={index}>
+                <h3>{column.title}</h3>
+                {column.links.map((link, linkIndex) => (
+                  <li key={linkIndex}>
+                    <a href={link.link}>{link.title}</a>
+                  </li>
+                ))}
+              </ul>
+            ))}
+          </div>
+        </div>
+        <div className="footer-credits">
+          <p>
+            {i18n(cfg.locale).components.footer.createdWith}{" "}
+            <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}
+          </p>
+          <p>
+            {i18n(cfg.locale).components.footer.madeBy}{" "}
+            <a href="https://notes.johnmavrick.com/">John Mavrick</a> @ LYT
+          </p>
+        </div>
       </footer>
     )
   }

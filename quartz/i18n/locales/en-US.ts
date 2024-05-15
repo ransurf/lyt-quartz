@@ -34,6 +34,7 @@ export default {
     },
     footer: {
       createdWith: "Created with",
+      madeBy: "Made with 💜 by ",
     },
     graph: {
       title: "Graph View",
