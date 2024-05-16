@@ -20,9 +20,9 @@ export default ((opts?: Options) => {
     return (
       <footer className={`${displayClass ?? ""}`}>
         <div className="footer-container">
-          <a href={"/index.html"} class="brand">
+          {/* <a href={"/index.html"} class="brand">
             <img className="lyt-logo" src={`/static/lyt-navbar-logo.png`} alt={`LYT Home`} />
-          </a>
+          </a> */}
           <div className="footer-columns">
             {columns.map((column, index) => (
               <ul className="footer-column" key={index}>
@@ -35,16 +35,15 @@ export default ((opts?: Options) => {
               </ul>
             ))}
           </div>
-        </div>
-        <div className="footer-credits">
-          <p>
-            {i18n(cfg.locale).components.footer.createdWith}{" "}
-            <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}
-          </p>
-          <p>
-            {i18n(cfg.locale).components.footer.madeBy}{" "}
-            <a href="https://notes.johnmavrick.com/">John Mavrick</a> @ LYT
-          </p>
+          <div className="footer-credits">
+            <p>
+              {i18n(cfg.locale).components.footer.madeBy}{" "}
+              <a href="https://notes.johnmavrick.com/">John Mavrick</a>{" "}
+              {i18n(cfg.locale).components.footer.createdWith}{" "}
+              <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a>
+            </p>
+            <p>© Linking Your Thinking {year}</p>
+          </div>
         </div>
       </footer>
     )
