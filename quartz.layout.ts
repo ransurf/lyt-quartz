@@ -91,7 +91,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.AboutAuthor(),
     Component.DesktopOnly(
       Component.RecentNotes({
-        title: "All Categories",
+        title: "All Maps",
         path: "maps",
         limit: 5,
         filter: (f) =>
