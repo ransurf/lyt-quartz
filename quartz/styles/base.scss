@@ -198,6 +198,13 @@ a {
       margin-top: 2rem;
     }
   }
+  & .page-after {
+    width: $pageWidth;
+    margin: 0 auto 0 auto;
+    @media all and (max-width: $fullPageWidth) {
+      width: initial;
+    }
+  }
 
   & .center,
   & footer {
