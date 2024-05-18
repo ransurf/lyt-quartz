@@ -3,7 +3,7 @@ up:
   - "[[FlowCreation MOC|FlowCreation MOC]]"
 related:
   - "[[Mihaly Csikszentmihalyi (kit)|Mihaly Csikszentmihalyi (kit)]]"
-created: 2016-06-01
+created: 2023-08-29T07:08:18
 ---
 The [[Flow Map|Flow Map]] is Dr. Mihaly Csikszentmihalyi's way to describe where [[./Flow|Flow]] takes place in regards to the variables: Challenge and Skill. However he came about plotting the two variables against each, it's a landmark discovery. It's a lodestar to which I keep returning. It's the foundation much of my thinking and to my carving of that theory to practical, moment-to-moment application.
 
