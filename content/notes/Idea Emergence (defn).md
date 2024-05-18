@@ -2,7 +2,7 @@
 up:
   - "[[Systems MOC (kit)|Systems MOC (kit)]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:09:48
 ---
  **Idea Emergence** is the process of how the ideas you encounter go from the "nothingness" to the "somethingness"—and how those ideas grow in richness, complexity, and personally meaningful value over time.
 
