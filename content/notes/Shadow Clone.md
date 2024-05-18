@@ -4,7 +4,7 @@ up:
   - "[[Cloning|Cloning]]"
 related:
   - "[[Multiplicity|Multiplicity]]"
-created: 2020-06-01
+created: 2023-08-29T07:12:42
 tags:
   - concept
 ---
@@ -22,7 +22,6 @@ While a user and/or their clones are performing tasks that require concentration
 
 ### How to Apply
 The best way to deploy a shadow-clone is probably through leveraging apps to do work for you. Like transcribing audio notes for example. 
-
 
 ---
 
@@ -58,7 +57,7 @@ Have you ever _experienced this when_ juggling multiple tasks, wishing for an ex
 ### Reference
 > "The art of splitting the body is a way of escaping the fight. It also increases the chance of winning." - Naruto Uzumaki
 
-It is *seen in*...
+It is *seen in*…
 
 - Naruto, a manga series where the protagonist frequently uses this technique.
 - The Prestige, a film that plays with similar ideas of doppelgängers.
@@ -72,8 +71,6 @@ It is *seen in*...
 
 - See the web: [Shadow Clone Jutsu in Naruto](https://naruto.fandom.com/wiki/Shadow_Clone_Technique), [The concept of Doppelgangers](https://www.britannica.com/art/doppelganger).
 - See wikipedia: [Shadow Clone Technique](https://en.wikipedia.org/wiki/Naruto#Shadow_Clone_Technique), [Multiplicity (film)](https://en.wikipedia.org/wiki/Multiplicity_(film)).
-
-
 
 THE DEFINITIONS:
 
