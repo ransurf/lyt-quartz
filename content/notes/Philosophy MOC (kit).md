@@ -2,7 +2,7 @@
 up:
   - "[[Library|Library]]"
 related: []
-created: 2023-08-19
+created: 2023-08-19T10:00:58
 tags:
   - map
 ---
@@ -18,7 +18,6 @@ tags:
 - [[Design MOC|Design MOC]]
 - [[1952 - The Syntopicon|1952 - The Syntopicon]]
 - [[./Dimensions of Reality|Dimensions of Reality]]
-
 
 ## Traditional Philosophy
 ### Top Philosophers

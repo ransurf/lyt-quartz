@@ -2,7 +2,7 @@
 up:
   - "[[Thinking Map|Thinking Map]]"
 related: []
-created: 2004-12-15
+created: 2023-08-29T06:52:52
 evolved: 2021-01-01
 tags:
   - map

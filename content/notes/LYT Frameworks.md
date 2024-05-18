@@ -2,7 +2,7 @@
 up:
   - "[[Ideaverse Map|Ideaverse Map]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:10:46
 ---
 LYT stands for "Linking Your Thinking".
 
@@ -18,11 +18,11 @@ LYT provides a framework for your notes. You can find them. You can work with th
 
 1. **The Home note** - The Home note can act as your home base to ground you, and as a launching pad into your note library.
 2. **Maps of Content** (MOCs) - These are like having curated worktables with all your relevant index cards placed on them. MOCs will help you overcome the overwhelming anxiety that can arise from having notes scattered everywhere. More on this later.
-3. **Other Fluid Frameworks** -  Adding structure to your notes has gotten a bad rap lately. But if you know how to keep your frameworks fluid, you'll get the best of both worlds: order *and* chaos; excellent note retrieval *and* the serendipity of discovery. More on this later. <!--with fluid structures, The LYT Framework emphasizes linked frameworks.-->
+3. **Other Fluid Frameworks** - Adding structure to your notes has gotten a bad rap lately. But if you know how to keep your frameworks fluid, you'll get the best of both worlds: order *and* chaos; excellent note retrieval *and* the serendipity of discovery. More on this later. <!--with fluid structures, The LYT Framework emphasizes linked frameworks.-->
 ---
-## The forest keeps winding...
+## The forest keeps winding…
 You reach a particularly interesting fork in the overgrown trail. You can continue on the main path and read about the [[./Benefits of LYT frameworks|Benefits of LYT frameworks]].
 
 Or you can start mapping the forest's unique landscape. Just go to: [[./Set Up Your Home Note|Set Up Your Home Note]].
 
-Or, you can climb the tallest Ent-like tree to get your bearings at a note called [[../LYT Ideaverse|Home]].
+Or, you can climb the tallest Ent-like tree to get your bearings at a note called [[../ |Home]].

@@ -4,7 +4,7 @@ up:
 related:
   - "[[Why Efforts are Liberating|Why Efforts are Liberating]]"
   - "[[How ideas and efforts play nicely together|How ideas and efforts play nicely together]]"
-created: 2022-09-01
+created: 2023-08-28T09:18:07
 ---
 There are four useful intensities for your efforts. 
 

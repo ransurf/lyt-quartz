@@ -4,7 +4,7 @@ up:
 related:
   - "[[Add|Add]]"
   - "[[Relate|Relate]]"
-created: 2022-01-01
+created: 2023-08-28T04:07:35
 tags:
   - map_view
 ---
@@ -15,9 +15,9 @@ Below are simple examples using the tag `output` to track my, well, outputs.
 This is enough to get you started. Over time, you might to customize your views.
 
 > [!Script]- ###### Newsletters
->  |                                                                                         | Published        |
-> | --------------------------------------------------------------------------------------- | ---------------- |
-> | [[./Sensemaking happens by triangulation\|Sensemaking happens by triangulation]] | January 01, 2022 |
+>  |                                                                                         | Published                 |
+> | --------------------------------------------------------------------------------------- | ------------------------- |
+> | [[./Sensemaking happens by triangulation\|Sensemaking happens by triangulation]] | 9:24 AM - August 28, 2023 |
 > 
 
 # Videos
@@ -29,13 +29,11 @@ This is enough to get you started. Over time, you might to customize your views.
 > |  | ---- |
 > 
 
-
 > [!Video]- ###### Published Youtube Videos
->  |                                                                                         | Published        |
-> | --------------------------------------------------------------------------------------- | ---------------- |
-> | [[./Sensemaking happens by triangulation\|Sensemaking happens by triangulation]] | January 01, 2022 |
-> | [[./PKM Planet 1 - What is PKM\|PKM Planet 1 - What is PKM]]                     | April 19, 2021   |
-> | [[./What is a note\|What is a note]]                                             | June 01, 2020    |
+>  |                                                                                         | Published                 |
+> | --------------------------------------------------------------------------------------- | ------------------------- |
+> | [[./Sensemaking happens by triangulation\|Sensemaking happens by triangulation]] | 9:24 AM - August 28, 2023 |
+> | [[./PKM Planet 1 - What is PKM\|PKM Planet 1 - What is PKM]]                     | 4:19 AM - August 28, 2023 |
+> | [[./What is a note\|What is a note]]                                             | 4:18 AM - August 28, 2023 |
 > 
-
 

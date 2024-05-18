@@ -2,7 +2,7 @@
 up:
   - "[[./The 3 Phases of MOCs|The 3 Phases of MOCs]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:13:19
 ---
 The 3 phases of MOCs are *non-linear*. They are not distinct like these examples. They overlap. They are messy. Don't make this rigid. Keep it fluid.
 
@@ -15,7 +15,7 @@ The process is overlapping and cyclical. In Italian 'coda' means 'tail', and in 
 
 An MOC is rarely a finalized concrete statue. Instead, it should be able to freely evolve over time.
 
-Or you could just create a new one... ;)
+Or you could just create a new one… ;)
 
 ---
 Perhaps you want to return to [[./The 3 Phases of MOCs|The 3 Phases of MOCs]]

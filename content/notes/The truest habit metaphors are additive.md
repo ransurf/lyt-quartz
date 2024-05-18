@@ -2,7 +2,7 @@
 up:
   - "[[Habits Map|Habits Map]]"
 related: []
-created: 2014-01-01
+created: 2023-08-29T07:13:57
 ---
 There are two metaphorical ways to talk about habits: additive and subtractive.
 
@@ -17,7 +17,6 @@ I say additive is the truest metaphor for habit formation because that's what is
 To conclude, even those neural formations are additive.
 
 ### Counterpoint
-But they're not actually. Consider the trail. Even though the removal of undergrowth and twigs seems subtractive, it's actually additive from the POV of *throughput*. The amount of content and/or the speed of travel has increased. 
-
+But they're not actually. Consider the trail. Even though the removal of undergrowth and twigs seems subtractive, it's actually additive from the POV of *throughput*. The amount of content and/or the speed of travel has increased.
 
 [^1]: As I return to this old idea, I'm struck with a contradiction. While the terrain wears away (subtractive), the speed of travel increases (additive). So if the point of reference changes from the terrain to the traveler, even the subtractive example contains an additive component. 2020-05-27

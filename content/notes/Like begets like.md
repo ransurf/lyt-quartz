@@ -2,7 +2,7 @@
 up:
   - "[[Habits Map|Habits Map]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:10:38
 tags:
   - concept
 ---
@@ -18,7 +18,7 @@ That means whatever you do, whatever tiny action or thought, creates neural path
 
 Others: *You are what you eat. I am what I am.*
 
-This is a first principle; perhaps one of the most fundamental first principles...one with major ramifications 
+This is a first principle; perhaps one of the most fundamental first principles…one with major ramifications 
 
 Related: [[Mirror Neurons|Mirror Neurons]] (not included in Ideaverse for Obsidian)
 

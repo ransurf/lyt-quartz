@@ -2,13 +2,13 @@
 up:
   - "[[Philosophy MOC (kit)|Philosophy MOC (kit)]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:07:41
 tags:
   - concept
 ---
  *What if you thought two dimensions was the entirety of reality?*
 
-This premise that "there is something more" always strikes a chord in me. It's why I resonate with [[./Plato's Cave|Plato's Cave]], The Matrix, Flatland...even The Truman Show! Bring on the existential angst I say! 
+This premise that "there is something more" always strikes a chord in me. It's why I resonate with [[./Plato's Cave|Plato's Cave]], The Matrix, Flatland…even The Truman Show! Bring on the existential angst I say! 
 
 Some of the themes found in these works are:
 

@@ -1,8 +1,9 @@
 ---
 title: " "
+created: 2024-05-07T06:53:50
 ---
-The safe trail ends. A forest stands before you.
+The safe trail ends. A forest stands before you. 
 
 Taking a deep breath, you [[./notes/The forest entrance|enter the forest]].
 
-[[./LYT Ideaverse|LYT Ideaverse]]
+[[./home|home]]

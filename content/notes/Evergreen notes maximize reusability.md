@@ -2,7 +2,7 @@
 up:
   - "[[Evergreen notes|Evergreen notes]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:08:07
 ---
 As the number of your evergreen notes grows over time, their value compounds into a priceless amalgamation of modular, agile thought-units. 
 

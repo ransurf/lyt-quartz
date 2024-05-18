@@ -1,7 +1,7 @@
 ---
 up:
   - "[[Habits Map|Habits Map]]"
-created: 2013-03-10
+created: 2023-08-29T07:03:47
 ---
 
 The following is an example of me considering the habitual cues in my life that I wanted to control in March of 2013.

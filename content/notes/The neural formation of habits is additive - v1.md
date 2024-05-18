@@ -2,7 +2,7 @@
 up:
   - "[[Habits MOC - Gather|Habits MOC - Gather]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:13:48
 ---
 I attended a presentation of "Portraits of the Mind" by Carl Schoonover. He showed pictures of how dendrites grow spines for better connections to synapses. Carl showed a video of neural networks forming. Now more than ever, we are starting to witness the neural formation of habits.
 

@@ -2,11 +2,11 @@
 up:
   - "[[../Ideaverse Map|Ideaverse Map]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:14:26
 ---
 The idea that "categories are bad" hinges on a faulty notion that categories limit access and cause rigidity that inhibit organic thinking.
 
-That argument applies to a system of folders. It does not apply to more fluid structures. Let's explore...
+That argument applies to a system of folders. It does not apply to more fluid structures. Let's explore…
 
 **Argument 1**
 Creating categories is a top-down process. You start with the structure and then file the material away. Notes will have to fit the structure. If they don’t, there’ll have to be a compromise. [^1]

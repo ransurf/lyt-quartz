@@ -1,7 +1,7 @@
 ---
 up:
-  - "[[../LYT Ideaverse|Home]]"
-created: 2023-08-19
+  - "[[../ |Home]]"
+created: 2023-08-29T09:15:36
 tags:
   - map
 ---
@@ -16,7 +16,6 @@ Keep your priorities in order. Quickly adjust your bandwidth as needed.
 > SORT rank desc
 > ```
 
-
 > [!Box]+ ### ♻️ Ongoing
 > ``` dataview
 > TABLE WITHOUT ID
@@ -25,7 +24,6 @@ Keep your priorities in order. Quickly adjust your bandwidth as needed.
 > FROM "Efforts/Ongoing"
 > SORT rank desc
 > ```
-
 
 > [!Box]+ ### 〰️ Simmering
 > Efforts can easily move from `on` to `simmering` in the background.
@@ -49,4 +47,4 @@ Keep your priorities in order. Quickly adjust your bandwidth as needed.
 >   
 >   ![[robert-mccall-black-hole-concept-art copy.jpg|robert-mccall-black-hole-concept-art copy.jpg]]
 
-Back to [[../LYT Ideaverse|Home]].
+Back to [[../ |Home]].

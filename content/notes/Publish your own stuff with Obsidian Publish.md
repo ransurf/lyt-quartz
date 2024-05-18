@@ -2,7 +2,7 @@
 up:
   - "[[Ideaverse Map|Ideaverse Map]]"
 related: []
-created: 2021-06-01
+created: 2023-08-29T07:12:15
 ---
 This is amazing. I'm just typing. 
 
@@ -10,7 +10,7 @@ Then I hit the publish button.
 
 And my words are on the internet.
 
-Just another...game changer.
+Just another…game changer.
 
 What are you waiting for?
 

@@ -2,7 +2,7 @@
 up:
   - "[[Habits Map|Habits Map]]"
 related: []
-created: 2019-10-01
+created: 2023-08-29T07:09:40
 modified: 2020-05-28
 ---
 Atomic Habits is a term from James Clear, with a [[Atomic Habits (book)|book of the same name]]. 
@@ -16,7 +16,7 @@ James adds a fourth step to Duhigg's habit cycle, which was needed. James is a s
 Other tidbits:
 - The first step is Awareness. Discover and record your habits throughout the day. Here's an example of me [[./Charting out habit cycles in my life circa 2013|Charting out habit cycles in my life circa 2013]]
 	- The more specific the implementation, the more motivation, ie time, place, etc
-- Focus on Identity over Outcome: ie "I'm the guy who..." over thinking about the result I want...Every action you take is you casting a vote for your identity.
+- Focus on Identity over Outcome: ie "I'm the guy who…" over thinking about the result I want…Every action you take is you casting a vote for your identity.
 - James shares 'The Goldilocks rule', which is nothing more than finding [[./Flow|Flow]] through balancing challenge with ability, which apparently is 3-4% beyond your current ability. You need victories to stay satisfied, but you need to be challenged. 
 
 > "Men desire novelty to such a degree that men who are doing well require it just as much as men who are not."

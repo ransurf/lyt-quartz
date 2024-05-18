@@ -1,7 +1,8 @@
 ---
-title: LYT Ideaverse
+title: " "
 aliases:
   - Home
+created: 2024-05-05T01:13:31
 ---
 
 Your launchpad and home base. That's here. That's **home**.
@@ -65,6 +66,4 @@ Your launchpad and home base. That's here. That's **home**.
 > ![[robert-mccall-black-hole-concept-art copy.jpg|400]]
 
 ![[pale-blue-dot-banner.jpg|pale-blue-dot-banner.jpg]]
-
-
 

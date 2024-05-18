@@ -2,7 +2,7 @@
 up:
   - "[[./LYT Mode Theme|LYT Mode Theme]]"
 related: []
-created: 2020-01-12
+created: 2023-08-21T09:10:04
 dates: 2020 - 2022
 ---
 
@@ -43,7 +43,6 @@ I use **Bold Words** for calling out nouny things (most of the time), and I'll u
 #### Other things you might want to know
 - I wouldn't normally use so many categories because they can quickly get in the way, but I'm trying to show you the theme, so don't judge!
 	- Cybertron is paired well while listening to nightride.fm. 
-
 
 ##### And then there was a cassette player
 Working your way around bumpy bumps and stumpy stumps, your foot knocks against something. "That's not a rock," is your first thought, followed quickly by, "That's the sound of cheap plastic!" You look down and find a dusty cassette player. You've heard about these from your grandpa. After some time (longer than you'd like to admit), you find the eject button, and study the tape inside. On the back side, scrawled in blue pen, are the words: "In case of a focus emergency". You put the tape back in and [[./In case of a focus emergency|press play]].

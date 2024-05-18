@@ -2,7 +2,7 @@
 up:
   - "[[Ideaverse Map|Ideaverse Map]]"
 related: []
-created: 2020-06-01
+created: 2023-08-28T02:39:18
 ---
 
 > The external part of your ideaverse should make sense and be useable to someone else—including and especially your future self. 
@@ -22,6 +22,6 @@ created: 2020-06-01
 - You can always edit notes, even years into the future. 
 - Your more valuable notes should eventually—generally—focus on a main idea.
 	- Why? Because long notes say many things, which means, when you link to a long note, your link isn't as clear. Your resulting confusion is a result of the vagueness of the link.
--  Your notes don't have to be "atomic". 
+- Your notes don't have to be "atomic". 
 	- Just because it's valuable to generally focus your notes on a main idea, it doesn't mean you should be making extra tiny atomic notes. Some people are rigid in their dogma that every note must be small. In doing so, they ironically succumb to the problems of over-structuring, the very thing they were trying to avoid. Just instead of over-structuring by having too many folders, they get stuck over-structuring by fragmenting out their ideas so much, it's too difficult to maintain a cohesive thought!  
 	- Creativity—benefits from shifting the rigid dogma on both ends so we land back into the "goldilocks zone" of effective thinking.

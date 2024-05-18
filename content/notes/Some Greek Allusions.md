@@ -2,7 +2,7 @@
 up:
   - "[[Allusion MOC|Allusion MOC]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:13:01
 ---
 Many of the words we use today are actually allusions to historical figures and Greek Gods. Here are just a few examples:
 Greek

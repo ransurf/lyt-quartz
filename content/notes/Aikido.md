@@ -3,7 +3,7 @@ up:
   - "[[Concepts Map|Concepts Map]]"
 related:
   - "[[./No-Face|No-Face]]"
-created: 2020-06-01
+created: 2023-08-29T07:01:06
 tags:
   - concept
 dates: 1920s - 1930s

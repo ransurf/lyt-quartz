@@ -2,7 +2,7 @@
 up:
   - "[[Meta PKM|Meta PKM]]"
 related: []
-created: 2020-06-01
+created: 2023-08-23T08:28:53
 ---
 Although "X" is not a word, it can quickly be intuited. 
 

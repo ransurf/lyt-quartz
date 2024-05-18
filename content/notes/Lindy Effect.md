@@ -2,14 +2,14 @@
 up:
   - "[[Concepts Map|Concepts Map]]"
 related: []
-created: 2015-09-01
+created: 2023-08-29T07:10:40
 tags:
   - concept
 ---
  *The longer I'm around, the longer I'll be around*
 
 - The longer a non-perishable thing has been around, the longer it will be around. Like the spoon. Not like the human. 
-- There is no spoon...unless you're talking about the Lindy Effect. Then there is a spoon—and it will be around for at least another couple million years.
+- There is no spoon…unless you're talking about the Lindy Effect. Then there is a spoon—and it will be around for at least another couple million years.
 - Things that have been around for a long time (and are non-perishable) are not "aging" like people, but "aging" in reverse.
 - The older something valuable is, the more likely it will still be valuable in 100 years.
 - This is strongly related to [[./Antifragility|Antifragility]].

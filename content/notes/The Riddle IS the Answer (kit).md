@@ -2,7 +2,7 @@
 up:
   - "[[Trust the process (kit)|Trust the process (kit)]]"
 related: []
-created: 2014-01-01
+created: 2023-08-29T07:13:51
 modified: 2022-03-15
 tags:
   - source_speech
@@ -14,7 +14,7 @@ What's up with public restrooms having all those scribbles on the walls?
 
 I mean, who does that? Well, one time I did.
 
-But first, some back story...I was 18 and was back from my first semester in college. It was the holiday season. Christmas Eve actually. And my dad said we could open presents a day early if we solved his riddle. So he gave us one of the best and hardest riddle of all time. A riddle for the ages. (If we have time, I'll share it with you at the end.)
+But first, some back story…I was 18 and was back from my first semester in college. It was the holiday season. Christmas Eve actually. And my dad said we could open presents a day early if we solved his riddle. So he gave us one of the best and hardest riddle of all time. A riddle for the ages. (If we have time, I'll share it with you at the end.)
 
 I chewed on the riddle trying to solve it. I wrestled with it. It was frustrating, and yet surprisingly, kinda fun. 
 

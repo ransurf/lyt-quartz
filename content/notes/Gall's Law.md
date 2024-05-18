@@ -2,7 +2,7 @@
 up:
   - "[[Concepts Map|Concepts Map]]"
 related: []
-created: 2020-06-01
+created: 2023-08-28T02:44:26
 tags:
   - concept
   - source_quote_my
@@ -15,7 +15,7 @@ Gall’s Law is a rule of thumb for systems design that states:
 
 > All complex systems that work evolved from simpler systems that worked. 
 
-> [And conversely...] A complex system designed from scratch never works and cannot be patched up to make it work. 
+> [And conversely…] A complex system designed from scratch never works and cannot be patched up to make it work. 
 
 So don't build unearned structure. Don't build walls in the desert. 
 
@@ -39,5 +39,5 @@ That said, you weren't born yesterday. You have lived many years of life, so eve
 Divergence, Emergence, Convergence, Complexity, Systems Thinking, Systems Theory
 
 ### Wiki
-Examples: This law...can be used to explain the success of systems like the World Wide Web and Blogosphere, which grew from simple to complex systems incrementally, and the failure of systems like CORBA, which began with complex specifications. 
+Examples: This law…can be used to explain the success of systems like the World Wide Web and Blogosphere, which grew from simple to complex systems incrementally, and the failure of systems like CORBA, which began with complex specifications. 
 

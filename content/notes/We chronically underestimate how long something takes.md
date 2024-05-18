@@ -2,13 +2,13 @@
 up:
   - "[[Cognitive Bias MOC|Cognitive Bias MOC]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:14:14
 tags:
   - note_develop🍃
 ---
  *If you're confident about time management, you have a problem.*
 
-Cognitive Bias...what's this called?
+Cognitive Bias…what's this called?
 
 When has this happened to me?
 

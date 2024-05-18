@@ -2,16 +2,16 @@
 up:
   - "[[Thinking Map|Thinking Map]]"
 related: []
-created: 2020-06-01
+created: 2023-08-28T02:48:15
 tags:
   - concept
 ---
 
-> The faster you can: *observe* the changes in your environment, *orient* advantageously, *decide* on the best course of action, and actually *act* on that decision...the greater your chances of victory. ^ac47c8
+> The faster you can: *observe* the changes in your environment, *orient* advantageously, *decide* on the best course of action, and actually *act* on that decision…the greater your chances of victory. ^ac47c8
 
 In that process, it's the Orientation phase that is the most valuable. That's where you take what you observe and figure things out. You figure things out based on a mixture of new information, cultural traditions, genetic heritage (See: [[Nature or Nuture|Nature or Nuture]]), your previous experiences—and how you blend all of that into your thinking process. ^56be2f
 
-If you are equipped with the ability to think quickly, with winning mental models, then Fortune will be in your favor.  ^00ee58
+If you are equipped with the ability to think quickly, with winning mental models, then Fortune will be in your favor. ^00ee58
 
 > [!NOTE]- Some links and content in this note have been removed.
 > Because this is a vertical slice of my actual PKM system, I can't include everything in this vault and left out some notes and material for ease of navigation and understanding the concepts (rather than getting lost in the knowledge) as well as for privacy. 
@@ -26,9 +26,9 @@ The OODA loop is the decision cycle of observe, orient, decide, and act develope
 ---
 ### Source
 1. **Observe**: It is not necessarily the one with more information who will come out victorious, it is the one with better judgment, the one who is better at discerning patterns.
-1. **Orient**: The reason Orient is the *schwerpunkt* of the OODA Loop is because that’s where our mental models exist, and it is our mental models that shape how everything in the OODA Loop works... "Orienting, in a nutshell, is the ability to make figurative mental snowmobiles on the fly and in the face of uncertainty. %%aka "Macgyvering"%%
+1. **Orient**: The reason Orient is the *schwerpunkt* of the OODA Loop is because that’s where our mental models exist, and it is our mental models that shape how everything in the OODA Loop works… "Orienting, in a nutshell, is the ability to make figurative mental snowmobiles on the fly and in the face of uncertainty. %%aka "Macgyvering"%%
 1. **Decide**: When we decide, we’re essentially moving forward with our best hypothesis — our best “educated guess” — about which mental model will work.
-1. **Act**: First, the individual or organization that can go through *successful*, consecutive OODA Loops faster than their opponent will win the conflict... Second, rapid OODA Looping on your part “resets” your opponent’s OODA Loop by causing confusion – it sends them back to square one.
+1. **Act**: First, the individual or organization that can go through *successful*, consecutive OODA Loops faster than their opponent will win the conflict… Second, rapid OODA Looping on your part “resets” your opponent’s OODA Loop by causing confusion – it sends them back to square one.
 
 ---
 The OODA Loop is not only a tool to win in battle. It is a learning engine that acts as a [[./Feedback Loop|Feedback Loop]] that allows an individual or organization to thrive in a changing environment.

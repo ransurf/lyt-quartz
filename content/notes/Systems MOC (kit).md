@@ -2,7 +2,7 @@
 up:
   - "[[Library|Library]]"
 related: []
-created: 2023-08-19
+created: 2023-08-29T06:54:51
 tags:
   - map
 ---
@@ -19,5 +19,4 @@ This mapping note is in the **gather phase**. I'm thinking about systems often, 
 - Top-down thinking
 - Middle-out thinking
 - [[./Heterarchy|Heterarchy]]
-
 

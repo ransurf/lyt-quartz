@@ -1,7 +1,7 @@
 ---
 up:
   - "[[Meta PKM|Meta PKM]]"
-created: 2020-06-01
+created: 2023-08-29T07:02:52
 ---
 The ideas folder is one of my favorite places because it has *umami*. Apparently umami is one of the five basic tastes. There are: Sweetness, Sourness, Saltiness, Bitterness—and that oddball Umami.
 
@@ -13,5 +13,4 @@ Anything that is a bit of knowledge that you might call a "thing" or a "statemen
 Yes, the definition is not rigid, but it works. 
 
 [[./Information that crosses our attentional filter becomes knowledge|Information that crosses our attentional filter becomes knowledge]].
-
 

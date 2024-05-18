@@ -2,7 +2,7 @@
 up:
   - "[[Ideaverse Map|Ideaverse Map]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:14:20
 ---
 Sometimes the best way of understanding something is hearing what people have to say about it. 
 
@@ -27,7 +27,7 @@ Sometimes the best way of understanding something is hearing what people have to
 
 ---
 
-- **Why do you need a MOC to lead to other new notes? Isn't that what Direct Links are all about? ...... In other words, what does an MOC achieve that Direct Links don't?**
+- **Why do you need a MOC to lead to other new notes? Isn't that what Direct Links are all about? …… In other words, what does an MOC achieve that Direct Links don't?**
 	- Direct Links are the strongest links. But many times we do not want a strong link. We want weaker links. Tags do this and so does naming notes starting with the topic, like: `Mandarin - NOTE1`, `Mandarin - NOTE132`. 
 	- But neither tags, nor alphabetical filenames, allow for a fluid conversation between notes to happen, where their relative positioning can change. MOCs allow for that. 
 	- In a sense, they allow for mini-folgezettels. It's hard to get over how powerful of a thinking tool this is.

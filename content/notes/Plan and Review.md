@@ -2,11 +2,11 @@
 up:
   - "[[Home|Home]]"
 related: []
-created: 2020-01-01
+created: 2023-08-29T06:54:00
 tags:
   - map
 ---
-This is the place for goals and grand strategy...for plans, reviews, analyzing, and recording wins.
+This is the place for goals and grand strategy…for plans, reviews, analyzing, and recording wins.
 
 - Themes
 	- 2023 - Year of the Level Up

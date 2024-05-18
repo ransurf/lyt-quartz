@@ -1,11 +1,11 @@
 ---
 up:
   - "[[home|home]]"
-down:
-  - "[[../notes/Relate|Relate]]"
 related:
   - "[[../notes/Concepts Map|Concepts Map]]"
-created: 2023-08-18
+down:
+  - "[[../notes/Relate|Relate]]"
+created: 2024-05-08T09:55:37
 tags:
   - map
 empty: 
@@ -37,10 +37,10 @@ Always remember, one of the best prompting tools out there is the thesaurus. So 
 ## Definitions
 Let's define some overlapping conceptual categories:
 
--   **Concept**: A concept is a pattern, truth, or mechanism that has been given a name.
--   **Mental Models** are specific readily-available patterns or mechanisms that—*when applied to a current situation or thing*—allow for efficient, optimal action. Great for strategic agency and in-the-moment adaptability.
--   **Metaphors** are primarily for relating unlike things. Great for creative expression and a means unto itself.
--   [[../notes/Refraction Thinking|Refraction Thinking]] is primarily for broadening perspective and deepening understanding. Great for reviewing, planning, empathizing, and meditating. 
+- **Concept**: A concept is a pattern, truth, or mechanism that has been given a name.
+- **Mental Models** are specific readily-available patterns or mechanisms that—*when applied to a current situation or thing*—allow for efficient, optimal action. Great for strategic agency and in-the-moment adaptability.
+- **Metaphors** are primarily for relating unlike things. Great for creative expression and a means unto itself.
+- [[../notes/Refraction Thinking|Refraction Thinking]] is primarily for broadening perspective and deepening understanding. Great for reviewing, planning, empathizing, and meditating. 
 
 ## Three thinking styles
 1. Top-down thinking

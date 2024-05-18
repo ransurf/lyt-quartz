@@ -2,7 +2,7 @@
 up: []
 related:
   - "[[+ About Ideas|+ About Ideas]]"
-created: 2020-06-01
+created: 2023-08-29T07:10:23
 ---
 Information is everywhere. 
 

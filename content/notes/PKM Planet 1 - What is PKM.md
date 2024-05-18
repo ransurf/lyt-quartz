@@ -4,7 +4,7 @@ up:
 related:
   - "[[LYT Notes 8|LYT Notes 8]]"
   - "[[📹 Videos (OE) (Example)|📹 Videos (OE) (Example)]]"
-created: 2021-04-19
+created: 2023-08-28T04:19:30
 tags:
   - output_youtube☑️
 URLs:
@@ -27,11 +27,11 @@ URLs:
 ### New intro
 PKM is a new term to describe an old problem: *how do we make sense of the world?*
 
-- Maybe you're trying to get through history class...or write your dissertation for a PhD.
+- Maybe you're trying to get through history class…or write your dissertation for a PhD.
 - Maybe you've gone down the internet rabbit hole into some fascinating topic but don't want to forget everything by next week.
 - Maybe you're putting together a grocery list or a list of todos for the day.
 - Maybe you're working your way in a new career, trying to track who knows who, and how, and how that's relevant to your aspirations.
-- Maybe you just love ideas...and get inspired and blown away by how the plow—yes the plow—changed humanity (shout out to James Burke).
+- Maybe you just love ideas…and get inspired and blown away by how the plow—yes the plow—changed humanity (shout out to James Burke).
 - Maybe you want to track your dreams or your workouts, or heart rate over time. 
 - Maybe you want to remember the memories you had with cherished friends and family, some of whom aren't around anymore—except in memory. 
 - Maybe you want to figure out how to go about living a good life—something the Ancient Greeks might call it "Eudaimonia".
@@ -57,7 +57,7 @@ Whoa, that's it! What does this stuff mean to us? What does it mean to you? How
 
 And there's the rub! I can't tell you how many times I had some amazing breakthrough on "how to live a good life", but quickly forgot it because I just kept consuming and collecting other ideas, until I drowned out the very idea that meant so much to me. That's bad PKM.
 
-The reverse of that is good PKM. Instead collecting more idea-noise, stop for a bit and focus on the signal. Do something with it. With today's digital linking tools, you can easily connect that nugget of wisdom to an existing note in your knowledge library.  Boom! Now you've spent more time with it, you've externalized it, and you've connected it to other ideas. Now you've got a way of making sense of the world that can reliably grow with you over the years. Now 10 years from today, Future You can return to these notes and connect them to new experiences you've had. Or maybe Future You is having a mid-life crisis and having these notes can re-ground you and re-mind you of what brings you meaning.
+The reverse of that is good PKM. Instead collecting more idea-noise, stop for a bit and focus on the signal. Do something with it. With today's digital linking tools, you can easily connect that nugget of wisdom to an existing note in your knowledge library. Boom! Now you've spent more time with it, you've externalized it, and you've connected it to other ideas. Now you've got a way of making sense of the world that can reliably grow with you over the years. Now 10 years from today, Future You can return to these notes and connect them to new experiences you've had. Or maybe Future You is having a mid-life crisis and having these notes can re-ground you and re-mind you of what brings you meaning.
 
 That's some powerful ==Personal Knowledge Management==. 
 
@@ -71,8 +71,8 @@ Since there are so many ways to manage knowledge, it would be helpful to have a 
 
 #### CTA 1 (newsletter)
 By the way, if you're digging this content make sure to join the LYT Notes newsletter (the link is in the description (https://linkingyourthinking.com/lytnotes)). LYT notes focuses on:
--   how to think better and with more joy
--   and how to be a better *note-maker* instead of just a bolding note-taker
+- how to think better and with more joy
+- and how to be a better *note-maker* instead of just a bolding note-taker
 
 ---
 ## PKM Planet
@@ -118,7 +118,7 @@ That's fundamentally important, because through your sense of the world, all you
 
 That means, through better sense-making, you become empowered to create better, learn faster, work at a higher and more sustainable level, *and yet*, stay grounded and focused as the world attempts to tear apart your attention.
 
-Through better sense-making by digitally *linking your thinking*: you can develop your ideas over decades, you can make more valuable leaps of insights, and all the while, you can't help but train yourself into the habit of better thinking. By "better thinking", I mean ability to think  ==critically==, ==creatively==, and ==connectively==—all at the same time. 
+Through better sense-making by digitally *linking your thinking*: you can develop your ideas over decades, you can make more valuable leaps of insights, and all the while, you can't help but train yourself into the habit of better thinking. By "better thinking", I mean ability to think ==critically==, ==creatively==, and ==connectively==—all at the same time. 
 
 This type of sustainable sense-making will fill your thoughts with more joy, meaning, and personally unique perspectives. Armed with all of that, you can't help but be able to contribute more value in more ways to your family, your friends, your community, and society as a whole—and it's all from developing a personal environment to encourage, nurture, develop, and reliably save your best thinking.
 
@@ -132,7 +132,6 @@ Next up: we'll look at the forever battle of PKM Planet Archetypes: *Top-down vs
 
 Recap and talk about the following PKM Planet video series
 
-
 ---
 Next up:
 [[PKM Planet - Archetypes (Backend Brainstorm)|PKM Planet - Archetypes (Backend Brainstorm)]]
@@ -144,7 +143,6 @@ The more others own you, the less you do.
 The more you own you, the less others do.
 
 %% This video will welcome you to the world of PKM, it will zoom out to show you the landscape of PKM, and it will zoom in to show you how people are linking their thinking to take their personal knowledge management to new heights.
-
 
 BOH-den
 link to francisco

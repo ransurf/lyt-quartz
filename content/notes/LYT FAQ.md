@@ -2,7 +2,7 @@
 up:
   - "[[Ideaverse Map|Ideaverse Map]]"
 related: []
-created: 2020-06-01
+created: 2023-08-28T02:39:18
 ---
 
 - **So now I have to manage MOCs?**
@@ -27,7 +27,6 @@ created: 2020-06-01
 	- (@ryanjamurphy): There are “good” and “bad” kinds of knowledge management janitorial work. Good kinds involve discovering new insights and refining your knowledge, bad kinds involve distractions and degrade your work.
 	- (@nickmilo): I can only speak from experience, but I have gone months without looking at my digital library, many times. That's actually why I craved and created the home note and MOCs: so I could immediately reconnect with my notes. Maybe it's a philosophy, but everything should just manage itself after it's set up. I don't think of it as extra tasks.
 
-
 ---
 
 ## What is LYT and an Ideaverse? 
@@ -39,17 +38,17 @@ It's the universe of ideas that exists between your brain and everything around 
 A: Do you want your notes to give you value, not just in the short-term, but forever?
 Do you lose ideas? Do you have trouble combining ideas? Are your notes scattered everywhere? Are you drowning in too much information? Have you lost the signal from the noise? If you answered yes to any of these, read on. 
 
-*Q: I'm still reading...So, who benefits from having an Ideaverse?*
+*Q: I'm still reading…So, who benefits from having an Ideaverse?*
 A: People who write and think a lot. People who don't want to forget important ideas. People who develop ideas. People who value the ability to build upon their knowledge over years instead of letting it slip away to the ravages of time. 
 
 *Q: Give me specific types of people please.*
-A: Students, academics, and life-long learners...makers, content creators, essay-writers...non-fiction and fiction writers...productivity and project-focused people...and life designers and anyone trying to live their best life. 
+A: Students, academics, and life-long learners…makers, content creators, essay-writers…non-fiction and fiction writers…productivity and project-focused people…and life designers and anyone trying to live their best life. 
 
 *Q: And what are ideas?* 
 Ideas are solutions to problems. They are original creations or thoughts. They are new insights built on shoulders existing sources or previous work. With a dynamic ideaverse, you will finally be able to work rapidly and fluidly with ideas in ways that were previously not easy or even possible. A dynamic ideaverse holds real value for anyone who works with ideas. 
 
 ---
-*Q: Okay then...What is LYT?*
+*Q: Okay then…What is LYT?*
 A: LYT stands for "Linking Your Thinking". It is a proven framework for knowledge management based on using links to enhance your thinking. It articulates the theory of [[./Idea Emergence (defn)|Idea Emergence (defn)]], and uses higher-order notes called "Maps of Content" (MOCs). See [[./LYT Frameworks|LYT Frameworks]].
 
 Use LYT to create your ideaverse. 
@@ -71,7 +70,7 @@ A: In several synergistic ways. Because it provides comforting, reliable navigat
 
 ---
 *Q: Do I need LYT?*
-A: No you don't, especially when you have less than a couple hundred notes. But you may want it. You'll know if you do. It's starts with a growing sense of anxiety and overwhelm...Like a vampire thirsting for blood, you'll find yourself gravitating toward a the creation of your first MOC, so you can work with several notes at the same time. See [[./Is LYT For Me|Is LYT For Me]].
+A: No you don't, especially when you have less than a couple hundred notes. But you may want it. You'll know if you do. It's starts with a growing sense of anxiety and overwhelm…Like a vampire thirsting for blood, you'll find yourself gravitating toward a the creation of your first MOC, so you can work with several notes at the same time. See [[./Is LYT For Me|Is LYT For Me]].
 
 ---
 *Q: What's an MOC?*

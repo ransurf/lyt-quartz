@@ -2,23 +2,23 @@
 up:
   - "[[Concepts Map|Concepts Map]]"
 related: []
-created: 2020-06-01
+created: 2023-08-28T02:44:27
 tags:
   - concept
 ---
 
 ### Themes
 - Structure amidst Chaos
-    - There can never be a white edge next to a white edge, therefore, there are constraints, meaning there are not infinite permutations, there are patterns, structure built into the chaos, but it's only chaos, unless you know what to look for, which is where practice and experience give help you see the patterns.
+	- There can never be a white edge next to a white edge, therefore, there are constraints, meaning there are not infinite permutations, there are patterns, structure built into the chaos, but it's only chaos, unless you know what to look for, which is where practice and experience give help you see the patterns.
 - Pattern Recognition
-    - When solving a cube, you're looking for a pattern. *If* this pattern, *then* that algorithm. 
-    - See [[./OODA Loop|OODA Loop]]
+	- When solving a cube, you're looking for a pattern. *If* this pattern, *then* that algorithm. 
+	- See [[./OODA Loop|OODA Loop]]
 - Repetitions/Experience lead to Pattern Recognition and Muscle Memory
-    - See Reps 
+	- See Reps 
 - Multi-dimensional thinking
 - Seeing multiple moves ahead
 - Multiple Solutions
-    - There is more than just one method to solve: OLL/PLL is fast if you can make mental images instantly. But there is always F2L, which is slower and certain, like the tortoise.
+	- There is more than just one method to solve: OLL/PLL is fast if you can make mental images instantly. But there is always F2L, which is slower and certain, like the tortoise.
 
 ### Additional Notes
 - Basic method, CFOP 

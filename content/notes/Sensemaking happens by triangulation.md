@@ -1,7 +1,7 @@
 ---
 up:
   - "[[MOCs Overview|MOCs Overview]]"
-created: 2022-01-01
+created: 2023-08-28T09:24:16
 rank: "4"
 tags:
   - output_lesson
@@ -36,7 +36,6 @@ Triangulation says *I am the ultimate sensemaking mechanism, to both the known a
 ### Use two known points, to better understand a third point.
 ![[feynman-triangulation-1.png|feynman-triangulation-1.png]]
 
-
 ### Use two known points, to remember a forgotten third point.
 ![[feynman-triangulation-2.png|feynman-triangulation-2.png]]
 
@@ -60,9 +59,9 @@ Those priorities deprioritize sensemaking, triangulation, and your ability to _u
 
 The better you triangulate, the faster you can move in the world. 
 
-- If you don't over-collect and drown your system in noise...
-- If you don't over-structure and suffocate your system in rigidity...
-- If you don't over-highlight and leave little time for active thinking...
+- If you don't over-collect and drown your system in noise…
+- If you don't over-structure and suffocate your system in rigidity…
+- If you don't over-highlight and leave little time for active thinking…
 
 Then you will have a healthy link-based PKM framework where Idea Emergence can work for you.
 
@@ -83,10 +82,7 @@ You will have an emergent system that strengthens your ability to triangulate "k
 - You can use what you know to create new stuff.
 	- Use two known points to imagine a third point.
 
-
 ---
-
-
 
 # Youtube slide show
 > Triangulation is using two known points to find a third point. 
@@ -144,14 +140,14 @@ Use two points to *imagine* a third point.
 
 ---
 
-#### If...
-- If you don't over-collect and drown your system in noise...
-- If you don't over-structure and suffocate your system in rigidity...
-- If you don't over-highlight and leave little time for active thinking...
+#### If…
+- If you don't over-collect and drown your system in noise…
+- If you don't over-structure and suffocate your system in rigidity…
+- If you don't over-highlight and leave little time for active thinking…
 
 ---
 
-#### Then...
+#### Then…
 You will have an emergent system that encourages your ability to triangulate "knowledge".
 
 ---
@@ -161,7 +157,6 @@ You will leverage these always-present **powers of triangulation** to *understan
 ---
 
 These **three powers of triangulation** underpin everything we cover in the following lessons. 
-
 
 ###### Youtube comments
 So the third power is basically Idea Emergence? How does one improve their triangulation skills?
@@ -175,63 +170,47 @@ ME: Thank you! Can you elaborate on the René Girard reference? I would love to 
 
 That is quite a task I'll try. Basically Girard "discovered" another facet of the human nature: that every desire is mimetic, or as the early version of the theory says: that there's a "mimetic triangulation of desire" where the mediator, who possesses the object of desire (with time) is to be hated/envied if he is close to the person who desires (like a friend, parent, etc), or admired if he is far (just like I admire Girard because I want "his" intelligence, theoretic capacity, etc). 
 
-He started observing this in literature, stating that there is a "Romantic Lie" in which the objects are desired for themselves, and a "Novelistic Truth" in which the triangulation is unveiled (Dostoievsky, Shakespeare, Cervantes, Stendhal, Flaubert, Proust... Our Machado de Assis) and then in Anthropology, in the Bible and mythic narratives, always revealing a layer of envy or pursuit depending on the distance of a mediator from the person who desires.
+He started observing this in literature, stating that there is a "Romantic Lie" in which the objects are desired for themselves, and a "Novelistic Truth" in which the triangulation is unveiled (Dostoievsky, Shakespeare, Cervantes, Stendhal, Flaubert, Proust… Our Machado de Assis) and then in Anthropology, in the Bible and mythic narratives, always revealing a layer of envy or pursuit depending on the distance of a mediator from the person who desires.
 
 The theory gets more interesting when the object desired and the mediator are the same person, which is what makes us prone into thinking that love, for example, is a linear thing (the Romantic Lie). But the triangular dynamic is still kept the same: you can strive to achieve the very same thing that you develop resentment towards to in the process. Or in the case of Narcissus, where he himself occupies the three points of the triangle! 
 
 The theory also adds some interesting layers to the Freudian "Totem and Taboo" archetype of the origin of societal violence and subsequent legislation and mitigation of violence, too. There's a temptation to try and explain every event of escape-goating and society violence as the multiplication of interconnected close triangules that scales up. 
 
-But some commentators note that could not explain the genocides of the 20th century as it can explain the escape-goating of Jesus and other figures in much smaller scale. So... going back to the video, you're definitely not wrong in noting that for us to apprehend something, to "take hold of it", we need to get it through someone who already "owns" it, and to bring one closer, is to bring the other too - to a point =P
+But some commentators note that could not explain the genocides of the 20th century as it can explain the escape-goating of Jesus and other figures in much smaller scale. So… going back to the video, you're definitely not wrong in noting that for us to apprehend something, to "take hold of it", we need to get it through someone who already "owns" it, and to bring one closer, is to bring the other too - to a point =P
 
 ME: Whoa. You are correct about the size of the task I was requesting, but I'm grateful you've enlightened me on this angle of the topic!
 
 # Tweet thread
 Here's the link to the finished version on Twitter: [https://twitter.com/NickMilo/status/1562063375491817473](https://twitter.com/NickMilo/status/1562063375491817473).
 
-People complain about Obsidian graphs, but they're forgetting its most powerful purpose... TRIANGULATION! Here's how you can use it to unlock new insights in your PKM 👇
+People complain about Obsidian graphs, but they're forgetting its most powerful purpose… TRIANGULATION! Here's how you can use it to unlock new insights in your PKM 👇
 
-
-What is "triangulation?" Triangulation is how we make sense of the world. We do it all the time! It's using two "known points" to find a third "unknown point." Triangulation helps you: 1. UNDERSTAND 2. REMEMBER 3. & IMAGINE Now let me show you how they work...
-
+What is "triangulation?" Triangulation is how we make sense of the world. We do it all the time! It's using two "known points" to find a third "unknown point." Triangulation helps you: 1. UNDERSTAND 2. REMEMBER 3. & IMAGINE Now let me show you how they work…
 
 The 1st Power of Triangulation: UNDERSTAND 📐 
 Use what you know to understand what you don't! For example, here are 3 (very simple) points: • you (known) • me (known) • idea (unknown) Your goal: Understand this idea → "Pace Layers"
 
-
-If you don't know me... or the idea... you can't make a nice triangle. So you won't understand! If you know me better... you can use me as an anchor point to better understand Pace Layers. When you are clear on two points, you can better understand the third point.
-
+If you don't know me… or the idea… you can't make a nice triangle. So you won't understand! If you know me better… you can use me as an anchor point to better understand Pace Layers. When you are clear on two points, you can better understand the third point.
 
 We do this countless times a day! We triangulate to understand how things we *know* relate to things we *don't know.* Once you have a bunch of dots on your Map, you can UNDERSTAND things rapidly. But how do you REMEMBER all the dots?
-
 
 The 2nd Power of Triangulation: REMEMBER 📐
 Use what you know to remember what you forgot! For example, let's say, you can't remember "Pace Layers". But you might remember the originator "Steward Brand" ([@stewartbrand](https://twitter.com/stewartbrand)). And from there, you'll remember "Pace Layers."
 
-
 Triangulating to remember is how our brains naturally work. Try it out with your graph. Hover over one idea. What is it connected to? Over time, your ideas will have many links. And this is how we build powerful and personal Knowledge Networks.
 
-
 When you know two points, you can better remember a third point. Once you have a bunch of dots on your Map, you can REMEMBER things rapidly. But how do you create with the stuff you know?
-
 
 The 3rd Power of Triangulation: IMAGINE 📐
 Use what you know to imagine new insights! This is the radical power of linking your thinking. By building your connective thinking muscle you become a creative machine.
 
-
 Now at the random crossroads between ideas, you are generating INSIGHTS! That means new forms of value. You are imagining worlds, products, and services. When you know two points, you can better imagine the third point.
-
 
 These are the 3 triangulation powers to help think better than ever before! 1. Use what you know to make sense of stuff 2. Use what you know to remember old stuff 3. Use what you know to create new stuff The better you triangulate, the faster you can move in the world of ideas!
 
-
 For more graphics, insights, and commentary on the 3 powers of triangulation, check out this 6-minute video: [youtu.be/JV_7nppxv7A](https://t.co/giVpsK9Ku1)
 
-
 By the way, some of these graphics came from one of [@ProfFeynman](https://twitter.com/ProfFeynman)'s more hidden lectures called "Tips on Physics": [https://feynmanlectures.caltech.edu/TIPS_01.html](https://t.co/eC0MDjvZWW)
-
-
-
-
 
 # Newsletter copy
 # Lesson: Sensemaking happens by Triangulation
@@ -282,8 +261,7 @@ You have an **Ideaverse**.
 
 > “I didn't have time to write a short letter, so I wrote a long one instead.” - Mark Twain
 
-When it comes to "triangulation", I could write a really long letter. ✉️ But for the workshop, I want to honor your valuable attention, so here is the short version...
-
+When it comes to "triangulation", I could write a really long letter. ✉️ But for the workshop, I want to honor your valuable attention, so here is the short version…
 
 ---
 > Many of the best ideas are the ones we've already had—we just need the reminder.
@@ -306,5 +284,4 @@ This is also known as the "You just finished reading a self-help book, please do
 Whether it's a forum post, youtube video, or Amazon review, why do we feel compelled to read the comments? Why is watching gamers comment about their gaming a multi-billion dollar industry? Because by consuming both the THING and the comments about the THING, we're making deeper sense of the THING (along with the person commenting about the THING). 
 
 In a world drowning in information overload, we crave quality curation.
-
 

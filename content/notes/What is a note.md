@@ -2,7 +2,7 @@
 up:
   - "[[📹 Videos (OE) (Example)|📹 Videos (OE) (Example)]]"
 related: []
-created: 2020-06-01
+created: 2023-08-28T04:18:07
 tags:
   - output_youtube☑️
   - output_lesson
@@ -46,20 +46,20 @@ So it's a bit subjective. "One person's trash is another person's treasure."
 
 And at their best, our notes are treasures.
 
-At their worst, our notes are overwhelming distraction-riddled collections of  thoughts we've never read that actually act as this static NOISE that distracts us and discourages us from spending time with more meaningful notes.  ^0bffe4
+At their worst, our notes are overwhelming distraction-riddled collections of thoughts we've never read that actually act as this static NOISE that distracts us and discourages us from spending time with more meaningful notes. ^0bffe4
 
-This is the Collector's Fallacy and it's practiced by the information hoarders, so scared to lose some drop of water from the never-ending information stream, that they never have any time to actually drink from it.  ^e19640
+This is the Collector's Fallacy and it's practiced by the information hoarders, so scared to lose some drop of water from the never-ending information stream, that they never have any time to actually drink from it. ^e19640
 
 Those people sure have a lot of notes. A lot of "containers of thoughts". It's just too bad they've never enjoyed them. ^dd5058
 
-Instead of just hoarding information like an addict, what if we just took a bit of it—a sliver of something that is interesting or meaningful—and we chewed on it. Savored it. Digested it. to mix metaphors, what if we wrestled with it, got to know it...in such a way, that we could explain it to a friend—and they'd get it!
+Instead of just hoarding information like an addict, what if we just took a bit of it—a sliver of something that is interesting or meaningful—and we chewed on it. Savored it. Digested it. to mix metaphors, what if we wrestled with it, got to know it…in such a way, that we could explain it to a friend—and they'd get it!
 
-Information hoarders can't explain the ideas they encounter. They might be able to regurgitate them. And they would even be rewarded for it in today's world with more digital followers. But what a corrupt value system that is.  They are choosing surface-level regurgitation that deprives them of the joy that comes from thinking itself. 
+Information hoarders can't explain the ideas they encounter. They might be able to regurgitate them. And they would even be rewarded for it in today's world with more digital followers. But what a corrupt value system that is. They are choosing surface-level regurgitation that deprives them of the joy that comes from thinking itself. 
 
 They are trading a nourished soul, for applause.
 
 ---
-If you've read books that meant a lot to you in the moment, but now it feels like you have nothing to show for it... If you have years of knowledge that you've either forgotten, or that you're not growing in value of over time... it's quite possible you're in the trap of note-taking instead of note-making. 
+If you've read books that meant a lot to you in the moment, but now it feels like you have nothing to show for it… If you have years of knowledge that you've either forgotten, or that you're not growing in value of over time… it's quite possible you're in the trap of note-taking instead of note-making. 
 
 Here's a test for you: Look at the notes you've taken from 2 to 3 years ago. How many of them have you continued to grow and link to other ideas and experiences? 
 

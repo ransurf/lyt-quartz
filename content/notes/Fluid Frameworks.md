@@ -2,7 +2,7 @@
 up:
   - "[[Ideaverse Map|Ideaverse Map]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:08:47
 ---
  *Fluid frameworks are non-rigid, highly-flexible organizing structures that you can use as needed.* When we talk about fluid frameworks in the "Linking Your Thinking" System, we're mainly referring to higher-order notes like MOCs and the Home note (but a balanced use of MOCs, folders, tags, and queries can also maintain a fluid structure).
 
@@ -11,11 +11,11 @@ Fluid frameworks are not mutually exclusive. That means a note with its link in 
 Now with higher-order notes like MOCs, we can fluidly add any structure, at any time. But these frameworks offer unique attributes to allow us to work more fluidly than ever before.
 
 ### Fluid Frameworks vs Rigid Frameworks
-Wow...So a fluid framework is a non-essential supporting structure. 
+Wow…So a fluid framework is a non-essential supporting structure. 
 
 Whereas, a typical framework—like a folder—is an essential supporting structure. Delete the folder, and you delete the files within.
 
-And that's because folders are not fluid; they are a rigid framework. They reduce the number of ways you have to access the notes trapped within. Now it's worth noting, we do have Global Search, and we can link to notes within folders...so that's better than it used to be...but there is still no removing the friction that comes from having to twirl down folders X, Y, and Z, just to get to Idea Omega.)
+And that's because folders are not fluid; they are a rigid framework. They reduce the number of ways you have to access the notes trapped within. Now it's worth noting, we do have Global Search, and we can link to notes within folders…so that's better than it used to be…but there is still no removing the friction that comes from having to twirl down folders X, Y, and Z, just to get to Idea Omega.)
 
 So even though folders alone are rigid, if you expertly use Fluid Frameworks—i.e. HIGHER-ORDER NOTES—to support your linked knowledge, then you can also work back in some smart applications of folders.
 

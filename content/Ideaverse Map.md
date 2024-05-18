@@ -1,7 +1,7 @@
 ---
 up:
-  - "[[./LYT Ideaverse|Home]]"
-created: 2023-08-30
+  - "[[./home|Home]]"
+created: 2024-05-17T05:29:22
 obsidianUIMode: preview
 tags:
   - map
@@ -102,4 +102,4 @@ tags:
 > - [[./notes/Guiding assumptions for linked notes|Guiding assumptions for linked notes]]
 > - [[./notes/Ideaverse for Obsidian - Release Notes|Ideaverse for Obsidian - Release Notes]]
 
-Back to [[./LYT Ideaverse|Home]]
+Back to [[./home|Home]]

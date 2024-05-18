@@ -2,7 +2,7 @@
 up:
   - "[[Sources Map|Sources Map]]"
 related: []
-created: 2022-01-01
+created: 2023-08-28T02:47:57
 ---
 This note passively looks at the properties of all notes.
 

@@ -2,7 +2,7 @@
 up:
   - "[[Allusion MOC|Allusion MOC]]"
 related: []
-created: 2020-06-01
+created: 2023-08-21T02:54:39
 ---
 
 - Babbitt – a self-satisfied person concerned chiefly with business and middle-class ideals, like material success. Comes from Babbitt by Sinclair Lewis.

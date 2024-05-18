@@ -2,18 +2,18 @@
 up: []
 related:
   - "[[./Cybertron Theme|Cybertron Theme]]"
-created: 2020-06-01
+created: 2023-08-29T07:10:57
 ---
 
 ![[lyt-mode-graphic-1.jpg|lyt-mode-graphic-1.jpg]]
 
 LYT Mode is for "Linking Your Thinking". It invokes sensemaking and lateral thinking. It was designed by [@ceciliamay](https://github.com/ceciliamay) on commission from Nick Milo for the purpose of evolving his Cybertron theme. Cyberpunk-inspired,
 
--   [[LYT Mode Theme#History of LYT Mode|LYT Mode Theme > History of LYT Mode]]
--   [[LYT Mode Theme#How to Use LYT Mode|LYT Mode Theme > How to Use LYT Mode]]
-    -   [[LYT Mode Theme#Alternative Checkboxes|LYT Mode Theme > Alternative Checkboxes]]
--   [[LYT Mode Theme#Supported Plugins|LYT Mode Theme > Supported Plugins]]
--   [[LYT Mode Theme#Features|LYT Mode Theme > Features]]
+- [[LYT Mode Theme#History of LYT Mode|LYT Mode Theme > History of LYT Mode]]
+- [[LYT Mode Theme#How to Use LYT Mode|LYT Mode Theme > How to Use LYT Mode]]
+	- [[LYT Mode Theme#Alternative Checkboxes|LYT Mode Theme > Alternative Checkboxes]]
+- [[LYT Mode Theme#Supported Plugins|LYT Mode Theme > Supported Plugins]]
+- [[LYT Mode Theme#Features|LYT Mode Theme > Features]]
 
 ## History of LYT Mode
 
@@ -21,11 +21,10 @@ This [Obsidian](https://obsidian.md/) theme is meant to be the definitive evol
 
 [@nickmilo](https://github.com/nickmilo) and [@ceciliamay](https://github.com/ceciliamay) crossed paths in an LYT workshop. At the same time, Cecilia was designing the winner of Obsidian's 2021 Theme of the Year with the now legendary theme, [Primary](https://github.com/ceciliamay/obsidianmd-theme-primary). Before the winner was known, Nick reached out to the public for help to take Cybertron to the next level. It was going to take more CSS & Design skill than what he could muster. Luckily, Cecilia raised her hand. Then Nick commissioned Cecilia May to design LYT Mode and this is the result.
 
-
 ## Features
 
 1. Evolved color palette from Cybertron comparison
-    - Special Colors for Markdown Emphasis
+	- Special Colors for Markdown Emphasis
 2. Beautiful readable fonts originally made for each other: **DM Sans DM Mono**
 3. Support for both **Mobile and Desktop**
 4. Support for all Obsidian views: Legacy, Live Preview, and Reading
@@ -56,31 +55,30 @@ LYT Mode focused on emphasizing support for markdown or note-native features, as
 
 LYT Mode also offers additional syntax for checkboxes. These act like bullet journaling “legends”. [Others use alternate checkboxes for quick visual references.](https://www.youtube.com/watch?v=8IL0wFUT6XQ)
 
-| Syntax  | Description | 
+| Syntax | Description | 
 | ------- | ----------- |
-| `- [ ]` | Unchecked   |
-| `- [x]` | Checked     |
+| `- [ ]` | Unchecked |
+| `- [x]` | Checked |
 | `- [>]` | Rescheduled |
-| `- [<]` | Scheduled   |
-| `- [!]` | Important   |
-| `- [-]` | Cancelled   |
+| `- [<]` | Scheduled |
+| `- [!]` | Important |
+| `- [-]` | Cancelled |
 | `- [/]` | In Progress |
-| `- [?]` | Question    |
-| `- [*]` | Star        |
-| `- [n]` | Note        |
-| `- [l]` | Location    |
+| `- [?]` | Question |
+| `- [*]` | Star |
+| `- [n]` | Note |
+| `- [l]` | Location |
 | `- [i]` | Information |
-| `- [I]` | Idea        |
-| `- [S]` | Amount      |
-| `- [p]` | Pro         |
-| `- [c]` | Con         |
-| `- [b]` | Bookmark    |
-| `- [f]` | Fire        |
-| `- [k]` | Key         |
-| `- [w]` | Win         |
-| `- [u]` | Up          |
-| `- [d]` | Down        |
+| `- [I]` | Idea |
+| `- [S]` | Amount |
+| `- [p]` | Pro |
+| `- [c]` | Con |
+| `- [b]` | Bookmark |
+| `- [f]` | Fire |
+| `- [k]` | Key |
+| `- [w]` | Win |
+| `- [u]` | Up |
+| `- [d]` | Down |
 
 ---
-
 

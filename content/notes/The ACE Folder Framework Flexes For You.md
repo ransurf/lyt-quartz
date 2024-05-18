@@ -1,7 +1,7 @@
 ---
 up:
   - "[[ACE Folder Framework|ACE Folder Framework]]"
-created: 2023-08-06
+created: 2023-08-24T01:53:03
 cssclasses:
   - wide-page
 ---
@@ -10,7 +10,7 @@ The ACE Folder Framework expands and contracts to fit your needs.
 Here is how ACE can work for a ***beginner***, a ***navigator***, and a ***zen master***.
 
 # How the ***Beginner*** can use ACE
-The Beginner needs to make sure not to copy other people's complex systems. Why? Because they haven't earned it! Here's all they need to do...
+The Beginner needs to make sure not to copy other people's complex systems. Why? Because they haven't earned it! Here's all they need to do…
 
 > [!Multi-Column]
 > 
@@ -24,7 +24,6 @@ The Beginner needs to make sure not to copy other people's complex systems. Why?
 > > - Put meeting notes and random notes in `Calendar`. 
 > > - Put project-related notes in `Efforts`. 
 > 
-
 
 # How the ***Navigator*** can use ACE
 The navigator has more experience with knowledge management. That means they have had the necessary time to *earn* their structure. *Beginners don't need what the Navigator has.* 
@@ -73,7 +72,7 @@ The navigator has more experience with knowledge management. That means they hav
 > > [!NOTE]+ Calendar Commentary
 > > 
 > > - Once you have over 100 calendar notes, you may want to split your notes into `Logs` and `Notes`.
-> > - Within `Notes`...
+> > - Within `Notes`…
 > > 	- You'll likely feel the need to put older notes in a `Past Years` subfolder.
 > > 	- You may also want to keep your plans & reviews in a special `Compass` subfolder.
 >   

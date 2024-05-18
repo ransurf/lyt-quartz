@@ -3,7 +3,7 @@ up:
   - "[[Concepts Map|Concepts Map]]"
   - "[[Thinking Map|Thinking Map]]"
 related: []
-created: 2020-06-01
+created: 2023-08-28T02:48:15
 tags:
   - concept
 ---

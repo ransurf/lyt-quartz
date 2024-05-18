@@ -2,7 +2,7 @@
 up:
   - "[[Charles Darwin|Charles Darwin]]"
 related: []
-created: 2020-06-01
+created: 2023-08-21T05:20:49
 tags:
   - concept
   - note_tidy🧹
