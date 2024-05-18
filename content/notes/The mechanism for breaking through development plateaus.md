@@ -2,7 +2,7 @@
 up:
   - "[[Habits Map|Habits Map]]"
 related: []
-created: 2015-02-20
+created: 2023-08-29T07:13:42
 modified: 2020-05-28
 ---
 To break through the a-curve plateau, we must get out of our newly established "automatic mindset", and return to a beginner's "cognitive mindset". 
