@@ -17,14 +17,12 @@ jobs:
         with:
           node-version: '18' # Update to Node.js 18
 
-      - name: Fetch and reset submodules
+      - name: Fetch and update submodules
         run: |
-          git submodule init
-          git submodule update --recursive --remote
-          cd content
-          git fetch origin main
-          git reset --hard origin/main
-          cd ..
+          git submodule update --init --recursive
+          git submodule foreach --recursive git fetch
+          git submodule foreach --recursive git checkout main
+          git submodule foreach --recursive git pull origin main
 
       - name: Upgrade npm
         run: npm install -g npm@latest # Ensure npm is at the latest version
