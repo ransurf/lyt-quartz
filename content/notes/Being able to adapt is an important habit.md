@@ -1,7 +1,7 @@
 ---
 up:
   - "[[Habits Map|Habits Map]]"
-created: 2014-06-28
+created: 2023-08-29T07:03:06
 modified: 2020-05-28
 ---
 No day is perfect. It's crucial to balance discipline with being flexible. Too much order is fragile. 
