@@ -2,7 +2,7 @@
 up:
   - "[[Ideaverse Map|Ideaverse Map]]"
 related: []
-created: 2022-06-01
+created: 2023-08-29T07:14:09
 ---
  *What will Future Me like to see?*
 
@@ -24,17 +24,17 @@ See [[./ACE Folder Framework|ACE Folder Framework]] for more.
 ---
 ## Example of how STIR works in the real world
 
-### If you have a daily digital note...
-...whatever you jot down is organized by **time**. What's recent is weighted as more important in our minds, but that **importance** cannot be relied upon long-term, as it'll be covered up by always more recent things. The key is to connect your THING—your spark, idea, or piece of information—to a **related** thing. 
+### If you have a daily digital note…
+…whatever you jot down is organized by **time**. What's recent is weighted as more important in our minds, but that **importance** cannot be relied upon long-term, as it'll be covered up by always more recent things. The key is to connect your THING—your spark, idea, or piece of information—to a **related** thing. 
 
 This leverages our built-in human need for understanding social dynamics, except instead of analyzing the dynamics between people, we use it to analyze the dynamics between ideas. You may link laterally to another idea of similar size, or you can link to a note with a lot of gravity, like a Map of Content (MOC). 
 
 An MOC becomes a digital **space** you can rely on. You don't have to remember to 20 ideas linked within, you just have to remember the map, then you can rapidly navigate to the specific idea you are trying to find—even if it's years since you jotted it down.
 
-### If you have a physical notebook...
-...whatever you jot down is organized primarily by **space**—and in short-term, **importance**, due to the [[Recency Bias|Recency Bias]], in which our minds weigh recent things as being more important than older things. 
+### If you have a physical notebook…
+…whatever you jot down is organized primarily by **space**—and in short-term, **importance**, due to the [[Recency Bias|Recency Bias]], in which our minds weigh recent things as being more important than older things. 
 
-But for analog notes,  that importance fades away and all you are left with is space, "it's in that notebook somewhere." The problem becomes that after a few days, whatever you wrote will get lost on a previous page you will not likely revisit. This is how information gets buried. This is not to discourage writing by hand. Far from it. Your best creative work should be a blend of analog and digital. 
+But for analog notes, that importance fades away and all you are left with is space, "it's in that notebook somewhere." The problem becomes that after a few days, whatever you wrote will get lost on a previous page you will not likely revisit. This is how information gets buried. This is not to discourage writing by hand. Far from it. Your best creative work should be a blend of analog and digital. 
 
 The problem with analog however, is that once it's out of sight, it's out of mind. The key is to make it easy to digitize *only* the bits that you want to continue working with. Why digitize? So you can work with it, not in isolation, but in harmony with your other ideas. Now you can connect that tiny bit of analog inspiration with your growing wealth of digital ideas. This digital connection leverages the power of **relatedness** as you connect it. 
 
