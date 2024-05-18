@@ -2,7 +2,7 @@
 up:
   - "[[Benefits of LYT frameworks|Benefits of LYT frameworks]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:13:05
 ---
 The Ancient Greeks and Roman notably relied on their memories to hold onto information. They developed mind palaces and other mnemonic devices. Central to their efforts of recalling things was placing bits of information into a spatial context. 
 
