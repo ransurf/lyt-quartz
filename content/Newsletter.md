@@ -1,4 +1,4 @@
 ---
 title: Newsletter
 ---
-Resources
+Newsletter
