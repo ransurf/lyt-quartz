@@ -2,11 +2,11 @@
 up:
   - "[[Home|Home]]"
 related: []
-created: 2016-06-01
+created: 2023-08-29T06:51:18
 tags:
   - map
 ---
-Have a place to honor the importance of the people your life.  Once you feel comfortable, adding notes for people—whether they are living or not—you will notice how it helps your understanding of them.
+Have a place to honor the importance of the people your life. Once you feel comfortable, adding notes for people—whether they are living or not—you will notice how it helps your understanding of them.
 Here's a cool view for you:
 
 > [!user]+ ## Prominent People 🌋
@@ -40,6 +40,4 @@ Here are the main things I do related to notes on people:
 	- [[People Map#Prominent People 🌋|Prominent People 🌋]]
 	- [[Entertainment Industry|Entertainment Industry]]
 	- [[Literary Industry|Literary Industry]]
-
-
 
