@@ -3,7 +3,7 @@ up:
   - "[[./ACE Folder Framework|ACE Folder Framework]]"
 related:
   - "[[./Use STIR To Remember More|STIR]]"
-created: 2023-08-21
+created: 2023-08-29T12:19:06
 ---
 The reason why the [[./ACE Folder Framework|ACE Folder Framework]] works is because it allows you to organize by *Intention*.
 
@@ -86,8 +86,6 @@ What’s better, is that it actually works in practice. Even further, it truly i
 ![ACE in Google Drive](https://forum.obsidian.md/uploads/default/original/3X/8/8/889177be487cfe73b1b83dbffaeb3f2c1254d709.png)
 
 ![ACE in Tana](https://forum.obsidian.md/uploads/default/original/3X/5/e/5e870c69ca77991e940bdd01ed727098bfef94f7.png)
-
-
 
 ## How STIR matches ACE (Atlas, Calendar, Efforts)
 - Space = Atlas
