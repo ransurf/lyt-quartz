@@ -2,7 +2,7 @@
 up:
   - "[[Trust the process (kit)|Trust the process (kit)]]"
 related: []
-created: 2020-02-16
+created: 2023-08-29T07:13:54
 ---
 On your journey to happiness, you come to a fork in the road where upon two identical twin trolls with hooked noses and big, thick sausage fingers are lounging on five feet tall tree stumps eating rabbit. 
 
@@ -14,7 +14,7 @@ You don't know which path is which. But you know the legend:
 
 One twin troll only tells lies. The other twin troll only tells the truth. And you don't know which twin troll is which!
 
-Even worse...to figure out which path leads to Happiness, *You can only ask one of the trolls, one question.* 
+Even worse…to figure out which path leads to Happiness, *You can only ask one of the trolls, one question.* 
 
 (After that, they'll just ignore you and eat more rabbit.)
 
