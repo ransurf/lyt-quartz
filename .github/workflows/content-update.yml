@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: '18' # Update to Node.js 18
 
-- name: Initialize and update submodules
+      - name: Initialize and update submodules
         run: |
           git submodule init
           git submodule update --recursive --remote
