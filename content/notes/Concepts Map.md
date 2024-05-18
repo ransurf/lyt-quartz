@@ -1,8 +1,8 @@
 ---
 up:
-  - "[[../LYT Ideaverse|Home]]"
+  - "[[../ |Home]]"
 related: []
-created: 2016-01-01
+created: 2023-08-29T06:53:08
 tags:
   - map
 ---
@@ -14,7 +14,7 @@ Why not string out these ideas into paragraphs? What a way to unearth hidden con
 
 Starting some days, I'll consider how to apply three *strategic* mental models: [[./OODA Loop|OODA Loop]], [[./Levels of Magnification|Levels of Magnification]], and [[./Refraction Thinking|Refraction Thinking]]. 
 
-For my work as an editor/AE in TV, I know to improve my craft means the steady application of getting [[./Reps|Reps]], creating the conditions for [[./Flow|Flow]], which involves environmental  [[./Forcing Function|Forcing Functions]], and considering when I can multitask [[./Shadow Clone|Shadow Clone]]. 
+For my work as an editor/AE in TV, I know to improve my craft means the steady application of getting [[./Reps|Reps]], creating the conditions for [[./Flow|Flow]], which involves environmental [[./Forcing Function|Forcing Functions]], and considering when I can multitask [[./Shadow Clone|Shadow Clone]]. 
 
 > [!Connect]- A single concept opens up new ways of looking at the world
 > ![[McCall-pen-sketch-narrow.jpg|McCall-pen-sketch-narrow.jpg]]
@@ -37,10 +37,10 @@ Activate "LYT Vision" to resurface thoughts in context. When you twirl this open
 > [!Venetian]+ Unrequited notes
 > These notes point directly to this note. But this note doesn't point back (yet). This is the strongest contextual query.
 > 
->  - [[./Wu wei|Wu wei]]
-> - [[./Strong opinions, weakly held|Strong opinions, weakly held]]
+>  - [[./Gall's Law|Gall's Law]]
 > - [[./Signal to Noise Ratio|Signal to Noise Ratio]]
-> - [[./Gall's Law|Gall's Law]]
+> - [[./Strong opinions, weakly held|Strong opinions, weakly held]]
+> - [[./Wu wei|Wu wei]]
 > 
 
 > [!Venetian]- Unmentioned notes in common
@@ -70,4 +70,4 @@ Activate "LYT Vision" to resurface thoughts in context. When you twirl this open
 
 ---
 
-Back to: [[../LYT Ideaverse|Home]] !
+Back to: [[../ |Home]] !
