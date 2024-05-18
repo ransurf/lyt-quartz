@@ -45,6 +45,3 @@ jobs:
 
       - name: Trigger Cloudflare Pages
         run: curl -X POST ${{ secrets.CLOUDFLARE_WEBHOOK_URL_PROD }}
-
-      - name: Debug event
-        run: echo "Event name: ${{ github.event_name }}"
