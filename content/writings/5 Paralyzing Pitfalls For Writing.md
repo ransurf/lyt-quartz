@@ -2,7 +2,7 @@
 publishDate: 2024-04-25
 footerTitle: 
 footerSubtitle: 
-ctaType: Ideaverse
+ctaType: cta1
 created: 2024-05-07T07:51:22
 ---
 You started writing…then stopped.
