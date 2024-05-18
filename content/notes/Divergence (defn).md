@@ -4,7 +4,7 @@ up:
 related:
   - "[[Complexity (defn)|Complexity (defn)]]"
   - "[[./Convergence (defn)|Convergence (defn)]]"
-created: 2020-06-01
+created: 2023-08-29T07:05:26
 ---
  **Divergence** is basically when things become unique.
 
