@@ -3,7 +3,7 @@ up:
   - "[[FlowCreation MOC|FlowCreation MOC]]"
 related:
   - "[[Balancing Challenge and Skill|Balancing Challenge and Skill]]"
-created: 2020-06-01
+created: 2023-08-29T07:09:07
 ---
 These are the four factors that govern flow. If you're in Flow, it's because these factors are doing well. If you are not in flow, then at least one factor isn't doing well.
 
