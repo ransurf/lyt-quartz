@@ -2,7 +2,7 @@
 up:
   - "[[./Feedback Loop|Feedback Loop]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:14:39
 tags:
   - concept
   - note_develop🍃
@@ -15,7 +15,7 @@ You are what you eat is a more specific comment on one of the fundamental truism
 
 It's circular but true, we become what we do.- From [It's circular but true, we become what we do](./It's circular but true, we become what we do.md)
 
-I'm really feeling the need to create a new map of content around something I always think about...so here we go: [[Our Tools Shape Us MOC|Our Tools Shape Us MOC]] (not included in Ideaverse for Obsidian
+I'm really feeling the need to create a new map of content around something I always think about…so here we go: [[Our Tools Shape Us MOC|Our Tools Shape Us MOC]] (not included in Ideaverse for Obsidian
 
 Related: [[./Feedback Loop|Feedback Loop]]
 

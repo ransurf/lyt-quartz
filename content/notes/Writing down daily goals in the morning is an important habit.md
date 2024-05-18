@@ -2,7 +2,7 @@
 up:
   - "[[Habits Map|Habits Map]]"
 related: []
-created: 2014-06-28
+created: 2023-08-29T07:14:33
 modified: 2020-05-28
 ---
 This follows: [[./Journaling in the morning is an important habit|Journaling in the morning is an important habit]]. After journaling, set some broad, simple daily goals.

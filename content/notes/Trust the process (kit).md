@@ -4,7 +4,7 @@ up:
 related:
   - "[[The Riddle of Two Paths (kit)|The Riddle of Two Paths (kit)]]"
   - "[[The Riddle IS the Answer (kit)|The Riddle IS the Answer (kit)]]"
-created: 2019-08-13
+created: 2023-08-20T06:17:34
 ---
 
 When I was young, my dad said we could open presents a day early if we solved his riddle. I chewed on the riddle trying to solve it. It was riveting to have a good riddle. 
@@ -20,7 +20,6 @@ The Process solidifies thoughts you deem worthy of remembering, and by working T
 Most importantly, it's not the destination but the journey. Or put another way, the journey IS the destination. 
 
 ***Trust the Process. The Process is the Answer.***
-
 
 ---
 This is also part of a speech. See: [[Speech MOC|Speech MOC]]

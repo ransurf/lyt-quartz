@@ -3,7 +3,7 @@ up:
   - "[[Habits MOC - Collide|Habits MOC - Collide]]"
 related:
   - "[[Isaac Newton|Isaac Newton]]"
-created: 2020-10-01
+created: 2023-08-29T07:11:28
 year: 1686
 tags:
   - concept

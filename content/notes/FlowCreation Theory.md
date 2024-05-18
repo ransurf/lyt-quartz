@@ -3,7 +3,7 @@ up:
   - "[[FlowCreation MOC|FlowCreation MOC]]"
 related:
   - "[[./Conditions of Flow|Conditions of Flow]]"
-created: 2020-06-01
+created: 2023-08-29T07:08:34
 ---
 
 [[FlowCreation Theory|FlowCreation Theory]] is about creating the [[./Conditions of Flow|Conditions of Flow]], not actually Creating Flow, because Flow cannot directly be created. You can only create the conditions of flow, and give yourself the best chance of entering it. %%(Nick, go deeper at [[Flow, Insights, and Acting cannot be forced|Flow, Insights, and Acting cannot be forced]] - not included in the Ideaverse for Obsidian)%%
@@ -15,7 +15,7 @@ There are just two steps:
 1. Find your current state of mind—Maybe ask, "What am I feeling?" or "Where's my head at?" Use the [[./Flow Map|Flow Map]] for this.
 2. Work on creating the [[./Conditions of Flow|Conditions of Flow]].
 
-It's that second step where some skills and tactics are important...
+It's that second step where some skills and tactics are important…
 
 ### Use specific Skills and Tactics to Create the Conditions of Flow
 There are four broad areas to cover when setting up the conditions for Flow. Here is an example of each:

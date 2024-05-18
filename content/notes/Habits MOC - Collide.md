@@ -2,7 +2,7 @@
 up:
   - "[[The 3 Phases of MOCs|The 3 Phases of MOCs]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T11:18:23
 ---
 This is where you generate all the insights. This is where ideas *collide*. It's where your ideas battle for relational positioning. This is the most joyous and valuable stage.
 

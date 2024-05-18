@@ -1,9 +1,10 @@
 ---
-published: 2024-04-25
 up:
   - "[[Thinking|Thinking]]"
 related:
   - "[[5 Paralyzing Pitfalls For Writing|5 Paralyzing Pitfalls For Writing]]"
+published: 2024-04-25
+created: 2024-05-08T10:51:52
 ---
 Have you ever walked in a Japanese garden?
 

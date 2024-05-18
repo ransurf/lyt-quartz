@@ -3,9 +3,9 @@ up:
   - "[[Ideaverse Map|Ideaverse Map]]"
 related:
   - "[[./Evergreen notes|Evergreen notes]]"
-created: 2020-06-01
+created: 2023-08-29T07:03:12
 ---
-A BOAT note is a "Block of Atomic Thought" floating alone in an empty ocean... 🚤 ^706f5c
+A BOAT note is a "Block of Atomic Thought" floating alone in an empty ocean… 🚤 ^706f5c
 
 - [[./Evergreen notes|Evergreen notes]] are well-linked, fully formed members of society.
 - BOAT notes are teenagers: still growing and forming a unique personality.

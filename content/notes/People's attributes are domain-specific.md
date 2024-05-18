@@ -2,7 +2,7 @@
 up:
   - "[[The Almagest|The Almagest]]"
 related: []
-created: 2018-02-20
+created: 2023-08-29T07:11:59
 tags:
   - note_boat🚤
 ---

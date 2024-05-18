@@ -3,13 +3,13 @@ up:
   - "[[Thinking Map|Thinking Map]]"
 related:
   - "[[./Refraction Thinking|Refraction Thinking]]"
-created: 2018-06-18
+created: 2023-08-28T02:48:15
 tags:
   - concept
 ---
 
 > [!NOTE]+
-> Considered changing "levels" to "lenses" on 2023-03-21. Test it out. Might actually need whole new term, like "[[Lenses of Sensemaking|Lenses of Sensemaking]]"...yes, I quite like that. It would connect nicely to [[Lens-bending|Lens-bending]].
+> Considered changing "levels" to "lenses" on 2023-03-21. Test it out. Might actually need whole new term, like "[[Lenses of Sensemaking|Lenses of Sensemaking]]"…yes, I quite like that. It would connect nicely to [[Lens-bending|Lens-bending]].
 
 ---
 

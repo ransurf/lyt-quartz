@@ -2,7 +2,7 @@
 up:
   - "[[Direction (re Flow)|Direction (re Flow)]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:07:56
 tags:
   - source_quote_100
 ---
@@ -19,7 +19,7 @@ The wise Abbe replies,
 > From the collision of clouds electricity is produced; from electricity, lightning; from lightning, illumination." - [[The Count of Monte Cristo|The Count of Monte Cristo]]
 
 ### My notes
-Captivity, compression, collision... concentration, density, tightly-packed
+Captivity, compression, collision… concentration, density, tightly-packed
 
 light, spark, explode, electricity, lightning, illumination
 

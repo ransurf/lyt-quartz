@@ -2,11 +2,11 @@
 up:
   - "[[Concepts Map|Concepts Map]]"
 related: []
-created: 2017-01-01
+created: 2023-08-29T07:12:23
 tags:
   - concept
 ---
- *"Reps, Reps, Reps."*   ^dbdd21
+ *"Reps, Reps, Reps."* ^dbdd21
 
 Learning, improving, deliberate practice…the underpinning of it all—the unspoken current flowing through any progression—is getting reps, in all forms, consistently and frequently.
 

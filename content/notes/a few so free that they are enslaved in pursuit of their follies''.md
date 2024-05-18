@@ -1,7 +1,7 @@
 ---
 up:
   - "[[./evaporated in a thousand follies''|evaporated in a thousand follies'']]"
-created: 2015-01-22
+created: 2023-08-23T08:11:06
 tags:
   - source_quote_100
 ---

@@ -1,7 +1,7 @@
 ---
 up:
   - "[[Ideaverse Map|Ideaverse Map]]"
-created: 2023-07-01
+created: 2023-08-29T12:19:02
 ---
 ACE is the most universal folder system to help you to learn, remember, and create. 
 

@@ -2,7 +2,7 @@
 up:
   - "[[Thinking Map|Thinking Map]]"
 related: []
-created: 2019-01-01
+created: 2023-08-29T07:12:21
 modified: 2023-03-22
 tags:
   - concept
@@ -21,7 +21,7 @@ It turns out that, as we think, we can apply to principles of refraction. **Refr
 
 Applying "refraction" to our thinking is why "mental models" are so effective: they allow us to see the world in a different way. 
 
-The term "mental model" grew to prominence as the great thinker Charlie Munger used to frequently in speeches as he implored others to see patterns, think holistically, and essentially...connect the dots. 
+The term "mental model" grew to prominence as the great thinker Charlie Munger used to frequently in speeches as he implored others to see patterns, think holistically, and essentially…connect the dots. 
 
 Munger and Warren Buffet were a formidable one-two punch in the financial industry. Hence, that term "mental models" is used excessively by the Wall Street financial types, which can make the word feel dirty to those outside of that hyper-aggressive world. It's no one's fault. But this is why severing the conflation between mental models and Wall Street is so important: using mental models is something we all do—and have done—long before the term was coined. 
 

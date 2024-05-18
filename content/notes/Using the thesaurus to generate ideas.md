@@ -2,14 +2,14 @@
 up:
   - "[[Word Excursion|Word Excursion]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:14:10
 ---
  *Let's treat words like ideas*
 
 This is an example of using something as fundamental as WORDS to generate ideas and opinions.
 
 - **Belated**: on time - Ant: punctual — CI: 820
-	- Birthday. This makes me think of...Facebook and birthday notifications. 
+	- Birthday. This makes me think of…Facebook and birthday notifications. 
 	- [[Facebook does a lot of harm|Facebook does a lot of harm]]. 
 		- [[By amplifying the most emotionally-charged posts, Facebook contributes to actual violence|By amplifying the most emotionally-charged posts, Facebook contributes to actual violence]].
 - **Exhaustive**: no stone unturned, all-encompassing, encyclopedic — 531, 772

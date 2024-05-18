@@ -2,7 +2,7 @@
 up:
   - "[[Habits Map|Habits Map]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:14:32
 ---
 For some reason I've called important habits a lot of different things over the years. (Maybe I should just call them "Important Habits".)
 

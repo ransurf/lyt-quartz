@@ -3,7 +3,7 @@ up:
   - "[[Home|Home]]"
 related:
   - "[[./Define your time-style|Define your time-style]]"
-created: 2023-08-19
+created: 2023-08-29T10:47:27
 tags:
   - map_view
 ---

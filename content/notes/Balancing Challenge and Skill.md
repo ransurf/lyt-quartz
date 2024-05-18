@@ -4,7 +4,7 @@ up:
 related:
   - "[[./Four Factors of Flow|Four Factors of Flow]]"
   - "[[./Attention (re Flow)|Attention (re Flow)]]"
-created: 2020-06-01
+created: 2023-08-29T07:01:54
 ---
 Conceptually, getting into flow requires [[Balancing Challenge and Skill|Balancing Challenge and Skill]]. It's the meta-meta-skill of creating the conditions of flow.
 

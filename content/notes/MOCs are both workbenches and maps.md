@@ -2,7 +2,7 @@
 up:
   - "[[Ideaverse Map|Ideaverse Map]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:11:11
 ---
 You enter your personal warehouse.  
 You can freely add a limitless amount of workbenches.
@@ -20,7 +20,7 @@ You *collide* and *craft* those notes.
 ![[lyt-crafting-mocs-3.jpg|lyt-crafting-mocs-3.jpg]]
 
 ---
-...and you create something special.
+…and you create something special.
 ![[lyt-crafting-mocs-4.jpg|lyt-crafting-mocs-4.jpg]]
 
 ---

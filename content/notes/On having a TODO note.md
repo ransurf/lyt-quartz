@@ -2,7 +2,7 @@
 up:
   - "[[Ideaverse Map|Ideaverse Map]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:11:45
 ---
 Usually, the people who are "Daily Notes" practitioners also like tagging their entries with `[[TODO]]` or `#task`. I recommend using a different app to fully manage your projects and tasks.
 

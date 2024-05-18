@@ -3,7 +3,7 @@ up:
   - "[[LYT Glossary|LYT Glossary]]"
 related:
   - "[[./MOCs (defn)|MOCs (defn)]]"
-created: 2020-06-01
+created: 2023-08-29T07:06:37
 ---
  *You requested the latest TPS reports?*
 
@@ -20,7 +20,7 @@ While [[./MOCs (defn)|MOCs (defn)]] are for active, generative thinking, the val
 
 You can analyze or act on that information; but information is worthless without putting meaningful context around it. 
 
--   Use MOCs to generate insights
--   Use data views to analyze information
+- Use MOCs to generate insights
+- Use data views to analyze information
 
 Using a series of queries to build data views is an advanced action. But many people want to learn because—in sage hands—queries are crazy-powerful.

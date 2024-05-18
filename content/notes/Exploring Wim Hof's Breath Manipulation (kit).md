@@ -2,9 +2,9 @@
 up: []
 related:
   - "[[Wim Hof|Wim Hof]]"
-created: 2015-12-03
+created: 2023-08-29T07:08:10
 ---
-This is an interesting topic and I don't have definitive answers—I hope to learn more from the burgeoning research, but here's my long take...
+This is an interesting topic and I don't have definitive answers—I hope to learn more from the burgeoning research, but here's my long take…
 ## PART 1
 Before holding my breath, I forcefully breath in more than I breath out for around 50 breaths (sort of like hyperventilating). O2 levels increase. CO2 levels decrease. pH levels increase (and surprisingly stay higher than what’s normal even after breath-holding, which should negate a lot of the breath-holding worries, since I believe they are associated with pH drops.
 

@@ -3,7 +3,7 @@ up:
   - "[[Concepts Map|Concepts Map]]"
 related:
   - "[[Analogy as Core (talk)|Analogy as Core (talk)]]"
-created: 2020-06-01
+created: 2023-08-29T07:05:43
 tags:
   - concept
   - source_quote

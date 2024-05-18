@@ -3,7 +3,7 @@ up:
   - "[[Habits Map|Habits Map]]"
 related:
   - "[[./Habits carry a ton of hidden inertia|Habits carry a ton of hidden inertia]]"
-created: 2020-06-01
+created: 2023-08-29T07:08:13
 tags:
   - concept
 ---

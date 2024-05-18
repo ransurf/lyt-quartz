@@ -2,16 +2,16 @@
 up:
   - "[[Concepts Map|Concepts Map]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:12:29
 tags:
   - note_develop🍃
 ---
-The seasons are a natural example of [[./Yin and Yang|Yin and Yang]]...ebb and flow...It's usually a duality but it doesn't have to be a duality. Many things are cyclical: the seasons, perennials, period's for women, the moon, hunger and satiation...
+The seasons are a natural example of [[./Yin and Yang|Yin and Yang]]…ebb and flow…It's usually a duality but it doesn't have to be a duality. Many things are cyclical: the seasons, perennials, period's for women, the moon, hunger and satiation…
 
 Other things may be cyclical and also be in stages, like how Hermann Hesse's characters (Siddhartha, Joseph Knecht) go through their different stages of life, similar to the idea of the stages of personal development (dependence, independence, interdependence), which both can map to the xy graph for progression overload—the idea behind building muscular strength through cumulative cycles. 
 - pre-industrial metaphor = grow
-- post-industrial metaphor = make... ie: everyday speech: we make time, make friends, make meaning, make money, make a living, make love.
-    - Alan Watts observed that a Chinese child will ask, "How does a baby grow?" But an American child will ask, "How do you make a baby?"
+- post-industrial metaphor = make… ie: everyday speech: we make time, make friends, make meaning, make money, make a living, make love.
+	- Alan Watts observed that a Chinese child will ask, "How does a baby grow?" But an American child will ask, "How do you make a baby?"
 
 > [!NOTE]- Some links and content in this note have been removed.
 > Because this is a vertical slice of my actual PKM system, I can't include everything in this vault and left out some notes and material for ease of navigation and understanding the concepts (rather than getting lost in the knowledge) as well as for privacy. 

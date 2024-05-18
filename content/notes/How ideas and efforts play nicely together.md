@@ -4,7 +4,7 @@ up:
 related:
   - "[[The big differences between efforts and projects|The big differences between efforts and projects]]"
   - "[[Why Efforts are Liberating|Why Efforts are Liberating]]"
-created: 2020-06-01
+created: 2023-08-28T01:18:24
 ---
 The best way to understand "efforts" is to walk through an example of how "efforts" naturally support existing ideas.
 
@@ -23,10 +23,10 @@ For example, check out [[./Sensemaking happens by triangulation|Sensemaking happ
 - Then I made it into a workshop lesson.
 - Then I replaced it in the workshop because I wanted to get us more on hands-up repetitions.
 - But I still liked the idea, so I rewrote it into a youtube video
-- ...and a twitter thread
-- ...and later I even rewrote it for my newsletter
-- ...and later, I want to get it up on my website.
-- ...and always, I have this treasure to fuel my own thinking.
+- …and a twitter thread
+- …and later I even rewrote it for my newsletter
+- …and later, I want to get it up on my website.
+- …and always, I have this treasure to fuel my own thinking.
 - That's the power of thinking in "efforts" and not projects.
 
 Go back to the first bullet. Can you imagine if tried to call this a "project". A project of what?! I didn't even know what I was trying to do! It would have smothered my spark of curiosity and replaced it with feelings of guilt for not completing it—whatever "it" was. 
@@ -42,6 +42,5 @@ This is the power of "efforts" over "projects" when it comes to developing your 
 > If you work in a corporate environment with clear deadlines and less creative work, you'll be fine with projects.
 
 > If you work with ideas, you'll finally feel free with efforts.
-
 
 Back to: [[./Efforts|Efforts]]

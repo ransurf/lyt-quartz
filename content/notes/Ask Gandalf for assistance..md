@@ -1,7 +1,7 @@
 ---
 up:
   - "[[+ About Sources|+ About Sources]]"
-created: 2020-06-01
+created: 2023-08-29T07:02:37
 ---
 Fortunately, Gandalf will save you this time. He summons the flame of Anor and epically declares:
 
@@ -9,7 +9,7 @@ GANDALF: *"You shall not pass!"*
 
 The Evernote Web Clipper falters and slinks back into the shadows.
 
-All is safe...for now...
+All is safe…for now…
 
 ---
 Separating the Signal from the Noise in your PKM efforts is an ongoing effort. Of course there are sources to save and add to your PKM library. *Just not everything.* 

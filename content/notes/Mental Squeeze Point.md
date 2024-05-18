@@ -3,7 +3,7 @@ up:
   - "[[Ideaverse Map|Ideaverse Map]]"
 related:
   - "[[./MOCs Overview|MOCs Overview]]"
-created: 2020-06-01
+created: 2023-08-29T07:11:01
 ---
 A **Mental Squeeze Point** is when your unsorted knowledge becomes so messy it overwhelms and discourages you. Either you are equipped with frameworks to overcome the squeeze point, or you are discouraged and possibly abandon your project. This is usually followed by yet another search for the next shiny thing to distract from the pain. ^64cf60a6
 

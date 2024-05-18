@@ -2,7 +2,7 @@
 up:
   - "[[MOCs Overview|MOCs Overview]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:11:04
 tags:
   - concept
   - note_boat🚤
@@ -18,7 +18,5 @@ Spatial constellation
 Research backing this up
 Mind palace links
 
-
-
 ### Wiki
-It is a strategy of memory enhancement by visualizing familiar spatial environments to improve the recall of information...The method relies on memorized spatial relationships to establish order and recollect memorial content. 
+It is a strategy of memory enhancement by visualizing familiar spatial environments to improve the recall of information…The method relies on memorized spatial relationships to establish order and recollect memorial content. 

@@ -1,7 +1,7 @@
 ---
 up:
   - "[[./Meta PKM|Meta PKM]]"
-created: 2020-06-01
+created: 2023-08-29T07:04:44
 ---
 For those that want to maintain an alphabetical "Map of Maps" list, check this out. The below list *was* in alphabetical order a long time ago. But as I make sense of the world, I constantly tweak filenames. So now look at how out of order it has become. 
 

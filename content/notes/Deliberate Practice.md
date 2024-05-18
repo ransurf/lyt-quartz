@@ -2,7 +2,7 @@
 up:
   - "[[Habits Map|Habits Map]]"
 related: []
-created: 2011-06-01
+created: 2023-08-29T07:07:39
 ---
  *Train to improve.*
 
@@ -11,7 +11,6 @@ created: 2011-06-01
 dates:: 2011
 people:: [Duncan R.D.Mascarenhas*](https://www.sciencedirect.com/science/article/pii/B9780443067341000171#!)[Nickolas C.Smith†](https://www.sciencedirect.com/science/article/pii/B9780443067341000171#!)
 URL:: [Link](https://www.sciencedirect.com/science/article/pii/B9780443067341000171)
-
 
 Deliberate practice is defined as being effortful in nature, with the main goal of personal improvement of performance rather than enjoyment, and is often performed without immediate reward.
 

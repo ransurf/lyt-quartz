@@ -1,8 +1,8 @@
 ---
 up:
-  - "[[../LYT Ideaverse|Home]]"
+  - "[[../ |Home]]"
 related: []
-created: 2020-01-01
+created: 2023-08-29T06:50:08
 tags:
   - map
 ---
@@ -11,7 +11,7 @@ Navigate your library of maps with a classification system made specifically for
 > [!Blocks]- The LYT Classification System
 > The **LYT Classification System** is lightly modified from the Cutter, Dewey, and Universal Decimal classification systems used in libraries around the world. It will provide you a time-tested foundation as you structure the interests of your digital library.
 > - 000 - *Knowledge Management*
-> - 100  - *Personal Management*
+> - 100 - *Personal Management*
 > - 200 - *Philosophy & Psychology; Spirituality & Religion*
 > - 300 - *Social Sciences*
 > - 400 - *Communications & Rhetoric; Language & Linguistics*
@@ -30,8 +30,8 @@ Navigate your library of maps with a classification system made specifically for
 > [!NOTE]+ ### 000 - Knowledge Management
 > The [[./Meta PKM|Meta PKM]] shows the best practices of knowledge management. I use the [[../Ideaverse Map|Ideaverse Map]] to show the power of linked thinking and to empower others to develop their thinking. The [[Mapping MOCs|Mapping MOCs]] is my personal note to wrap my head around the wondrous beauty that MOCs offer. Others include:
 > 
-> - [[./Relate|Relate]] | [[Logs (Example)|Logs (Example)]] |  [[I want to...|I want to...]]
-> - [[Cartographer's Corner 🗺|Cartographer's Corner 🗺]] | [[./Commonplace Book|Commonplace Book]] |  [[Knowledge and memory MOC|Knowledge and memory MOC]]
+> - [[./Relate|Relate]] | [[Logs (Example)|Logs (Example)]] | [[I want to...|I want to...]]
+> - [[Cartographer's Corner 🗺|Cartographer's Corner 🗺]] | [[./Commonplace Book|Commonplace Book]] | [[Knowledge and memory MOC|Knowledge and memory MOC]]
 
 > [!Milestone]+ ### 100 - Personal Management
 > The [[Thinking Map|Thinking Map]] can galvanize my attention; the [[./Concepts Map|Concepts Map]] can flavor it; and the [[./Habits Map|Habits Map]] speaks about how to direct it. Hidden within in the [[./Cabin|Cabin]]. Go to my [[./Life Map|Life Map]] to brush up on [[./My Virtues (starter)|My Virtues]] and more.
@@ -75,7 +75,7 @@ Navigate your library of maps with a classification system made specifically for
 > - [[Cooking MOC|Cooking MOC]] | Leisure 
 
 > [!Venetian]+ ### 800 - Literature
-> If folks barely remember leisure, they likely completely forgot about classical literature. A great shame, neomania...we blind ourselves to some of humanity's greatest hits. Use [[Literature MOC|Literature MOC]] as a launchpad.
+> If folks barely remember leisure, they likely completely forgot about classical literature. A great shame, neomania…we blind ourselves to some of humanity's greatest hits. Use [[Literature MOC|Literature MOC]] as a launchpad.
 
 > [!Fingerprint]+ ### 900 - History & Biography & Geography
 > I've noticed I'm naturally building up the [[Ancient Greece MOC|Ancient Greece MOC]], but I haven't cared to build out the [[History MOC|History MOC]] just yet. The [[./Places MOC|Places MOC]] is a peculiarly powerful note that has big things in store for it.
@@ -91,4 +91,4 @@ Please don't go crazy numbering things. We are just using a pre-made map so we c
 >  
 > Plus, it's okay to have some unlinked notes in your own vault. They won't all be built out at once.
 
-Up to: [[../LYT Ideaverse|Home]]
+Up to: [[../ |Home]]

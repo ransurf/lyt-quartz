@@ -2,7 +2,7 @@
 up:
   - "[[Evergreen notes|Evergreen notes]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:08:04
 ---
 When you follow a process for making evergreen notes, you naturally develop insights that compound in value over time. This is the result of the fact that [[./Evergreen notes are antifragile|Evergreen notes are antifragile]].
 

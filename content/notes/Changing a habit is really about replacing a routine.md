@@ -3,7 +3,7 @@ up:
   - "[[Defining a habit|Defining a habit]]"
 related:
   - "[[./Habit formation provides an evolutionary advantage|Habit formation provides an evolutionary advantage]]"
-created: 2020-06-01
+created: 2023-08-29T07:03:42
 ---
 Duhigg's book, while full of the requisite filler of long pop-science stories, breaks ground on providing a simple habit formation process.[^1] 
 

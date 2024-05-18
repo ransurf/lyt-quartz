@@ -2,7 +2,7 @@
 up:
   - "[[MOCs are both workbenches and maps|MOCs are both workbenches and maps]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:14:01
 ---
 Ideas are forged from thoughts coming together and talking. 
 
@@ -23,5 +23,4 @@ Here's the expanded question:
 The answer? By using MOCs (Maps of Content). 
 
 MOCs become a tightly-packed room where ideas have to jostle for positioning and figure things out. It's the “the room where it happens".
-
 

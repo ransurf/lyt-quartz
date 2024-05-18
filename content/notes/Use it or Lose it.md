@@ -2,7 +2,7 @@
 up:
   - "[[Habits Map|Habits Map]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:14:06
 tags:
   - concept
   - note_develop🍃
@@ -17,6 +17,4 @@ In what areas does this apply?
 Where does it not apply as much?
 
 Mention strength training for sure. And relate this to spaced repetition.
-
-
 

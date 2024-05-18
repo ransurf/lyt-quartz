@@ -4,7 +4,7 @@ up:
 related:
   - "[[./Divergence (defn)|Divergence (defn)]]"
   - "[[Complexity (defn)|Complexity (defn)]]"
-created: 2020-06-01
+created: 2023-08-29T07:05:34
 ---
  **Convergence** is basically when things become unified.
 

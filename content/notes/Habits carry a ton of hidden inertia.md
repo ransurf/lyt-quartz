@@ -3,7 +3,7 @@ up:
   - "[[Habits Map|Habits Map]]"
 related:
   - "[[./Feedback Loop|Feedback Loop]]"
-created: 2020-06-01
+created: 2023-08-29T07:09:27
 ---
 While some [[./Feedback Loop|Feedback Loop]]s show immediate results, many times progress is hidden until much further along in time. This type of progress, where it's not obvious and visible is basically "hidden inertia". 
 

@@ -3,7 +3,7 @@ up:
   - "[[Concepts Map|Concepts Map]]"
 related:
   - "[[./Natural Selection|Natural Selection]]"
-created: 2020-06-01
+created: 2023-08-29T07:01:21
 tags:
   - concept
 ---
@@ -36,5 +36,4 @@ Antifragility is beyond resilience or robustness. The resilient resists shocks a
 Domains: The concept has been applied in physics, risk analysis, molecular biology, transportation planning, engineering, aerospace, megaproject management, and computer science.
 
 Background: Developed by Nassim Nicholas Taleb
-
 

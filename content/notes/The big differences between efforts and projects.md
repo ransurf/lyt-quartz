@@ -4,7 +4,7 @@ up:
 related:
   - "[[Why Efforts are Liberating|Why Efforts are Liberating]]"
   - "[[./How ideas and efforts play nicely together|How ideas and efforts play nicely together]]"
-created: 2022-09-01
+created: 2023-08-28T09:19:58
 ---
 Let's get the definitions right:
 
@@ -32,6 +32,5 @@ They can be bigger than projects, or smaller, and oftentimes their size is hard 
 Instead, efforts and projects work in tandem: a smaller project organically spins out of a larger effort. I can tackle the project, and then confidently refocus on the larger effort. 
 
 > Efforts are expandable.
-
 
 Learn [[./How ideas and efforts play nicely together|How ideas and efforts play nicely together]].

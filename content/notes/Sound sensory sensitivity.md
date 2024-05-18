@@ -1,7 +1,7 @@
 ---
 up: []
 related: []
-created: 2022-05-09
+created: 2023-08-29T07:13:04
 URLs:
   - https://feeei.substack.com/p/sensory-quietness-for-the-soul?s=r
 tags:
