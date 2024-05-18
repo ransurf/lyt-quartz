@@ -13,10 +13,6 @@
     cursor: pointer;
     white-space: nowrap;
 
-    & > div {
-      flex-grow: 1;
-    }
-
     & > p {
       display: inline;
       padding: 0 1rem;
@@ -26,7 +22,6 @@
       cursor: pointer;
       width: 18px;
       min-width: 18px;
-      margin: 0 0.5rem;
 
       .search-path {
         stroke: var(--light);

@@ -43,13 +43,24 @@ export default ((userOpts?: Partial<Options>) => {
     }
 
     function createLinkedElement(fileData: any, opts: any, value: string) {
-      let cleanedValue = value.replace(/['"\[\]]+/g, "")
+      // if there is an alias in the link like [[alias|link]] then we need to remove the alias
+      let cleanedValue;
+      if (value.includes("|")) {
+        cleanedValue = value.split("|")[1]
+      } else {
+        cleanedValue = value
+      }
+      cleanedValue = cleanedValue.replace(/['"\[\]]+/g, "")
+      
       let href = transformLink(fileData.slug!, cleanedValue, opts)
+
+      // split cleanedValue to last part of the path
+      let splitValue = cleanedValue.split("/")[cleanedValue.split("/").length - 1]
     
       return (
         <h3>
           <a href={href} class="internal">
-            {cleanedValue}
+            {splitValue}
           </a>
         </h3>
       )

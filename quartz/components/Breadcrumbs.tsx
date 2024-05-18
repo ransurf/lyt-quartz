@@ -41,19 +41,17 @@ const defaultOptions: BreadcrumbOptions = {
   showCurrentPage: true,
 }
 
-function formatName(name: string): string {
-  // if writings, notes, or maps, capitalize
-  // pull it from array
-  const capitalizable = ["writings", "notes", "maps"]
-  if (capitalizable.includes(name)) {
+function formatName(name: string, isFolderPath: boolean): string {
+  // capitalize if it is not last part of crumb
+  if (isFolderPath) {
     return name.charAt(0).toUpperCase() + name.slice(1)
   }
   return name
 }
 
-function formatCrumb(displayName: string, baseSlug: FullSlug, currentSlug: SimpleSlug): CrumbData {
+function formatCrumb(displayName: string, baseSlug: FullSlug, currentSlug: SimpleSlug, isFolderPath: boolean): CrumbData {
   return {
-    displayName: formatName(displayName.replaceAll("-", " ")),
+    displayName: formatName(displayName.replaceAll("-", " "), isFolderPath),
     path: resolveRelative(baseSlug, currentSlug),
   }
 }
@@ -76,7 +74,7 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
     }
 
     // Format entry for root element
-    const firstEntry = formatCrumb(options.rootName, fileData.slug!, "/" as SimpleSlug)
+    const firstEntry = formatCrumb(options.rootName, fileData.slug!, "/" as SimpleSlug, false)
     const crumbs: CrumbData[] = [firstEntry]
 
     if (!folderIndex && options.resolveFrontmatterTitle) {
@@ -120,6 +118,7 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
           curPathSegment,
           fileData.slug!,
           (currentPath + (includeTrailingSlash ? "/" : "")) as SimpleSlug,
+          i !== slugParts.length - 1
         )
         crumbs.push(crumb)
       }
