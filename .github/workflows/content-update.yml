@@ -16,10 +16,15 @@ jobs:
         with:
           node-version: '18' # Update to Node.js 18
 
-      - name: Update submodule to the latest commit on the specified branch
+- name: Initialize and update submodules
+        run: |
+          git submodule init
+          git submodule update --recursive --remote
+
+      - name: Force merge unrelated histories
         run: |
           git config --file .gitmodules submodule.content.branch main
-          git submodule update --remote --merge
+          git -c submodule."content".update=merge submodule update --init --recursive --force
 
       - name: Upgrade npm
         run: npm install -g npm@latest # Ensure npm is at the latest version
