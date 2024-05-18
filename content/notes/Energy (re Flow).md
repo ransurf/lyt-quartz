@@ -2,7 +2,7 @@
 up:
   - "[[FlowCreation MOC|FlowCreation MOC]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:07:51
 ---
 Attention is what the mind is focused on—and what it has been focused on over the recent past (the past 72 hours is simple way to look at it). Everything that enters the mind in the past 72 hours affects the next hour of thought. That's what it's so important to Guard and Guide Your Mind wisely.
 
@@ -12,12 +12,12 @@ Guard what enters your mind, and what stays in the mind. Reduce distractions. Re
 
 - **Focus** — The ability to maintain focus is of crucial importance in any aspect of modern living. Without focus, life drifts from stimuli to stimuli, with very little consistent [[./Direction (re Flow)|Direction (re Flow)]].
 - **Residual Attention** — Your *attention* isn't just about what you are thinking about right now; it's more so composed of everything that's entered your mind over past 72 hours.
-    - Similar Keywords: Attentional Residue, Echo, Resonating, Ripples, Shadows, Reflections, Glimmers, Whispers, Deja Vu, Attention Robbers, Attentional Switching, Distraction Radiation, Distraction Amnesia, Continuity of Thought
+	- Similar Keywords: Attentional Residue, Echo, Resonating, Ripples, Shadows, Reflections, Glimmers, Whispers, Deja Vu, Attention Robbers, Attentional Switching, Distraction Radiation, Distraction Amnesia, Continuity of Thought
 
 ## Main Factors Governing Attention
 
 - Intensity and Frequency of Distractions
-    - Surroundings and Environment
+	- Surroundings and Environment
 - Quality of Diet
 
 ### Causes of Poor Attention
