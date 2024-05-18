@@ -3,7 +3,7 @@ up:
   - "[[Ideaverse Map|Ideaverse Map]]"
 related:
   - "[[./Fluid Frameworks|Fluid Frameworks]]"
-created: 2020-06-01
+created: 2023-08-29T07:08:49
 tags:
   - source_quote
 ---
