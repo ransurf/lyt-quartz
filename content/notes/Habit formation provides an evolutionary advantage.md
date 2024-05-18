@@ -3,13 +3,13 @@ up:
   - "[[Habits Map|Habits Map]]"
 related:
   - "[[./Selfish Gene|Selfish Gene]]"
-created: 2020-05-29
+created: 2023-08-29T07:09:25
 ---
-Whenever we take an action, neurons fire and strengthen their connections. Then, when we repeat that same action, it  miraculously requires less effort. How can this be?!
+Whenever we take an action, neurons fire and strengthen their connections. Then, when we repeat that same action, it miraculously requires less effort. How can this be?!
 
 It's because Nature's [[./Selfish Gene|Selfish Gene]] has a prime directive to survive—which means to become more efficient—so whatever you do once, is easier to do a second time.
 
-By making a repeated action more efficient, less energy is used, less willpower is required[^1], and fewer calories are burned—all of which lead to a better chance of survival. 
+By making a repeated action more efficient, less energy is used, less willpower is required,[^1] and fewer calories are burned—all of which lead to a better chance of survival. 
 
 Bad habits and good habits are nothing more than a bunch of self-perpetuating [[./Feedback Loop|Feedback Loop]]s that have grown efficient over time, with deeply enmeshed neural connections. In this way, "Passing mental states become lasting neural traits”.[^2]
 
@@ -22,4 +22,3 @@ While "habit formation provides an evolutionary advantage", it doesn't necessari
 
 [^1]: When it comes to willpower expenditure, the anterior cingulate cortex, is a crucial player.
 [^2]: Quote by Hebb's Rule
-
