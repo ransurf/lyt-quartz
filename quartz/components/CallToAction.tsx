@@ -17,7 +17,7 @@ const CallToAction: QuartzComponent = ({ fileData, displayClass }: QuartzCompone
   if (ctaType) {
     //get the cta object
     const cta = actions[ctaType];
-    return (
+    return cta && (
       <div class={classNames(displayClass, "cta")}>
         <h3>{footerTitle || cta.defaultTitle}</h3>
         <p>{footerSubtitle || cta.defaultSubtitle}</p>
