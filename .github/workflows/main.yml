@@ -15,10 +15,10 @@ jobs:
       with:
         submodules: true  # Fetch submodules
 
-    - name: Set up Node.js (if applicable, change as needed)
-      uses: actions/setup-node@v2
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
       with:
-        node-version: '14'
+        node-version: '18.14.0'  # Ensure this matches the required version
 
     - name: Install dependencies
       run: npm install
