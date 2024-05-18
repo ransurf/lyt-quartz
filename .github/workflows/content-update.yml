@@ -31,4 +31,4 @@ jobs:
         run: npx quartz build
 
       - name: Trigger Cloudflare Pages
-        run: curl -X POST ${{ secrets.CLOUDFLARE_WEBHOOK_URL }}
+        run: curl -X POST ${{ secrets.CLOUDFLARE_WEBHOOK_URL_PROD }}
