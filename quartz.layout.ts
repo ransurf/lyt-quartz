@@ -61,6 +61,7 @@ export const defaultContentPageLayout: PageLayout = {
       linkToMore: "writings/" as SimpleSlug,
       cta: "See all"
     }),
+    Component.CallToAction(),
   ],
   left: [
     Component.MobileOnly(Component.Spacer()),

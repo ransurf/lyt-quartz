@@ -94,6 +94,9 @@ declare module "vfile" {
         lang: string
         enableToc: string
         cssclasses: string[]
+        footerTitle: string
+        footerSubtitle: string
+        footerLink: string
       }>
   }
 }

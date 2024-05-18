@@ -25,6 +25,7 @@ import AboutAuthor from "./AboutAuthor"
 import RelatedNotes from "./RelatedNotes"
 import RelatedNotesContainer from "./RelatedNotesContainer"
 import Navbar from "./Navbar"
+import CallToAction from "./CallToAction"
 
 export {
   ArticleTitle,
@@ -53,5 +54,6 @@ export {
   AboutAuthor,
   RelatedNotes,
   RelatedNotesContainer,
-  Navbar
+  Navbar,
+  CallToAction,
 }
