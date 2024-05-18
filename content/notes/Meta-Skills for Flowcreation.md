@@ -2,7 +2,7 @@
 up:
   - "[[FlowCreation MOC|FlowCreation MOC]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:11:03
 ---
 What's the goal here? The goal is to Balance Challenge and Skill to get into flow. [[./Balancing Challenge and Skill|Balancing Challenge and Skill]] is basically the meta-meta-skill. On a conceptual level, that's what we're always trying to do when we're going after high quality experiences in life.
 
