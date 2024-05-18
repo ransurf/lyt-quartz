@@ -1,7 +1,7 @@
 ---
 up:
   - "[[Ideaverse Map|Ideaverse Map]]"
-created: 2020-06-01
+created: 2023-08-29T07:03:09
 ---
 Folks relying solely on direct links, tags, and folders are missing out on a bevy of benefits. Below is a list of benefits derived from having your notes equipped with fluid frameworks like a **Home note** and **Maps of Content**.
 
@@ -10,8 +10,7 @@ Folks relying solely on direct links, tags, and folders are missing out on a bev
 ###### Provides Reliability
 Having a Home note and MOCs act as reliable home bases to re-ground your thoughts whenever they begin to waver. Like a parent to a five-year old, linked frameworks like MOCs are a consistent and comforting safety net. 
  
-Disregard this at your own peril.  [^1]
-
+Disregard this at your own peril. [^1]
 
 ### Provides Flexibility
 > [[./Fluid Frameworks|Fluid Frameworks]] like the Home note and Maps of Content *don't limit access; they curate it.* 
@@ -76,7 +75,6 @@ internal links, embeds, headers, dividers, emphasis with bolds, italics, bold+it
 The benefits are exhaustive—and we haven't even talked about [Idea Emergence](https://twitter.com/NickMilo/status/1317190776284086272)!
 
 But you may still be asking: [[./Is LYT For Me|Is LYT For Me]]?
-
 
 [^1]: Do not underestimate the peace of mind that comes from a reliable, dependable digital library. Being unable to access something you know you have is basically a form of "Digital Dementia". 
 [^2]: I like to make my digital library super robust. That means I have several avenues built-in to re-discover a note. I find this process of "connecting to conceptual cousins" further cements each idea into my memory. It sort of tethers things in place like Wolverine, or if you prefer, like a bug caught on a spider web. 
