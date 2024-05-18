@@ -2,7 +2,7 @@
 up:
   - "[[Habits Map|Habits Map]]"
 related: []
-created: 2014-06-28
+created: 2023-08-29T07:10:15
 modified: 2020-05-28
 ---
  **Micro Habits**: These are super tiny, hidden habits that happen without us usually being aware of them; but that can majorly impact our state of mind.
