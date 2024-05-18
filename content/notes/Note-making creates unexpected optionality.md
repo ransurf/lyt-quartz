@@ -3,7 +3,7 @@ up:
   - "[[Evergreen notes|Evergreen notes]]"
 related:
   - "[[Note-making sharpens your thinking|Note-making sharpens your thinking]]"
-created: 2020-06-01
+created: 2023-08-29T07:11:35
 ---
 A second-order effect that results from "linking your thinking" is how much "Optionality" it offers. 
 
