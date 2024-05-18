@@ -1,0 +1,20 @@
+name: Dispatch to repo
+on: 
+  push:
+    branches:
+      main
+  workflow_dispatch:
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        repo: ["ransurf/lyt-quartz"]
+    steps:
+      - name: Push to repo
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.GH_PAT }}
+          repository: ${{ matrix.repo }}
+          event-type: build
+          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}", "module": "content", "branch": "v4"}'
