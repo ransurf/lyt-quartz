@@ -2,13 +2,13 @@
 up:
   - "[[Philosophy MOC (kit)|Philosophy MOC (kit)]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:12:03
 tags:
   - note_develop🍃
 people:
   - "[[Plato|Plato]]"
 ---
-When you return and tell everyone their beliefs are wrong...What happens is the same thing that happened to [[Copernicus|Copernicus]] and [[Gallileo|Gallileo]] and [[Jesus|Jesus]] and... They don't like that because they lose a [[./Sense of Control|Sense of Control]].
+When you return and tell everyone their beliefs are wrong…What happens is the same thing that happened to [[Copernicus|Copernicus]] and [[Gallileo|Gallileo]] and [[Jesus|Jesus]] and… They don't like that because they lose a [[./Sense of Control|Sense of Control]].
 
 I relate this to [[./Dimensions of Reality|Dimensions of Reality]], in which our friend "A Square" from [[1884 - Flatland|1884 - Flatland]] faces a similar predicament. 
 
