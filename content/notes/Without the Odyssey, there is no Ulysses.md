@@ -3,14 +3,14 @@ up:
   - "[[Idea Emergence (defn)|Idea Emergence (defn)]]"
 related:
   - "[[Kate Bush, Stranger Things, & Idea Emergence|Kate Bush, Stranger Things, & Idea Emergence]]"
-created: 2022-06-26
+created: 2023-08-29T07:14:29
 ---
  *I wanted to make this a note to capture a snapshot of the ever-elusive Idea Emergence.*
 
 ---
 
 The creative process is hard to capture as it's happening. Here is an attempt to capture
-a tiny example of how ideas emerge...
+a tiny example of how ideas emerge…
 
 I recently re-stumbled across a term called "Intertextuality". Intertextuality describes how past things are referenced in new things. 
 
@@ -24,7 +24,7 @@ The next day, I was writing a newsletter.
 
 I wanted to make point about Idea Emergence. I wanted to say that our past experiences affect our future ideas in unpredictable ways. 
 
-I started typing *"Without past inspirations..."*
+I started typing *"Without past inspirations…"*
 
 That triggered my brain to fire up and I was reminded of a familiar quote:
 
