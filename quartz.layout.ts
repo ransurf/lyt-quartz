@@ -50,7 +50,18 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Properties(),
     // Component.TagList(),
   ],
-  afterBody: [],
+  afterBody: [
+    Component.RelatedNotesContainer({
+      title: "",
+      path: "writings",
+      showForIndex: true,
+      showForNotes: true,
+      limit: 5,
+      field: "",
+      linkToMore: "writings/" as SimpleSlug,
+      cta: "See all"
+    }),
+  ],
   left: [
     Component.MobileOnly(Component.Spacer()),
     // Component.Darkmode(),
@@ -103,18 +114,22 @@ export const defaultContentPageLayout: PageLayout = {
       Component.RelatedNotes({
         title: "Related Maps",
         path: "writings",
+        showForNotes: true,
         limit: 4,
         field: "up",
         linkToMore: "maps/" as SimpleSlug,
+        cta: "See all →"
       }),
     ),
     Component.DesktopOnly(
       Component.RelatedNotes({
         title: "Related Writing",
         path: "writings",
+        showForNotes: true,
         limit: 4,
         field: "related",
         linkToMore: "writings/" as SimpleSlug,
+        cta: "See all →"
       }),
     ),
     Component.Graph(),

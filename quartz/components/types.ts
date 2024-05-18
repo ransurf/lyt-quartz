@@ -39,4 +39,5 @@ export enum ComponentIds {
   Properties = "PROPERTIES",
   RecentNotes = "RECENT_NOTES",
   RelatedNotes = "RELATED_NOTES",
+  RelatedNotesContainer = "RELATED_NOTES_CONTAINER",
 }

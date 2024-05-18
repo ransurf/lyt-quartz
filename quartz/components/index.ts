@@ -23,6 +23,7 @@ import Breadcrumbs from "./Breadcrumbs"
 import Properties from "./Properties"
 import AboutAuthor from "./AboutAuthor"
 import RelatedNotes from "./RelatedNotes"
+import RelatedNotesContainer from "./RelatedNotesContainer"
 import Navbar from "./Navbar"
 
 export {
@@ -51,5 +52,6 @@ export {
   PathOnly,
   AboutAuthor,
   RelatedNotes,
+  RelatedNotesContainer,
   Navbar
 }
