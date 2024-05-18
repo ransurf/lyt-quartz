@@ -2,14 +2,14 @@
 up: []
 related:
   - "[[The Almagest|The Almagest]]"
-created: 2020-06-01
+created: 2023-08-29T07:12:11
 tags:
   - people
 dates: 100 - 170
 ---
 Ptolemy was a Greek guy living in Alexandria, Egypt, where the biggest library in the world was. 
 
-And so what did Ptolemy do? He read...and he looked at the stars a lot. 
+And so what did Ptolemy do? He read…and he looked at the stars a lot. 
 
 All that reading and all that staring at the stars led to something massive. He assembled and created a unified theory of the cosmos called [[The Almagest|The Almagest]]. This text was so good, it was treated as 100% accurate for 1500 years!  
 
