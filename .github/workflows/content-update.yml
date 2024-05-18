@@ -14,7 +14,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '18' # Update to Node.js 18
+
+      - name: Upgrade npm
+        run: npm install -g npm@latest # Ensure npm is at the latest version
 
       - name: Install dependencies
         run: npm install
