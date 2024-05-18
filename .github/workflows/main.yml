@@ -3,7 +3,7 @@ name: Deploy on Merge
 on:
   push:
     branches:
-      - main  # Change to your default branch if different
+      - v4  # Change to your default branch if different
 
 jobs:
   deploy:
