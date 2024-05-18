@@ -2,7 +2,7 @@
 up:
   - "[[Habits Map|Habits Map]]"
 related: []
-created: 2014-06-28
+created: 2023-08-29T07:12:06
 modified: 2020-05-28
 ---
 This should read as common sense. Still, a refresher is nice.
