@@ -2,7 +2,7 @@
 up:
   - "[[Small Wins foster a Sense of Control|Small Wins foster a Sense of Control]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:12:10
 ---
  **Progressive Ideation** is the process of relating and developing ideas over time. 
 
