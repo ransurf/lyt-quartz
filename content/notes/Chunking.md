@@ -3,7 +3,7 @@ up:
   - "[[./Deliberate Practice|Deliberate Practice]]"
 related:
   - "[[Analogy as Core (talk)|Analogy as Core (talk)]]"
-created: 2020-06-01
+created: 2023-08-29T07:04:27
 ---
  *It takes years of focused reps to chunk like an expert.*
 
