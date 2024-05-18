@@ -2,7 +2,7 @@
 up:
   - "[[Ideaverse Map|Ideaverse Map]]"
 related: []
-created: 2020-06-01
+created: 2023-08-29T07:11:18
 ---
 This is a brief overview of MOCs. An M—O—C is a cluster of information that maps "things" in context with other "things".
 
