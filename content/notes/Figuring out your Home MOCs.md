@@ -2,7 +2,7 @@
 up:
   - "[[Set Up Your Home Note|Set Up Your Home Note]]"
 related: []
-created: 2020-06-01
+created: 2023-08-24T01:35:42
 ---
 Your Maps of Content (MOCs) in your Home note are just your main launchpads into your ideaverse—your custom network of knowledge and your creativity engine. 
 
