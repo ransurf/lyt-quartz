@@ -1,0 +1,12 @@
+---
+up:
+  - "[[Habits Map|Habits Map]]"
+related:
+  - "[[./Reps|Reps]]"
+created: 2015-01-01
+tags:
+  - concept
+---
+Turning cobwebs into cables is a metaphor for strengthening neural connections through getting [[./Reps|Reps]].
+
+> "Neurons that fire together wire together” - Hebb's Rule 
