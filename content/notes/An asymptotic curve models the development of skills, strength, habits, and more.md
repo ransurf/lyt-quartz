@@ -1,10 +1,10 @@
 ---
 up:
   - "[[Habits Map|Habits Map]]"
-created: 2015-02-20
+created: 2023-08-29T07:01:08
 modified: 2020-05-28
 ---
-An asymptotic curve is seen in the development of habits, skills,  muscles, and more.
+An asymptotic curve is seen in the development of habits, skills, muscles, and more.
 
 The asymptotic curve rises fast on the y-axis before leveling out. Practically, this models the rate of improvement when we start a new habit or develop a new skill.
 
