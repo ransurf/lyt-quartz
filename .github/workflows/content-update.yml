@@ -2,6 +2,7 @@ name: Rebuild on Dispatch
 on:
   repository_dispatch:
     types: [build]
+
 jobs:
   rebuild:
     runs-on: ubuntu-latest
@@ -16,15 +17,14 @@ jobs:
         with:
           node-version: '18' # Update to Node.js 18
 
-      - name: Initialize and update submodules
+      - name: Fetch and reset submodules
         run: |
           git submodule init
           git submodule update --recursive --remote
-
-      - name: Force merge unrelated histories
-        run: |
-          git config --file .gitmodules submodule.content.branch main
-          git -c submodule."content".update=merge submodule update --init --recursive --force
+          cd content
+          git fetch origin main
+          git reset --hard origin/main
+          cd ..
 
       - name: Upgrade npm
         run: npm install -g npm@latest # Ensure npm is at the latest version
