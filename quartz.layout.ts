@@ -11,9 +11,33 @@ export const sharedPageComponents: SharedLayout = {
     Component.Navbar(),
   ],
   footer: Component.Footer({
-    links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
+    columns: [
+    {
+      title: "Resources",
+      links: [
+        { title: "Ideaverse", link: "https://start.linkingyourthinking.com/ideaverse-for-obsidian" },
+        { title: "Obsidian Flight School", link: "https://www.linkingyourthinking.com/obsidian-flight-school" },
+        { title: "How to Work a Book", link: "https://www.linkingyourthinking.com/how-to-work-a-book" },
+        { title: "LYT Workshop", link: "https://www.linkingyourthinking.com/workshop" },
+        { title: "Writing Original Works", link: "https://www.linkingyourthinking.com/wow-workshop" },
+      ]
     },
+    {
+      title: "Socials",
+      links: [
+        { title: "Youtube", link: "https://linkingyourthinking.com/youtube" },
+        { title: "Podcast", link: "https://podcast.linkingyourthinking.com/" },
+        { title: "Twitter", link: "https://twitter.com/the_LYT_way" },
+      ]
+    },
+    {
+      title: "Company",
+      links: [
+        { title: "Contact Us", link: "contact" },
+        { title: "About LYT", link: "about" },
+      ]
+    }
+  ]
   }),
 }
 
@@ -25,6 +49,19 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ContentMeta(),
     Component.Properties(),
     // Component.TagList(),
+  ],
+  afterBody: [
+    Component.RelatedNotesContainer({
+      title: "",
+      path: "writings",
+      showForIndex: true,
+      showForNotes: true,
+      limit: 5,
+      field: "",
+      linkToMore: "writings/" as SimpleSlug,
+      cta: "See all"
+    }),
+    Component.CallToAction(),
   ],
   left: [
     Component.MobileOnly(Component.Spacer()),
@@ -66,7 +103,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.AboutAuthor(),
     Component.DesktopOnly(
       Component.RecentNotes({
-        title: "All Categories",
+        title: "All Maps",
         path: "maps",
         limit: 5,
         filter: (f) =>
@@ -78,18 +115,22 @@ export const defaultContentPageLayout: PageLayout = {
       Component.RelatedNotes({
         title: "Related Maps",
         path: "writings",
+        showForNotes: true,
         limit: 4,
         field: "up",
         linkToMore: "maps/" as SimpleSlug,
+        cta: "See all →"
       }),
     ),
     Component.DesktopOnly(
       Component.RelatedNotes({
         title: "Related Writing",
         path: "writings",
+        showForNotes: true,
         limit: 4,
         field: "related",
         linkToMore: "writings/" as SimpleSlug,
+        cta: "See all →"
       }),
     ),
     Component.Graph(),
@@ -101,6 +142,7 @@ export const defaultContentPageLayout: PageLayout = {
 // components for pages that display lists of pages  (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
+  afterBody: [],
   left: [
     Component.MobileOnly(Component.Spacer()),
     // Component.Darkmode(),

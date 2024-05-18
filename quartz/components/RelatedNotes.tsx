@@ -9,26 +9,34 @@ import { i18n } from "../i18n"
 import { classNames } from "../util/lang"
 import { ComponentIds } from "./types"
 
-interface Options {
+// Rest of the code...
+
+export interface RelatedNotesOptions {
   title?: string
   // must match the folder name to render
   path?: string
+  showForIndex: boolean
+  showForNotes: boolean
   limit: number
   showDates?: boolean
   linkToMore: SimpleSlug | false
   field: string
   sort: (f1: QuartzPluginData, f2: QuartzPluginData) => number
+  cta: string
 }
 
-const defaultOptions = (cfg: GlobalConfiguration): Options => ({
+const defaultOptions = (cfg: GlobalConfiguration): RelatedNotesOptions => ({
   limit: 3,
   linkToMore: false,
+  showForIndex: false,
+  showForNotes: false,
   showDates: false,
   field: "related",
   sort: byDateAndAlphabetical(cfg),
+  cta: i18n(cfg.locale).components.relatedNotes.seeAll
 })
 
-export default ((userOpts?: Partial<Options>) => {
+export default ((userOpts?: Partial<RelatedNotesOptions>) => {
   const RelatedNotes: QuartzComponent = ({
     allFiles,
     fileData,
@@ -66,8 +74,30 @@ export default ((userOpts?: Partial<Options>) => {
       )
     }
 
-    const shouldRender = userOpts?.path ? fileData.slug?.startsWith(userOpts.path) : true;
-    if (!shouldRender) return null
+    function shouldRender() {
+      if (!userOpts?.path) return true;
+
+      // get last part of slug
+      const slugParts = fileData.slug?.split("/")[fileData.slug?.split("/").length - 1];
+
+      const isIndexNote = slugParts && userOpts.path.includes(slugParts);
+
+      if (userOpts.showForIndex && fileData.slug?.startsWith(userOpts.path) && isIndexNote) {
+        return true
+      }
+      if (userOpts.showForNotes && fileData.slug?.startsWith(userOpts.path) && !isIndexNote) {
+        return true
+      }
+      return false
+    }
+
+    function replacePlaceholders(cta: string) {
+      return cta.replace("{{field}}", String(userOpts?.field))
+      // for others
+      // return str.replace(/{{(.*?)}}/g, (match, p1) => data[p1.trim()] || '');
+    }
+
+    if (!shouldRender()) return null
     const opts = { ...defaultOptions(cfg), ...userOpts }
     const value = fileData.frontmatter?.[opts.field] ?? []
     // const relatedNotes: any[] = [];
@@ -75,15 +105,12 @@ export default ((userOpts?: Partial<Options>) => {
     var propertyType = Object.prototype.toString.call(value)
     if (propertyType === "[object String]" && (value as string).includes("[[")) {
       //Check if it's a string or string array
-      linkedElements.push(createLinkedElement(fileData, opts, value as string))
+      linkedElements.push(createLinkedElement(fileData, transformOpts, value as string))
     } else if (propertyType === "[object Array]") {
       for (const [index, arrayItem] of Object.entries(value ?? {})) {
         // Check if it's an array
         var entry = (value as Array<any>)[Number(index)]
         if (entry.includes("[[")) {
-          if (Number(index) > 0) {
-            linkedElements.push(", ")
-          }
           linkedElements.push(createLinkedElement(fileData, transformOpts, entry))
         } else {
           linkedElements.push(entry)
@@ -119,7 +146,7 @@ export default ((userOpts?: Partial<Options>) => {
         {opts.linkToMore && (
           <p>
             <a href={resolveRelative(fileData.slug!, opts.linkToMore)}>
-              {i18n(cfg.locale).components.relatedNotes.seeAll}
+              {replacePlaceholders(opts.cta)}
             </a>
           </p>
         )}

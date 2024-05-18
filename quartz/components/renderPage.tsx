@@ -15,6 +15,7 @@ interface RenderComponents {
   header: QuartzComponent[]
   beforeBody: QuartzComponent[]
   pageBody: QuartzComponent
+  afterBody: QuartzComponent[]
   left: QuartzComponent[]
   right: QuartzComponent[]
   footer: QuartzComponent
@@ -187,6 +188,7 @@ export function renderPage(
     head: Head,
     header,
     beforeBody,
+    afterBody,
     pageBody: Content,
     left,
     right,
@@ -254,6 +256,11 @@ export function renderPage(
                 </div>
               </div>
               <Content {...componentData} />
+              <div class="page-after">
+                <div class="popover-hint">
+                  {afterBody?.map((BodyComponent) => conditionalFilterBodyComponent(BodyComponent))}
+                </div>
+              </div>
             </div>
             {RightComponent}
           </Body>
