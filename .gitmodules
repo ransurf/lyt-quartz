@@ -1,4 +1,0 @@
-[submodule "content"]
-	path = content
-	url = https://github.com/ransurf/lyt-quartz-content.git
-	branch = main
