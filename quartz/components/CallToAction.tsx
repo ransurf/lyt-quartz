@@ -1,27 +1,38 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
+import { FooterNewsletter } from "./FooterNewsletter";
 
 const actions: Record<string, any> = {
   cta1: {
     defaultTitle: "Title",
     defaultSubtitle: "Subtitle",
-    embed: <script async data-uid="439e8b14a6" src="https://wondrous-designer-8526.ck.page/439e8b14a6/index.js"></script>
+    defaultButton: "Get the Ultimate Primer",
+    formId: "6589197"
+  },
+  cta2: {
+    defaultTitle: "CTA2 Title",
+    defaultSubtitle: "CTA2 Subtitle",
+    defaultButton: "CTA 2 Button",
+    formId: "6608546"
   }
 };
 
 const CallToAction: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
-  const footerTitle = fileData.frontmatter?.footerTitle;
-  const footerSubtitle = fileData.frontmatter?.footerSubtitle;
+  const ctaTitle = fileData.frontmatter?.ctaTitle;
+  const ctaSubtitle = fileData.frontmatter?.ctaTitle;
+  const ctaButton = fileData.frontmatter?.ctaButton;
   const ctaType = fileData.frontmatter?.ctaType as string;
 
   if (ctaType) {
     //get the cta object
     const cta = actions[ctaType];
+    const buttonText = ctaButton || cta.defaultButton
     return cta && (
       <div class={classNames(displayClass, "cta")}>
-        <h3>{footerTitle || cta.defaultTitle}</h3>
-        <p>{footerSubtitle || cta.defaultSubtitle}</p>
-        {cta.embed}
+        <h1>{ctaTitle || cta.defaultTitle}</h1>
+        <p>{ctaSubtitle || cta.defaultSubtitle}</p>
+        {/* {cta.embed} */}
+        <FooterNewsletter buttonText={buttonText as string} formId={cta.formId as string}/>
       </div>
     )
   } else {

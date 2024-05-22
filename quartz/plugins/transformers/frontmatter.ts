@@ -96,6 +96,7 @@ declare module "vfile" {
         cssclasses: string[]
         footerTitle: string
         footerSubtitle: string
+        footerButton: string
         footerLink: string
       }>
   }
