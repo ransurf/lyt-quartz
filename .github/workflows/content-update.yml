@@ -33,6 +33,10 @@ jobs:
       - name: Build project
         run: npx quartz build
 
+      - name: Pull latest changes from remote
+        run: |
+          git pull origin v4
+
       - name: Commit and push submodule update
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
