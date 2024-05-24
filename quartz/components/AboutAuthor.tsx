@@ -45,7 +45,7 @@ export default ((userOpts?: Partial<Options>) => {
     return (
       <div class={classNames(displayClass, "about-author")}>
         <h3 className="component-title">{i18n(cfg.locale).components.aboutAuthor.title}</h3>
-        <p>{i18n(cfg.locale).components.aboutAuthor.description}</p>
+        <p className="about-author-text">{i18n(cfg.locale).components.aboutAuthor.description}</p>
         {/* {opts.linkToMore && remaining > 0 && (
           <p>
             <a href={resolveRelative(fileData.slug!, opts.linkToMore)}>

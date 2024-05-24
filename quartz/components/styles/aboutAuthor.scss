@@ -4,6 +4,10 @@
     font-size: 1rem;
   }
 
+  & > p {
+    color: var(--medgray)
+  }
+
   & > ul.recent-ul {
     list-style: none;
     margin-top: 1rem;
