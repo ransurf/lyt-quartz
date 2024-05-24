@@ -22,7 +22,7 @@ const config: QuartzConfig = {
       fontOrigin: "local",
       cdnCaching: true,
       typography: {
-        header: "Canela Deck",
+        header: "DM Sans",
         body: "DM Sans",
         code: "DM Mono",
       },
@@ -31,6 +31,7 @@ const config: QuartzConfig = {
           light: "#ffffff",
           lightgray: "#e5e5e5",
           gray: "#b8b8b8",
+          medgray: "#888888",
           darkgray: "#4e4e4e",
           // headers
           dark: "#121826",
@@ -42,6 +43,7 @@ const config: QuartzConfig = {
           light: "#161618",
           lightgray: "#393639",
           gray: "#646464",
+          medgray: "CCCCCC",
           darkgray: "#d4d4d4",
           dark: "#ebebec",
           secondary: "#7b97aa",

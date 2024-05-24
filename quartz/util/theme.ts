@@ -2,6 +2,7 @@ export interface ColorScheme {
   light: string
   lightgray: string
   gray: string
+  medgray: string
   darkgray: string
   dark: string
   secondary: string
@@ -44,6 +45,7 @@ ${stylesheet.join("\n\n")}
   --light: ${theme.colors.lightMode.light};
   --lightgray: ${theme.colors.lightMode.lightgray};
   --gray: ${theme.colors.lightMode.gray};
+  --medgray: ${theme.colors.lightMode.medgray};
   --darkgray: ${theme.colors.lightMode.darkgray};
   --dark: ${theme.colors.lightMode.dark};
   --secondary: ${theme.colors.lightMode.secondary};
@@ -59,6 +61,7 @@ ${stylesheet.join("\n\n")}
   --light: ${theme.colors.darkMode.light};
   --lightgray: ${theme.colors.darkMode.lightgray};
   --gray: ${theme.colors.darkMode.gray};
+  --medgray: ${theme.colors.darkMode.medgray};
   --darkgray: ${theme.colors.darkMode.darkgray};
   --dark: ${theme.colors.darkMode.dark};
   --secondary: ${theme.colors.darkMode.secondary};
