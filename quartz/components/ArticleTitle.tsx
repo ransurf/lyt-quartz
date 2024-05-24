@@ -15,7 +15,7 @@ ArticleTitle.css = `
   font-family: "Canela Deck", serif;
   font-size: 3rem;
   font-weight: bold;
-  margin: 1rem 0 0 0;
+  margin: 1rem 0 0.5rem 0;
 }
 `
 
