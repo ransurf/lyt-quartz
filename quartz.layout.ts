@@ -86,15 +86,15 @@ export const defaultContentPageLayout: PageLayout = {
     //     linkToMore: "writings/" as SimpleSlug,
     //   }),
     // ),
-  Component.DesktopOnly(
-    Component.RecentNotes({
-      title: "Recent Notes",
-      showDates: true,
-      limit: 2,
-      filter: (f) => f.slug!.startsWith("notes/"),
-      linkToMore: "notes/" as SimpleSlug,
-    }),
-  ),
+  // Component.DesktopOnly(
+  //   Component.RecentNotes({
+  //     title: "Recent Notes",
+  //     showDates: true,
+  //     limit: 2,
+  //     filter: (f) => f.slug!.startsWith("notes/"),
+  //     linkToMore: "notes/" as SimpleSlug,
+  //   }),
+  // ),
   Component.DesktopOnly(
     Component.Search()
   ),
