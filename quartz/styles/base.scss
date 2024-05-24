@@ -18,8 +18,15 @@
 
 @font-face {
   font-family: 'Canela Deck';
-  src: url('../static/fonts/CanelaDeck-Black.otf') format('truetype');
+  src: url('../static/fonts/CanelaDeck-Bold.otf') format('truetype');
   font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Canela Deck';
+  src: url('../static/fonts/CanelaDeck-Black.otf') format('truetype');
+  font-weight: bolder;
   font-style: normal;
 }
 
@@ -39,8 +46,15 @@
 
 @font-face {
   font-family: 'Canela Deck';
-  src: url('../static/fonts/CanelaDeck-BlackItalic.otf') format('truetype');
+  src: url('../static/fonts/CanelaDeck-BoldItalic.otf') format('truetype');
   font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Canela Deck';
+  src: url('../static/fonts/CanelaDeck-BlackItalic.otf') format('truetype');
+  font-weight: bolder;
   font-style: italic;
 }
 
@@ -321,6 +335,11 @@ thead {
     color: var(--dark);
     background-color: transparent;
   }
+}
+
+h3 > a {
+  //negate bold of header
+  font-size: normal !important;
 }
 
 h1,
