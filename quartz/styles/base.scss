@@ -712,9 +712,8 @@ a {
       display: flex;
       flex-direction: column;
       gap: 2rem;
-      top: 0;
       width: $sidePanelWidth;
-      margin-top: $topSpacing;
+      margin-top: 1.25rem;
       box-sizing: border-box;
       padding: 0 4rem;
       position: fixed;
@@ -732,6 +731,9 @@ a {
       @media all and (max-width: $fullPageWidth) {
         gap: 0;
         align-items: center;
+      }
+      @media all and (max-width: $mobileBreakpoint) {
+        margin-top: 0;
       }
     }
 
