@@ -2,7 +2,8 @@ $pageWidth: 670px;
 $mobileBreakpoint: 600px;
 $tabletBreakpoint: 1000px;
 $sidePanelWidth: 380px;
-$topSpacing: 9.125rem;
+// 3.25 rem ish for breadcrumbs offset
+$topSpacing: 9.5rem;
 $fullPageWidth: $pageWidth + 2 * $sidePanelWidth;
 $boldWeight: 700;
 $semiBoldWeight: 600;
