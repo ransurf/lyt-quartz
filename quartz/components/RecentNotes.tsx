@@ -54,16 +54,14 @@ export default ((userOpts?: Partial<Options>) => {
               <li class="recent-li">
                 <div class="section">
                   <div class="desc">
-                    <h3>
-                      <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
-                        {title}
-                      </a>
-                    </h3>
+                    <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal no-background">
+                      {title}
+                    </a>
                   </div>
                   {userOpts?.showDates && page.dates && (
-                    <p class="meta">
+                    <i class="meta">
                       <Date date={getDate(cfg, page)!} locale={cfg.locale} />
-                    </p>
+                    </i>
                   )}
                   {/* Show related categories of a writing */}
                   {/* <ul class="tags">

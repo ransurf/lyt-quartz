@@ -66,11 +66,9 @@ export default ((userOpts?: Partial<RelatedNotesOptions>) => {
       let splitValue = cleanedValue.split("/")[cleanedValue.split("/").length - 1]
     
       return (
-        <h3>
-          <a href={href} class="internal">
-            {splitValue}
-          </a>
-        </h3>
+        <a href={href} class="internal no-background">
+          {splitValue}
+        </a>
       )
     }
 

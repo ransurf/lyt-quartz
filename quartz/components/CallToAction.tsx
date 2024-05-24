@@ -1,6 +1,7 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
 import { FooterNewsletter } from "./FooterNewsletter";
+import style from "./styles/callToAction.scss"
 
 const actions: Record<string, any> = {
   cta1: {
@@ -29,8 +30,8 @@ const CallToAction: QuartzComponent = ({ fileData, displayClass }: QuartzCompone
     const buttonText = ctaButton || cta.defaultButton
     return cta && (
       <div class={classNames(displayClass, "cta")}>
-        <h1>{ctaTitle || cta.defaultTitle}</h1>
-        <p>{ctaSubtitle || cta.defaultSubtitle}</p>
+        <h1 className="cta-title">{ctaTitle || cta.defaultTitle}</h1>
+        <p className="cta-subtitle CanelaText-Regular-Web">{ctaSubtitle || cta.defaultSubtitle}</p>
         {/* {cta.embed} */}
         <FooterNewsletter buttonText={buttonText as string} formId={cta.formId as string}/>
       </div>
@@ -39,5 +40,7 @@ const CallToAction: QuartzComponent = ({ fileData, displayClass }: QuartzCompone
     return null
   }
 }
+
+CallToAction.css = style
 
 export default (() => CallToAction) satisfies QuartzComponentConstructor

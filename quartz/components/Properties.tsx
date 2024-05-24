@@ -24,7 +24,7 @@ function createLinkedElement(fileData: any, opts: any, value: string) {
   let splitValue = cleanedValue.split("/")[cleanedValue.split("/").length - 1]
 
   return (
-    <a href={href} class="internal">
+    <a href={href} class="internal no-background">
       {splitValue}
     </a>
   )
