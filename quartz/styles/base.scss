@@ -2,6 +2,48 @@
 @use "./syntax.scss";
 @use "./callouts.scss";
 
+@font-face {
+  font-family: 'Canela Deck';
+  src: url('../static/fonts/CanelaDeck-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Canela Deck';
+  src: url('../static/fonts/CanelaDeck-Medium.otf') format('truetype');
+  font-weight: $mediumWeight;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Canela Deck';
+  src: url('../static/fonts/CanelaDeck-Black.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Canela Deck';
+  src: url('../static/fonts/CanelaDeck-RegularItalic.otf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Canela Deck';
+  src: url('../static/fonts/CanelaDeck-MediumItalic.otf') format('truetype');
+  font-weight: $mediumWeight;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Canela Deck';
+  src: url('../static/fonts/CanelaDeck-BlackItalic.otf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
 html {
   scroll-behavior: smooth;
   text-size-adjust: none;
@@ -300,6 +342,8 @@ h6 {
     opacity: 1;
   }
 }
+
+
 
 // typography improvements
 h1 {

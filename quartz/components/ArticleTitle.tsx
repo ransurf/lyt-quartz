@@ -12,6 +12,8 @@ const ArticleTitle: QuartzComponent = ({ fileData, displayClass }: QuartzCompone
 
 ArticleTitle.css = `
 .article-title {
+  font-family: "Canela Deck", serif;
+  font-weight: bold;
   margin: 1rem 0 0 0;
 }
 `

@@ -19,10 +19,10 @@ const config: QuartzConfig = {
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
-      fontOrigin: "googleFonts",
+      fontOrigin: "local",
       cdnCaching: true,
       typography: {
-        header: "DM Sans",
+        header: "Canela Deck",
         body: "DM Sans",
         code: "DM Mono",
       },

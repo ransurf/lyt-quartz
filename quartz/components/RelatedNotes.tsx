@@ -120,7 +120,7 @@ export default ((userOpts?: Partial<RelatedNotesOptions>) => {
 
     return (
       <div class={classNames(displayClass, "related-notes")}>
-        <h3>{opts.title ?? i18n(cfg.locale).components.relatedNotes.title}</h3>
+        <h3 className="component-title">{opts.title ?? i18n(cfg.locale).components.relatedNotes.title}</h3>
         <ul class="related-ul">
           <li class="related-li">
               <div class="section">

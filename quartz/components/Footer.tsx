@@ -26,7 +26,7 @@ export default ((opts?: Options) => {
           <div className="footer-columns">
             {columns.map((column, index) => (
               <ul className="footer-column" key={index}>
-                <h3>{column.title}</h3>
+                <h3 className="component-title">{column.title}</h3>
                 {column.links.map((link, linkIndex) => (
                   <li key={linkIndex}>
                     <a href={link.link}>{link.title}</a>

@@ -19,7 +19,7 @@ const actions: Record<string, any> = {
 
 const CallToAction: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
   const ctaTitle = fileData.frontmatter?.ctaTitle;
-  const ctaSubtitle = fileData.frontmatter?.ctaTitle;
+  const ctaSubtitle = fileData.frontmatter?.ctaSubtitle;
   const ctaButton = fileData.frontmatter?.ctaButton;
   const ctaType = fileData.frontmatter?.ctaType as string;
 
