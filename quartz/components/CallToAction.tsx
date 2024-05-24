@@ -23,6 +23,7 @@ const CallToAction: QuartzComponent = ({ fileData, displayClass }: QuartzCompone
   const ctaSubtitle = fileData.frontmatter?.ctaSubtitle;
   const ctaButton = fileData.frontmatter?.ctaButton;
   const ctaType = fileData.frontmatter?.ctaType as string;
+  const ctaFormId = fileData.frontmatter?.ctaFormId as string;
 
   if (ctaType) {
     //get the cta object
@@ -33,7 +34,7 @@ const CallToAction: QuartzComponent = ({ fileData, displayClass }: QuartzCompone
         <h1 className="cta-title">{ctaTitle || cta.defaultTitle}</h1>
         <p className="cta-subtitle CanelaText-Regular-Web">{ctaSubtitle || cta.defaultSubtitle}</p>
         {/* {cta.embed} */}
-        <FooterNewsletter buttonText={buttonText as string} formId={cta.formId as string}/>
+        <FooterNewsletter buttonText={ctaButton || buttonText as string} formId={ctaFormId || cta.formId as string}/>
       </div>
     )
   } else {
