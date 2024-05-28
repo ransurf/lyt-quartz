@@ -5,6 +5,7 @@ import style from "./styles/graph.scss"
 import { i18n } from "../i18n"
 import { classNames } from "../util/lang"
 import { ComponentIds } from "./types"
+import { GlobalConfiguration } from "../cfg"
 
 export interface D3Config {
   drag: boolean
@@ -22,11 +23,13 @@ export interface D3Config {
 }
 
 interface GraphOptions {
-  localGraph: Partial<D3Config> | undefined
-  globalGraph: Partial<D3Config> | undefined
+  renderAtBottom: boolean
+  localGraph?: Partial<D3Config> | undefined
+  globalGraph?: Partial<D3Config> | undefined
 }
 
 const defaultOptions: GraphOptions = {
+  renderAtBottom: false,
   localGraph: {
     drag: true,
     zoom: true,
@@ -57,8 +60,19 @@ const defaultOptions: GraphOptions = {
   },
 }
 
-export default ((opts?: GraphOptions) => {
-  const Graph: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
+
+  
+export default ((userOpts?: GraphOptions) => {
+  const Graph: QuartzComponent = ({ displayClass, cfg, fileData }: QuartzComponentProps) => {
+    const opts = { ...defaultOptions, ...userOpts }
+    if (
+      fileData.slug &&
+      // bottom render is for blogs
+      ((opts.renderAtBottom && !fileData.slug.startsWith("blog")) ||
+      // side render is for everything else
+        (!opts.renderAtBottom && fileData.slug.startsWith("blog")))
+    )
+      return null
     const localGraph = { ...defaultOptions.localGraph, ...opts?.localGraph }
     const globalGraph = { ...defaultOptions.globalGraph, ...opts?.globalGraph }
     return (

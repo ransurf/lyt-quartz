@@ -35,9 +35,8 @@ export default ((userOpts?: Partial<Options>) => {
     displayClass,
     cfg,
   }: QuartzComponentProps) => {
-    // check if folder is found in the slug
-    const shouldRender = userOpts?.path ? fileData.slug?.startsWith(userOpts.path) : true;
-    if (!shouldRender) return null
+    // only render for blogs
+    if (!fileData.slug || !fileData.slug.startsWith("blog")) return null;
     const opts = { ...defaultOptions(cfg), ...userOpts }
     const pages = allFiles.filter(opts.filter).sort(opts.sort)
     const remaining = Math.max(0, pages.length - opts.limit)

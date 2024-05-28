@@ -53,12 +53,12 @@ export const defaultContentPageLayout: PageLayout = {
   afterBody: [
     Component.RelatedNotesContainer({
       title: "",
-      path: "writings",
+      path: "blog",
       showForIndex: true,
       showForNotes: true,
       limit: 5,
       field: "",
-      linkToMore: "writings/" as SimpleSlug,
+      linkToMore: "blog/" as SimpleSlug,
       cta: "See all"
     }),
     Component.CallToAction(),
@@ -76,7 +76,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(
       Component.RelatedNotes({
         title: "Related Maps",
-        path: "writings",
+        path: "blog",
         showForNotes: true,
         limit: 4,
         field: "up",
@@ -87,15 +87,24 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(
       Component.RelatedNotes({
         title: "Related Writing",
-        path: "writings",
+        path: "blog",
         showForNotes: true,
         limit: 4,
         field: "related",
-        linkToMore: "writings/" as SimpleSlug,
+        linkToMore: "blog/" as SimpleSlug,
         cta: "See all →"
       }),
     ),
-    Component.Backlinks(),
+    Component.Graph(
+      {
+        renderAtBottom: true
+      }
+    ),
+    Component.Backlinks(
+      {
+        renderAtBottom: true
+      }
+    ),
   ],
   left: [
     Component.MobileOnly(Component.Spacer()),
@@ -103,11 +112,12 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(
       Component.RecentNotes({
         title: "Recent Writing",
+        path: "root",
         showDates: true,
         limit: 4,
         filter: (f) =>
-          f.slug!.startsWith("writings/") && f.slug! !== "writings/index" && !f.frontmatter?.noindex,
-        linkToMore: "writings/" as SimpleSlug,
+          f.slug!.startsWith("blog/") && f.slug! !== "blog/index" && !f.frontmatter?.noindex,
+        linkToMore: "blog/" as SimpleSlug,
       }),
     ),
     // Component.DesktopOnly(
@@ -116,8 +126,8 @@ export const defaultContentPageLayout: PageLayout = {
     //     path: "maps",
     //     limit: 4,
     //     filter: (f) =>
-    //       Boolean(f.slug!.startsWith("writings/") && f.slug! !== "writings/index"),
-    //     linkToMore: "writings/" as SimpleSlug,
+    //       Boolean(f.slug!.startsWith("blog/") && f.slug! !== "blog/index"),
+    //     linkToMore: "blog/" as SimpleSlug,
     //   }),
     // ),
   // Component.DesktopOnly(
@@ -135,6 +145,7 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   right: [
     Component.Graph(),
+    Component.Backlinks(),
     Component.DesktopOnly(Component.TableOfContents()),
   ],
 }
