@@ -210,17 +210,16 @@ export function renderPage(
   )
 
   function conditionalFilterLeftComponent(BodyComponent: QuartzComponent) {
-    // if (BodyComponent.id === ComponentIds.RecentNotes) {
-    //   return slug.startsWith("blog/") ? <BodyComponent {...componentData} /> : null
-    // }
+    if (BodyComponent.id === ComponentIds.TableOfContents) {
+      return slug.startsWith("blog/") ? <BodyComponent {...componentData} /> : null
+    }
+    
     return <BodyComponent {...componentData} />
   }
 
   function conditionalFilterRightComponent(BodyComponent: QuartzComponent) {
-    if (BodyComponent.id === ComponentIds.TableOfContents) {
-      return !slug.startsWith("blog/") ? <BodyComponent {...componentData} /> : null
-    } else if (BodyComponent.id === ComponentIds.Graph) {
-      return !slug.startsWith("blog/") ? <BodyComponent {...componentData} /> : null
+  if (BodyComponent.id === ComponentIds.Graph) {
+    return !slug.startsWith("blog/") ? <BodyComponent {...componentData} /> : null
   } else if (BodyComponent.id === ComponentIds.Backlinks) {
       return !slug.startsWith("blog/") ? <BodyComponent {...componentData} /> : null
   }

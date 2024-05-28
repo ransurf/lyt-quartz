@@ -99,6 +99,10 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   left: [
     Component.MobileOnly(Component.Spacer()),
+    Component.DesktopOnly(
+      Component.Search()
+    ),
+    Component.DesktopOnly(Component.TableOfContents()),
     // Component.Darkmode(),
     Component.DesktopOnly(
       Component.RecentNotes({
@@ -130,12 +134,8 @@ export const defaultContentPageLayout: PageLayout = {
   //     linkToMore: "notes/" as SimpleSlug,
   //   }),
   // ),
-  Component.DesktopOnly(
-    Component.Search()
-  ),
   ],
   right: [
-    Component.DesktopOnly(Component.TableOfContents()),
     Component.Graph(),
     Component.Backlinks(),
   ],
