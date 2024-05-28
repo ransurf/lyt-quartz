@@ -62,6 +62,40 @@ export const defaultContentPageLayout: PageLayout = {
       cta: "See all"
     }),
     Component.CallToAction(),
+    Component.AboutAuthor(),
+    Component.DesktopOnly(
+      Component.RecentNotes({
+        title: "All Maps",
+        path: "maps",
+        limit: 5,
+        filter: (f) =>
+          Boolean(f.slug!.startsWith("maps/") && f.slug! !== "maps/index"),
+        sort: byAlphabetical(),
+      }),
+    ),
+    Component.DesktopOnly(
+      Component.RelatedNotes({
+        title: "Related Maps",
+        path: "writings",
+        showForNotes: true,
+        limit: 4,
+        field: "up",
+        linkToMore: "maps/" as SimpleSlug,
+        cta: "See all →"
+      }),
+    ),
+    Component.DesktopOnly(
+      Component.RelatedNotes({
+        title: "Related Writing",
+        path: "writings",
+        showForNotes: true,
+        limit: 4,
+        field: "related",
+        linkToMore: "writings/" as SimpleSlug,
+        cta: "See all →"
+      }),
+    ),
+    Component.Backlinks(),
   ],
   left: [
     Component.MobileOnly(Component.Spacer()),
@@ -100,42 +134,8 @@ export const defaultContentPageLayout: PageLayout = {
   ),
   ],
   right: [
-    Component.AboutAuthor(),
-    Component.DesktopOnly(
-      Component.RecentNotes({
-        title: "All Maps",
-        path: "maps",
-        limit: 5,
-        filter: (f) =>
-          Boolean(f.slug!.startsWith("maps/") && f.slug! !== "maps/index"),
-        sort: byAlphabetical(),
-      }),
-    ),
-    Component.DesktopOnly(
-      Component.RelatedNotes({
-        title: "Related Maps",
-        path: "writings",
-        showForNotes: true,
-        limit: 4,
-        field: "up",
-        linkToMore: "maps/" as SimpleSlug,
-        cta: "See all →"
-      }),
-    ),
-    Component.DesktopOnly(
-      Component.RelatedNotes({
-        title: "Related Writing",
-        path: "writings",
-        showForNotes: true,
-        limit: 4,
-        field: "related",
-        linkToMore: "writings/" as SimpleSlug,
-        cta: "See all →"
-      }),
-    ),
     Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
-    Component.Backlinks(),
   ],
 }
 
