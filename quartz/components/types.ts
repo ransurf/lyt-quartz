@@ -4,7 +4,6 @@ import { QuartzPluginData } from "../plugins/vfile"
 import { GlobalConfiguration } from "../cfg"
 import { Node } from "hast"
 import { BuildCtx } from "../util/ctx"
-import AboutAuthor from "./AboutAuthor"
 
 export type QuartzComponentProps = {
   ctx: BuildCtx
@@ -33,6 +32,7 @@ export type QuartzComponentConstructor<Options extends object | undefined = unde
 
 export enum ComponentIds {
   AboutAuthor = "ABOUT_AUTHOR",
+  Backlinks = "BACKLINKS",
   Breadcrumbs = "BREAD_CRUMBS",
   ContentMeta = "CONTENT_META",
   Graph = "GRAPH",
@@ -40,4 +40,5 @@ export enum ComponentIds {
   RecentNotes = "RECENT_NOTES",
   RelatedNotes = "RELATED_NOTES",
   RelatedNotesContainer = "RELATED_NOTES_CONTAINER",
+  TableOfContents = "TABLE_OF_CONTENTS",
 }

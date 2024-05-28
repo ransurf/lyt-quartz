@@ -2,6 +2,7 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 import legacyStyle from "./styles/legacyToc.scss"
 import modernStyle from "./styles/toc.scss"
 import { classNames } from "../util/lang"
+import { ComponentIds } from "./types"
 
 // @ts-ignore
 import script from "./scripts/toc.inline"
@@ -20,6 +21,7 @@ const TableOfContents: QuartzComponent = ({
   displayClass,
   cfg,
 }: QuartzComponentProps) => {
+  
   if (!fileData.toc) {
     return null
   }
@@ -58,6 +60,7 @@ const TableOfContents: QuartzComponent = ({
   )
 }
 TableOfContents.css = modernStyle
+TableOfContents.id = ComponentIds.TableOfContents
 TableOfContents.afterDOMLoaded = script
 
 const LegacyTableOfContents: QuartzComponent = ({ fileData, cfg }: QuartzComponentProps) => {

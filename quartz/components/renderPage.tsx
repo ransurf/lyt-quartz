@@ -217,11 +217,13 @@ export function renderPage(
   }
 
   function conditionalFilterRightComponent(BodyComponent: QuartzComponent) {
-    if (BodyComponent.id === ComponentIds.AboutAuthor) {
-      return slug.startsWith("blog/") ? <BodyComponent {...componentData} /> : null
+    if (BodyComponent.id === ComponentIds.TableOfContents) {
+      return !slug.startsWith("blog/") ? <BodyComponent {...componentData} /> : null
     } else if (BodyComponent.id === ComponentIds.Graph) {
       return !slug.startsWith("blog/") ? <BodyComponent {...componentData} /> : null
-    }
+  } else if (BodyComponent.id === ComponentIds.Backlinks) {
+      return !slug.startsWith("blog/") ? <BodyComponent {...componentData} /> : null
+  }
     return <BodyComponent {...componentData} />
   }
 
@@ -232,6 +234,13 @@ export function renderPage(
       return !slug.startsWith("blog/") ? <BodyComponent {...componentData} /> : null
     } else if (BodyComponent.id === ComponentIds.Properties) {
       return !slug.startsWith("blog/") ? <BodyComponent {...componentData} /> : null
+    }
+    
+    //After body
+    if (BodyComponent.id === ComponentIds.AboutAuthor) {
+      return slug.startsWith("blog/") ? <BodyComponent {...componentData} /> : null
+    } else if (BodyComponent.id === ComponentIds.Backlinks) {
+      return slug.startsWith("blog/") ? <BodyComponent {...componentData} /> : null
     }
     return <BodyComponent {...componentData} />
   }

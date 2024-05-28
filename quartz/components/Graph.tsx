@@ -60,19 +60,9 @@ const defaultOptions: GraphOptions = {
   },
 }
 
-
-  
 export default ((userOpts?: GraphOptions) => {
   const Graph: QuartzComponent = ({ displayClass, cfg, fileData }: QuartzComponentProps) => {
     const opts = { ...defaultOptions, ...userOpts }
-    if (
-      fileData.slug &&
-      // bottom render is for blogs
-      ((opts.renderAtBottom && !fileData.slug.startsWith("blog")) ||
-      // side render is for everything else
-        (!opts.renderAtBottom && fileData.slug.startsWith("blog")))
-    )
-      return null
     const localGraph = { ...defaultOptions.localGraph, ...opts?.localGraph }
     const globalGraph = { ...defaultOptions.globalGraph, ...opts?.globalGraph }
     return (

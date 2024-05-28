@@ -3,33 +3,15 @@ import style from "./styles/backlinks.scss"
 import { resolveRelative, simplifySlug } from "../util/path"
 import { i18n } from "../i18n"
 import { classNames } from "../util/lang"
-import { GlobalConfiguration } from "../cfg"
+import { ComponentIds } from "./types"
 
-interface Options {
-  // for blogs, render at the bottom of the page
-  renderAtBottom: boolean
-}
-
-const defaultOptions = {
-  renderAtBottom: false,
-}
-
-export default ((userOpts?: Partial<Options>) => {
+export default (() => {
   const Backlinks: QuartzComponent = ({
     fileData,
     allFiles,
     displayClass,
     cfg,
   }: QuartzComponentProps) => {
-    const opts = { ...defaultOptions, ...userOpts }
-    if (
-      fileData.slug &&
-      // bottom render is for blogs
-      ((opts.renderAtBottom && !fileData.slug.startsWith("blog")) ||
-      // side render is for everything else
-        (!opts.renderAtBottom && fileData.slug.startsWith("blog")))
-    )
-      return null
     const slug = simplifySlug(fileData.slug!)
     const backlinkFiles = allFiles.filter((file) => file.links?.includes(slug))
     return (
@@ -53,6 +35,7 @@ export default ((userOpts?: Partial<Options>) => {
   }
 
   Backlinks.css = style
+  Backlinks.id = ComponentIds.Backlinks
 
   return Backlinks
 }) satisfies QuartzComponentConstructor

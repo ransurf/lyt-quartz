@@ -95,16 +95,7 @@ export const defaultContentPageLayout: PageLayout = {
         cta: "See all →"
       }),
     ),
-    Component.Graph(
-      {
-        renderAtBottom: true
-      }
-    ),
-    Component.Backlinks(
-      {
-        renderAtBottom: true
-      }
-    ),
+    Component.Backlinks(),
   ],
   left: [
     Component.MobileOnly(Component.Spacer()),
