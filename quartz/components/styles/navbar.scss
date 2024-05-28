@@ -64,7 +64,7 @@ nav.navbar {
 	background: var(--dark);
 	padding: 1.12rem 2rem;
 	border-radius: .75rem;
-	width: min($pageWidth, 100%);
+	width: 95%;
 
 	// Media Query for Desktop
 	@include largescreen {
