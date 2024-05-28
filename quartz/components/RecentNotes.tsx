@@ -28,6 +28,24 @@ const defaultOptions = (cfg: GlobalConfiguration): Options => ({
   sort: byDateAndAlphabetical(cfg),
 })
 
+// const renderIfValid = (path: string | null, slug: string) => {
+//   // check if folder is found in the slug
+//   if (path === "root" && !slug) {
+//     return false;
+//   }
+
+//   // only render for root folder if path is empty
+//   if (path === "" && slug.includes("/")) {
+//     return false;
+//   }
+
+//   // only render for specific folder
+//   if (path !== "root" && !slug?.startsWith(path)) {
+//     return false;
+//   }
+//   return true;
+// }
+
 export default ((userOpts?: Partial<Options>) => {
   const RecentNotes: QuartzComponent = ({
     allFiles,
@@ -35,15 +53,21 @@ export default ((userOpts?: Partial<Options>) => {
     displayClass,
     cfg,
   }: QuartzComponentProps) => {
-    // check if folder is found in the slug
 
-    if (userOpts?.path === "root" && fileData.slug) return null;
+    //only render for root page
+    if (userOpts?.path === "root" && !(fileData.slug === "index" || fileData.slug === "/")) {
+      return null;
+    }
 
     // only render for root folder if path is empty
-    if (userOpts?.path === "" && fileData.slug?.includes("/")) return null;
+    else if (userOpts?.path === "" && !fileData.slug?.includes("/")) {
+      return null;
+    }
 
     // only render for specific folder
-    if (userOpts?.path && !fileData.slug?.startsWith(userOpts.path)) return null;
+    else if (userOpts?.path && userOpts?.path !== "root" && !fileData.slug?.startsWith(userOpts.path)) {
+      return null;
+    }
 
     const opts = { ...defaultOptions(cfg), ...userOpts }
     const pages = allFiles.filter(opts.filter).sort(opts.sort)
