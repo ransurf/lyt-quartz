@@ -699,6 +699,30 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options> 
         })
       }
 
+      // was for sticky right sidebar but not needed for now
+      // js.push({
+      //   script: `
+      //   document.addEventListener('scroll', () => {
+      //     const leftSidebarElement = document.getElementById('left-sidebar');
+      //     const rightSidebarElement = document.getElementById('right-sidebar');
+      //     const footer = document.querySelector('footer');
+      //     if (rightSidebarElement && footer) {
+      //     const footerTop = footer.getBoundingClientRect().top;
+      //     const windowHeight = window.innerHeight;
+        
+      //     if (footerTop < windowHeight) {
+      //       rightSidebarElement.style.bottom = \`\${windowHeight - footerTop + 10}px\`;
+      //     } else {
+      //       rightSidebarElement.style.bottom = '10px';
+      //     }
+      //     }
+      //   });
+      //   `,
+      //   loadTime: "afterDOMReady",
+      //   moduleType: "module",
+      //   contentType: "inline",
+      // })
+
       return { js }
     },
   }
