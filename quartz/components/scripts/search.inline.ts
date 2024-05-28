@@ -147,7 +147,7 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
   const currentSlug = e.detail.url
   const data = await fetchData
   const container = document.getElementById("search-container")
-  const sidebar = container?.closest(".sidebar") as HTMLElement
+  const searchContainer = container?.closest("navbar") as HTMLElement
   const searchIcon = document.getElementById("search-icon")
   const searchBar = document.getElementById("search-bar") as HTMLInputElement | null
   const searchLayout = document.getElementById("search-layout")
@@ -177,8 +177,8 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
     if (searchBar) {
       searchBar.value = "" // clear the input when we dismiss the search
     }
-    if (sidebar) {
-      sidebar.style.zIndex = "unset"
+    if (searchContainer) {
+      searchContainer.style.zIndex = "unset"
     }
     if (results) {
       removeAllChildren(results)
@@ -195,8 +195,8 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
 
   function showSearch(searchTypeNew: SearchType) {
     searchType = searchTypeNew
-    if (sidebar) {
-      sidebar.style.zIndex = "1"
+    if (searchContainer) {
+      searchContainer.style.zIndex = "1"
     }
     container?.classList.add("active")
     searchBar?.focus()
