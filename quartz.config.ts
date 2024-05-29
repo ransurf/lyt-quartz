@@ -22,7 +22,7 @@ const config: QuartzConfig = {
       fontOrigin: "local",
       cdnCaching: true,
       typography: {
-        header: "DM Sans",
+        header: "Canela Deck Web",
         body: "DM Sans",
         code: "DM Mono",
       },
