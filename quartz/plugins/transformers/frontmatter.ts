@@ -85,6 +85,7 @@ declare module "vfile" {
     frontmatter: { [key: string]: unknown } & {
       title: string
     } & Partial<{
+        subtitle: string
         tags: string[]
         topic: string[]
         aliases: string[]

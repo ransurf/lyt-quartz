@@ -1,23 +1,23 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
+import style from "./styles/ArticleTitle.scss"
 
 const ArticleTitle: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
   const title = fileData.frontmatter?.title
+  const subtitle = fileData.frontmatter?.subtitle
   const isDisabled = fileData.frontmatter?.disableTitle
   if (title && !isDisabled) {
-    return <h1 class={classNames(displayClass, "article-title")}>{title}</h1>
+    return (
+      <div>
+        <h1 className={classNames(displayClass, "article-title")}>{title}</h1>
+        {subtitle && <h2 className="article-subtitle">{subtitle}</h2>}
+      </div>
+    )
   } else {
     return null
   }
 }
 
-ArticleTitle.css = `
-.article-title {
-  font-family: "Canela Deck", serif;
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 1rem 0 0.5rem 0;
-}
-`
+ArticleTitle.css = style
 
 export default (() => ArticleTitle) satisfies QuartzComponentConstructor
