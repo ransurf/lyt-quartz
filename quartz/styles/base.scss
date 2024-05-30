@@ -543,8 +543,15 @@
 html {
   scroll-behavior: smooth;
   text-size-adjust: none;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   width: 100vw;
+}
+
+body {
+  display: flex;;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
 }
 
 body,
@@ -709,7 +716,6 @@ a {
     }
 
     & .sidebar {
-      flex: 1;
       display: flex;
       flex-direction: column;
       gap: 2rem;
@@ -717,8 +723,9 @@ a {
       margin-top: 1.25rem;
       box-sizing: border-box;
       padding: 0 4rem;
-      bottom: 2rem;
-      position: fixed;
+      top: 4rem;
+      position: sticky;
+      align-self: flex-start;
       @media all and (max-width: $fullPageWidth) {
         position: initial;
         flex-direction: row;

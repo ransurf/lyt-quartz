@@ -213,7 +213,7 @@ export function renderPage(
 
   function conditionalFilterLeftComponent(BodyComponent: QuartzComponent) {
     if (BodyComponent.id === ComponentIds.TableOfContents) {
-      return checkIsPathButNotIndex(slug, "blog") ? <BodyComponent {...componentData} /> : null
+      return !checkIsPathButNotIndex(slug, "blog") ? <BodyComponent {...componentData} /> : null
     }
     
     return <BodyComponent {...componentData} />
@@ -272,8 +272,8 @@ export function renderPage(
             </div>
             {RightComponent}
           </Body>
-          <Footer {...componentData} />
         </div>
+        <Footer {...componentData} />
       </body>
       {pageResources.js
         .filter((resource) => resource.loadTime === "afterDOMReady")
