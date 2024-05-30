@@ -21,6 +21,8 @@ interface RenderComponents {
   footer: QuartzComponent
 }
 
+const checkIsPathButNotIndex = (slug: FullSlug, path: string) => slug.startsWith(`${path}/`) && slug.split("/")?.[1] !== "index"
+
 const headerRegex = new RegExp(/h[1-6]/)
 export function pageResources(
   baseDir: FullSlug | RelativeURL,
@@ -211,7 +213,7 @@ export function renderPage(
 
   function conditionalFilterLeftComponent(BodyComponent: QuartzComponent) {
     if (BodyComponent.id === ComponentIds.TableOfContents) {
-      return slug.startsWith("blog/") ? <BodyComponent {...componentData} /> : null
+      return checkIsPathButNotIndex(slug, "blog") ? <BodyComponent {...componentData} /> : null
     }
     
     return <BodyComponent {...componentData} />
@@ -219,27 +221,23 @@ export function renderPage(
 
   function conditionalFilterRightComponent(BodyComponent: QuartzComponent) {
   if (BodyComponent.id === ComponentIds.Graph) {
-    return !slug.startsWith("blog/") ? <BodyComponent {...componentData} /> : null
+    return !checkIsPathButNotIndex(slug, "blog") ? <BodyComponent {...componentData} /> : null
   } else if (BodyComponent.id === ComponentIds.Backlinks) {
-      return !slug.startsWith("blog/") ? <BodyComponent {...componentData} /> : null
+      return !checkIsPathButNotIndex(slug, "blog") ? <BodyComponent {...componentData} /> : null
   }
     return <BodyComponent {...componentData} />
   }
 
   function conditionalFilterBodyComponent(BodyComponent: QuartzComponent) {
     if (BodyComponent.id === ComponentIds.ContentMeta) {
-      return slug.startsWith("blog/") ? <BodyComponent {...componentData} /> : null
-    } else if (BodyComponent.id === ComponentIds.Breadcrumbs) {
-      return !slug.startsWith("blog/") ? <BodyComponent {...componentData} /> : null
-    } else if (BodyComponent.id === ComponentIds.Properties) {
-      return !slug.startsWith("blog/") ? <BodyComponent {...componentData} /> : null
+      return checkIsPathButNotIndex(slug, "blog") && slug.split("/")?.[1] !== "index" ? <BodyComponent {...componentData} /> : null
     }
     
     //After body
     if (BodyComponent.id === ComponentIds.AboutAuthor) {
-      return slug.startsWith("blog/") ? <BodyComponent {...componentData} /> : null
+      return checkIsPathButNotIndex(slug, "blog") ? <BodyComponent {...componentData} /> : null
     } else if (BodyComponent.id === ComponentIds.Backlinks) {
-      return slug.startsWith("blog/") ? <BodyComponent {...componentData} /> : null
+      return checkIsPathButNotIndex(slug, "blog") ? <BodyComponent {...componentData} /> : null
     }
     return <BodyComponent {...componentData} />
   }
@@ -255,15 +253,17 @@ export function renderPage(
           ))}
         </Header>
         <div id="quartz-root" class="page">
+          <div class="page-header">
+              <div class="popover-hint">
+                {beforeBody.map((BodyComponent) => conditionalFilterBodyComponent(BodyComponent))}
+              </div>
+            </div>
           <Body {...componentData}>
             {LeftComponent}
             <div class="center">
-              <div class="page-header">
-                <div class="popover-hint">
-                  {beforeBody.map((BodyComponent) => conditionalFilterBodyComponent(BodyComponent))}
-                </div>
-              </div>
+              {/* {beforeBody?.length > 0 && <hr/>} */}
               <Content {...componentData} />
+              {/* {afterBody?.length > 0 && <hr/>} */}
               <div class="page-after">
                 <div class="popover-hint">
                   {afterBody?.map((BodyComponent) => conditionalFilterBodyComponent(BodyComponent))}
