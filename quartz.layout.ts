@@ -99,6 +99,9 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   left: [
     Component.MobileOnly(Component.Spacer()),
+    Component.DesktopOnly(
+      Component.Search()
+    ),
     Component.DesktopOnly(Component.TableOfContents()),
     // Component.Darkmode(),
     Component.DesktopOnly(
@@ -111,9 +114,6 @@ export const defaultContentPageLayout: PageLayout = {
           f.slug!.startsWith("blog/") && f.slug! !== "blog/index" && !f.frontmatter?.noindex,
         linkToMore: "blog/" as SimpleSlug,
       }),
-    ),
-    Component.DesktopOnly(
-      Component.Search()
     ),
     // Component.DesktopOnly(
     //   Component.RecentNotes({

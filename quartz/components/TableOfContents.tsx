@@ -30,7 +30,7 @@ const TableOfContents: QuartzComponent = ({
     <div class={classNames(displayClass, "toc")}>
       <button type="button" id="toc" class={fileData.collapseToc ? "collapsed" : ""}>
         <h3 className="component-title">{i18n(cfg.locale).components.tableOfContents.title}</h3>
-        <svg
+        {/* <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -43,7 +43,7 @@ const TableOfContents: QuartzComponent = ({
           class="fold"
         >
           <polyline points="6 9 12 15 18 9"></polyline>
-        </svg>
+        </svg> */}
       </button>
       <div id="toc-content">
         <ul class="overflow">
