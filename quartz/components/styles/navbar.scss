@@ -68,7 +68,7 @@ nav.navbar {
 
 	// Media Query for Desktop
 	@include largescreen {
-		padding: 1rem;
+		padding: 1rem 2rem;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -77,7 +77,7 @@ nav.navbar {
 	}
 
 	@include mobile {
-		padding: 1rem 1rem;
+		padding: 1rem;
 	}
 
 	.navbrand {
