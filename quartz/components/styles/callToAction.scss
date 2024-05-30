@@ -1,8 +1,28 @@
+.cta {
+  background-color: var(--lightgray);
+  padding: 1rem;
+  border-radius: .75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
 .cta-title {
+  margin: 0;
   font-size: 3rem;
 }
 
 .cta-subtitle {
   font-size: 1.5rem;
   font-family: 'Canela Text Web', sans;
+  font-weight: 200;
 }
+
+.cta-form {
+  width: 100%;
+  & .formkit-submit {
+    font-weight: bold;
+  }
+}
+

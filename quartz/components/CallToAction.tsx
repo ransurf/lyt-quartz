@@ -4,17 +4,11 @@ import { FooterNewsletter } from "./FooterNewsletter";
 import style from "./styles/callToAction.scss"
 
 const actions: Record<string, any> = {
-  cta1: {
-    defaultTitle: "Title",
-    defaultSubtitle: "Subtitle",
+  default: {
+    defaultTitle: "Start Linking Your Thinking!",
+    defaultSubtitle: `Get our email course "The Ultimate Primer to Linking Your Thinking" to start creating an ideaverse that can support and power a lifetime of memories & ideas.`,
     defaultButton: "Get the Ultimate Primer",
     formId: "6589197"
-  },
-  cta2: {
-    defaultTitle: "CTA2 Title",
-    defaultSubtitle: "CTA2 Subtitle",
-    defaultButton: "CTA 2 Button",
-    formId: "6608546"
   }
 };
 
@@ -28,13 +22,12 @@ const CallToAction: QuartzComponent = ({ fileData, displayClass }: QuartzCompone
   if (ctaType) {
     //get the cta object
     const cta = actions[ctaType];
-    const buttonText = ctaButton || cta.defaultButton
-    return cta && (
+    const shouldRender = (cta || (ctaTitle && ctaButton && ctaFormId))
+    return shouldRender && (
       <div class={classNames(displayClass, "cta")}>
-        <h1 className="cta-title">{ctaTitle || cta.defaultTitle}</h1>
-        <p className="cta-subtitle CanelaText-Regular-Web">{ctaSubtitle || cta.defaultSubtitle}</p>
-        {/* {cta.embed} */}
-        <FooterNewsletter buttonText={ctaButton || buttonText as string} formId={ctaFormId || cta.formId as string}/>
+        {ctaTitle && <h1 className="cta-title">{ctaTitle || cta.defaultTitle}</h1>}
+        {ctaSubtitle && <p className="cta-subtitle">{ctaSubtitle}</p>}
+        <FooterNewsletter buttonText={ctaButton || cta.defaultButton as string} formId={ctaFormId || cta.formId as string}/>
       </div>
     )
   } else {
