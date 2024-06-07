@@ -1,6 +1,13 @@
 @use "./variables.scss" as *;
 @use "sass:color";
 
+//from https://github.dev/Lisandra-dev/owlly-lab
+.grid .callout {
+  display: table-cell;
+  width: 50%;
+}
+
+
 .callout {
   border: 1px solid var(--border);
   background-color: var(--bg);
@@ -44,7 +51,7 @@
     & .callout-title {
       display: none;
     }
-    width: 50px;
+    width: 50px !important;
     padding: 5px;
   }
 
