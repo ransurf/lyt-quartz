@@ -1,6 +1,7 @@
 import { GlobalConfiguration } from "../cfg"
 import { ValidLocale } from "../i18n"
 import { QuartzPluginData } from "../plugins/vfile"
+import { displayRelativeDate } from "./scripts/util"
 
 interface Props {
   date: Date
@@ -27,5 +28,5 @@ export function formatDate(d: Date, locale: ValidLocale = "en-US"): string {
 }
 
 export function Date({ date, locale }: Props) {
-  return <>{formatDate(date, locale)}</>
+  return <>{displayRelativeDate(date)}</>
 }

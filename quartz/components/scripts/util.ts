@@ -23,3 +23,28 @@ export function removeAllChildren(node: HTMLElement) {
     node.removeChild(node.firstChild)
   }
 }
+
+function returnPluralOrSingular(count: number) {
+  return count === 1 ? "" : "s"
+
+}
+
+export function displayRelativeDate(dateInput: string | Date): string {
+  const now = new Date();
+  const date = new Date(dateInput);
+  
+  const seconds = Math.floor((now.getTime() - date.getTime()) / 1000);
+  const minutes = Math.floor(seconds / 60);
+  const hours = Math.floor(minutes / 60);
+  const days = Math.floor(hours / 24);
+  const months = Math.floor(days / 30);
+  const years = Math.floor(days / 365);
+  
+  if (days < 30) {
+      return `${days} day${returnPluralOrSingular(days)} ago`;
+  } else if (months < 12) {
+      return `${months} month${returnPluralOrSingular(months)} ago`;
+  } else {
+      return `${years} year${returnPluralOrSingular(years)} ago`;
+  }
+}
