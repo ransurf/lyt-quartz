@@ -58,7 +58,7 @@ export const defaultContentPageLayout: PageLayout = {
       showForNotes: true,
       limit: 5,
       field: "",
-      linkToMore: "blog/" as SimpleSlug,
+      linkToMore: "essays/" as SimpleSlug,
       cta: "See all"
     }),
     Component.CallToAction(),
@@ -86,12 +86,12 @@ export const defaultContentPageLayout: PageLayout = {
     ),
     Component.DesktopOnly(
       Component.RelatedNotes({
-        title: "Related Writing",
+        title: "Related Essays",
         path: "blog",
         showForNotes: true,
         limit: 4,
         field: "related",
-        linkToMore: "blog/" as SimpleSlug,
+        linkToMore: "essays/" as SimpleSlug,
         cta: "See all →"
       }),
     ),
@@ -103,13 +103,13 @@ export const defaultContentPageLayout: PageLayout = {
     // Component.Darkmode(),
     Component.DesktopOnly(
       Component.RecentNotes({
-        title: "Recent Writing",
+        title: "Recent Essays",
         path: "root",
         showDates: true,
         limit: 4,
         filter: (f) =>
-          f.slug!.startsWith("blog/") && f.slug! !== "blog/index" && !f.frontmatter?.noindex,
-        linkToMore: "blog/" as SimpleSlug,
+          f.slug!.startsWith("essays/") && f.slug! !== "essays/index" && !f.frontmatter?.noindex,
+        linkToMore: "essays/" as SimpleSlug,
       }),
     ),
     Component.DesktopOnly(
@@ -121,8 +121,8 @@ export const defaultContentPageLayout: PageLayout = {
     //     path: "maps",
     //     limit: 4,
     //     filter: (f) =>
-    //       Boolean(f.slug!.startsWith("blog/") && f.slug! !== "blog/index"),
-    //     linkToMore: "blog/" as SimpleSlug,
+    //       Boolean(f.slug!.startsWith("essays/") && f.slug! !== "essays/index"),
+    //     linkToMore: "essays/" as SimpleSlug,
     //   }),
     // ),
   // Component.DesktopOnly(

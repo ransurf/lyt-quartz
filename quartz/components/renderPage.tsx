@@ -213,7 +213,7 @@ export function renderPage(
 
   function conditionalFilterLeftComponent(BodyComponent: QuartzComponent) {
     if (BodyComponent.id === ComponentIds.TableOfContents) {
-      return !checkIsPathButNotIndex(slug, "blog") ? <BodyComponent {...componentData} /> : null
+      return !checkIsPathButNotIndex(slug, "essays") ? <BodyComponent {...componentData} /> : null
     }
     
     return <BodyComponent {...componentData} />
@@ -221,23 +221,23 @@ export function renderPage(
 
   function conditionalFilterRightComponent(BodyComponent: QuartzComponent) {
   if (BodyComponent.id === ComponentIds.Graph) {
-    return !checkIsPathButNotIndex(slug, "blog") ? <BodyComponent {...componentData} /> : null
+    return !checkIsPathButNotIndex(slug, "essays") ? <BodyComponent {...componentData} /> : null
   } else if (BodyComponent.id === ComponentIds.Backlinks) {
-      return !checkIsPathButNotIndex(slug, "blog") ? <BodyComponent {...componentData} /> : null
+      return !checkIsPathButNotIndex(slug, "essays") ? <BodyComponent {...componentData} /> : null
   }
     return <BodyComponent {...componentData} />
   }
 
   function conditionalFilterBodyComponent(BodyComponent: QuartzComponent) {
     if (BodyComponent.id === ComponentIds.ContentMeta) {
-      return checkIsPathButNotIndex(slug, "blog") && slug.split("/")?.[1] !== "index" ? <BodyComponent {...componentData} /> : null
+      return checkIsPathButNotIndex(slug, "essays") && slug.split("/")?.[1] !== "index" ? <BodyComponent {...componentData} /> : null
     }
     
     //After body
     if (BodyComponent.id === ComponentIds.AboutAuthor) {
-      return checkIsPathButNotIndex(slug, "blog") ? <BodyComponent {...componentData} /> : null
+      return checkIsPathButNotIndex(slug, "essays") ? <BodyComponent {...componentData} /> : null
     } else if (BodyComponent.id === ComponentIds.Backlinks) {
-      return checkIsPathButNotIndex(slug, "blog") ? <BodyComponent {...componentData} /> : null
+      return checkIsPathButNotIndex(slug, "essays") ? <BodyComponent {...componentData} /> : null
     }
     return <BodyComponent {...componentData} />
   }
