@@ -53,7 +53,7 @@ export const defaultContentPageLayout: PageLayout = {
   afterBody: [
     Component.RelatedNotesContainer({
       title: "",
-      path: "blog",
+      path: "essays",
       showForIndex: true,
       showForNotes: true,
       limit: 5,
@@ -76,7 +76,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(
       Component.RelatedNotes({
         title: "Related Maps",
-        path: "blog",
+        path: "essays",
         showForNotes: true,
         limit: 4,
         field: "up",
@@ -87,7 +87,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(
       Component.RelatedNotes({
         title: "Related Essays",
-        path: "blog",
+        path: "essays",
         showForNotes: true,
         limit: 4,
         field: "related",
