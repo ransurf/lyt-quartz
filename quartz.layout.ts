@@ -47,7 +47,6 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Breadcrumbs(),
     Component.ArticleTitle(),
     Component.ContentMeta(),
-    Component.Properties(),
     // Component.TagList(),
   ],
   afterBody: [
@@ -95,11 +94,12 @@ export const defaultContentPageLayout: PageLayout = {
         cta: "See all →"
       }),
     ),
+    Component.Properties(),
     Component.Backlinks(),
   ],
   left: [
     Component.MobileOnly(Component.Spacer()),
-    Component.DesktopOnly(Component.TableOfContents()),
+    // Component.DesktopOnly(Component.TableOfContents()),
     // Component.Darkmode(),
     Component.DesktopOnly(
       Component.RecentNotes({
