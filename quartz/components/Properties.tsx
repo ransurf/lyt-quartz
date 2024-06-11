@@ -43,10 +43,11 @@ function calculatePropertyEmoji(key: string) {
 
 function createPropertyElement(key: string, value: any) {
   // const emoji = calculatePropertyEmoji(key);
+  const capitalizedKey = key.charAt(0).toUpperCase() + key.slice(1)
 
   return (
     <div class="properties-row">
-      <span class="property-key">{key}:</span> <span class="property-value">{value}</span>
+      <span class="property-key">{capitalizedKey}:</span> <span class="property-value">{value}</span>
     </div>
   )
 }
@@ -75,7 +76,7 @@ export default (() => {
 
     if (Object.keys(fileData.frontmatter ?? {}).length > 0) {
       for (const [key, value] of Object.entries(fileData.frontmatter ?? {})) {
-        const includedProperties = ["up", "related"] // Add properties you want to ignore here
+        const includedProperties = ["related"] // Add properties you want to ignore here
 
         if (!includedProperties.includes(key)) {
           // Ignore excluded properties
