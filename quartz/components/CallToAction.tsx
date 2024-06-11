@@ -13,11 +13,11 @@ const actions: Record<string, any> = {
 };
 
 const CallToAction: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
-  const ctaTitle = fileData.frontmatter?.ctaTitle;
-  const ctaSubtitle = fileData.frontmatter?.ctaSubtitle;
-  const ctaButton = fileData.frontmatter?.ctaButton;
-  const ctaType = fileData.frontmatter?.ctaType as string;
-  const ctaFormId = fileData.frontmatter?.ctaFormId as string;
+  const ctaTitle: string = fileData.frontmatter?.ctaTitle as string;
+  const ctaSubtitle: string = fileData.frontmatter?.ctaSubtitle as string;
+  const ctaButton: string = fileData.frontmatter?.ctaButton as string;
+  const ctaType: string = fileData.frontmatter?.ctaType as string;
+  const ctaFormId: string = fileData.frontmatter?.ctaFormId as string;
 
   if (ctaType) {
     //get the cta object
@@ -25,8 +25,8 @@ const CallToAction: QuartzComponent = ({ fileData, displayClass }: QuartzCompone
     const shouldRender = (cta || (ctaTitle && ctaButton && ctaFormId))
     return shouldRender && (
       <div class={classNames(displayClass, "cta")}>
-        {ctaTitle && <h1 className="cta-title">{ctaTitle || cta.defaultTitle}</h1>}
-        {ctaSubtitle && <p className="cta-subtitle">{ctaSubtitle || cta.defaultSubtitle}</p>}
+        {ctaTitle && <h1 className="cta-title">{ctaTitle || cta.defaultTitle as string}</h1>}
+        {ctaSubtitle && <p className="cta-subtitle">{ctaSubtitle || cta.defaultSubtitle as string}</p>}
         <FooterNewsletter buttonText={ctaButton || cta.defaultButton as string} formId={ctaFormId || cta.formId as string}/>
       </div>
     )
