@@ -9,6 +9,8 @@ import {
   splitAnchor,
   transformLink,
   joinSegments,
+  slugifyFilePath,
+  FilePath,
 } from "../../util/path"
 import path from "path"
 import { visit } from "unist-util-visit"
@@ -80,6 +82,18 @@ export const CrawlLinks: QuartzTransformerPlugin<Partial<Options> | undefined> =
                       },
                     ],
                   })
+                }
+
+                // Add frontmatter links to outgoing links
+                if (file.data.frontmatter) {
+                  for (const [fmKey, fmValue] of Object.entries(file.data.frontmatter)) {
+                    if (fmValue && typeof fmValue === "string") {
+                      const dest = fmValue.match(/\[\[(.*)\]\]/)?.[1] as FilePath ?? null
+                      if (dest) {
+                        outgoing.add(simplifySlug(slugifyFilePath(dest)))
+                      }
+                    }
+                  }
                 }
 
                 // Check if the link has alias text
