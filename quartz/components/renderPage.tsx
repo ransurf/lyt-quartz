@@ -238,6 +238,8 @@ export function renderPage(
       return checkIsPathButNotIndex(slug, "essays") ? <BodyComponent {...componentData} /> : null
     } else if (BodyComponent.id === ComponentIds.Backlinks) {
       return checkIsPathButNotIndex(slug, "essays") ? <BodyComponent {...componentData} /> : null
+    } else if (BodyComponent.id === ComponentIds.Properties) {
+      return !checkIsPathButNotIndex(slug, "essays") ? <BodyComponent {...componentData} /> : null
     }
     return <BodyComponent {...componentData} />
   }
