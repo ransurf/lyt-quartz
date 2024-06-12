@@ -6,6 +6,7 @@ import { i18n } from "../i18n"
 import { JSX } from "preact"
 import style from "./styles/contentMeta.scss"
 import { ComponentIds } from "./types"
+import { displayRelativeDate } from "./scripts/util"
 
 interface ContentMetaOptions {
   /**
@@ -33,7 +34,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
       const segments: (string | JSX.Element)[] = []
 
       if (fileData.dates) {
-        segments.push(formatDate(getDate(cfg, fileData)!, cfg.locale))
+        segments.push(displayRelativeDate(getDate(cfg, fileData)!))
       }
 
       // Display reading time if enabled
