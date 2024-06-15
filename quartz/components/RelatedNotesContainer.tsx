@@ -39,9 +39,8 @@ export default ((userOpts?: Partial<RelatedNotesOptions>) => {
         field: fieldName,
         title: fieldName,
         linkToMore: `${href}` as SimpleSlug,
-        cta: `Read more writings on ${fieldName} →`,
+        cta: `Read more essays on ${fieldName} →`,
       }
-
 
       const RelatedNotesComponent = RelatedNotes(elementOpts)
       return <RelatedNotesComponent {...props} />
@@ -75,11 +74,15 @@ export default ((userOpts?: Partial<RelatedNotesOptions>) => {
     }
 
     return (
-      <div class={classNames(displayClass, "related-notes-container")}>
-        {relatedNotesViews.map((noteView, index) => (
-          <div key={index}>{noteView}</div>
-        ))}
-      </div>
+      <>
+        {relatedNotesViews.length > 0 && (
+          <div class={classNames(displayClass, "related-notes-container")}>
+            {relatedNotesViews.map((noteView, index) => (
+              <div key={index}>{noteView}</div>
+            ))}
+          </div>
+        )}
+      </>
     )
   }
 
