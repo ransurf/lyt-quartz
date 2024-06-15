@@ -576,6 +576,8 @@ section {
 }
 
 .center {
+  margin-bottom: 2rem;
+
   h1,
   h2,
   h3,
@@ -583,6 +585,10 @@ section {
   h5,
   h6 {
     font-family: "Canela Deck Web", sans;
+  }
+
+  p {
+    line-height: 2.1rem;
   }
 }
 
@@ -993,7 +999,7 @@ code {
 tbody,
 li,
 p {
-  line-height: 2.1rem;
+  line-height: 1.6rem;
 }
 
 .table-container {
