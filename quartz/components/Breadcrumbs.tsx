@@ -1,13 +1,45 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import breadcrumbsStyle from "./styles/breadcrumbs.scss"
-import { FullSlug, SimpleSlug, joinSegments, resolveRelative } from "../util/path"
+import {
+  FullSlug,
+  SimpleSlug,
+  joinSegments,
+  resolveRelative,
+  transformLink,
+  TransformOptions,
+} from "../util/path"
 import { QuartzPluginData } from "../plugins/vfile"
 import { classNames } from "../util/lang"
 import { ComponentIds } from "./types"
+import { Orbit } from "lucide-preact"
+import { JSX } from "preact/jsx-runtime"
+// import config from "../../quartz.config"
 
 type CrumbData = {
   displayName: string
   path: string
+}
+
+function createLinkedElement(fileData: any, opts: any, value: string) {
+  // if there is an alias in the link like [[alias|link]] then we need to remove the alias
+  let cleanedValue;
+  if (value.includes("|")) {
+    cleanedValue = value.split("|")[1]
+  } else {
+    cleanedValue = value
+  }
+  cleanedValue = cleanedValue.replace(/['"\[\]]+/g, "")
+
+  let href = transformLink(fileData.slug!, cleanedValue, opts)
+
+  // split cleanedValue to last part of the path
+  let splitValue = cleanedValue.split("/")[cleanedValue.split("/").length - 1]
+
+  return (
+    <a href={href} className="internal no-background">
+      {splitValue}
+    </a>
+  )
 }
 
 interface BreadcrumbOptions {
@@ -16,10 +48,6 @@ interface BreadcrumbOptions {
    */
   spacerSymbol: string
   /**
-   * Name of first crumb
-   */
-  rootName: string
-  /**
    * Whether to look up frontmatter title for folders (could cause performance problems with big vaults)
    */
   resolveFrontmatterTitle: boolean
@@ -27,18 +55,12 @@ interface BreadcrumbOptions {
    * Whether to display breadcrumbs on root `index.md`
    */
   hideOnRoot: boolean
-  /**
-   * Whether to display the current page in the breadcrumbs.
-   */
-  showCurrentPage: boolean
 }
 
 const defaultOptions: BreadcrumbOptions = {
-  spacerSymbol: "❯",
-  rootName: "Home",
+  spacerSymbol: "•",
   resolveFrontmatterTitle: true,
   hideOnRoot: true,
-  showCurrentPage: true,
 }
 
 function formatName(name: string, isFolderPath: boolean): string {
@@ -49,10 +71,15 @@ function formatName(name: string, isFolderPath: boolean): string {
   return name
 }
 
-function formatCrumb(displayName: string, baseSlug: FullSlug, currentSlug: SimpleSlug, isFolderPath: boolean): CrumbData {
+function formatCrumb(
+  displayName: string,
+  baseSlug: FullSlug,
+  currentSlug: SimpleSlug,
+  isFolderPath: boolean,
+): CrumbData {
   return {
-    displayName: formatName(displayName.replaceAll("-", " "), isFolderPath),
-    path: resolveRelative(baseSlug, currentSlug),
+    displayName: formatName(displayName?.replaceAll("-", " "), isFolderPath),
+    path: resolveRelative(baseSlug, currentSlug)
   }
 }
 
@@ -74,8 +101,7 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
     }
 
     // Format entry for root element
-    const firstEntry = formatCrumb(options.rootName, fileData.slug!, "/" as SimpleSlug, false)
-    const crumbs: CrumbData[] = [firstEntry]
+    const crumbs: CrumbData[] = []
 
     if (!folderIndex && options.resolveFrontmatterTitle) {
       folderIndex = new Map()
@@ -118,28 +144,35 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
           curPathSegment,
           fileData.slug!,
           (currentPath + (includeTrailingSlash ? "/" : "")) as SimpleSlug,
-          i !== slugParts.length - 1
+          i !== slugParts.length - 1,
         )
         crumbs.push(crumb)
       }
-
-      // Add current file to crumb (can directly use frontmatter title)
-      if (options.showCurrentPage && slugParts.at(-1) !== "index") {
-        crumbs.push({
-          displayName: fileData.frontmatter!.title,
-          path: "",
-        })
-      }
     }
+
+    const opts: TransformOptions = {
+      strategy: "shortest",
+      allSlugs: allFiles.map((fp) => fp.slug as FullSlug),
+    }
+
+    var propertiesElements = []
+    // var priorityPropertiesElements = []
+
+    // const darkGrayColor = config.configuration.theme.colors.darkMode.darkgray;
+
+    const noteState = fileData.frontmatter?.state as string
 
     return (
       <nav class={classNames(displayClass, "breadcrumb-container")} aria-label="breadcrumbs">
         {crumbs.map((crumb, index) => (
-          <div class="breadcrumb-element">
-            <a href={crumb.path}>{crumb.displayName}</a>
-            {index !== crumbs.length - 1 && <p>{` ${options.spacerSymbol} `}</p>}
+          <div className="breadcrumb-element">
+            <a className="internal no-background" href={crumb.path}>
+              {crumb.displayName}
+            </a>
           </div>
         ))}
+        <Orbit className="breadcrumb-spacer" size={16} />
+        {noteState && <div class="breadcrumb-element">{noteState}</div>}
       </nav>
     )
   }

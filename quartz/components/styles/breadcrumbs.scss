@@ -5,9 +5,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 0.5rem;
+  align-items: center;
 }
 
 .breadcrumb-element {
+  font-weight: bold;
   p {
     margin: 0;
     margin-left: 0.5rem;
