@@ -1,13 +1,28 @@
 .content-meta {
-  margin-top: 0;
-  color: var(--gray);
+  &-container {
+    margin-top: 0;
+    color: var(--gray);
+  }
 
-  &[show-comma="true"] {
-    > span:not(:last-child) {
+  &-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-      &::after {
-        content: "  •  ";
-      }
+  &-element {
+    display: flex;
+    align-items: center;
+    
+    &.horizontal {
+      flex-direction: row;
     }
+  }
+
+  &-divider {
+    margin: 0.125rem auto;
   }
 }
