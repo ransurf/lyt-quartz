@@ -44,9 +44,8 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
     }
 
     const renderReadingTime = () => {
-      // Display reading time only if essays and there is text
       if (!text || !fileData.slug?.startsWith(`${MainPaths.WRITINGS}/`)) {
-        return null;
+        return <div></div>;
       }
 
       if (options.showReadingTime) {
@@ -100,20 +99,30 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
         }
       }
 
-      return (
-        <div className="content-meta-element horizontal">
-          <CircleArrowUp size={16} />
-          {linkedElements}
-        </div>
-      )
+      if (linkedElements.length > 0) {
+        return (
+          <>
+            {linkedElements &&
+              <div className="content-meta-element horizontal">
+                <CircleArrowUp size={16} />
+                {linkedElements}
+              </div>}
+          </>
+        )
+      } else {
+        return <div></div>
+      }
+      
     }
 
     const renderDates = () => {
-      if (fileData.dates) {
+      if (fileData.dates && fileData.slug?.startsWith(`${MainPaths.WRITINGS}/`)) {
         const createdDate = displayRelativeDate(getDate(cfg, fileData)!)
         return (
           <span>emerged {createdDate}</span>
         )
+      } else {
+        return <div></div>
       }
     };
 
