@@ -90,7 +90,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
           var entry = (value as Array<any>)[Number(index)]
           if (entry.includes("[[")) {
             if (Number(index) > 0) {
-              linkedElements.push(" ")
+              linkedElements.push(", ")
             }
             linkedElements.push(createLinkedElement(fileData, transformOpts, entry))
           } else {
