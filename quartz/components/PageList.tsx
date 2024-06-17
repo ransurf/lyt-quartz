@@ -7,12 +7,12 @@ import { DateType } from "./Date"
 
 export function byDateAndAlphabetical(
   cfg: GlobalConfiguration,
-  dateType: DateType = "created",
+  pageListSortType: DateType = "created",
 ): (f1: QuartzPluginData, f2: QuartzPluginData) => number {
   return (f1, f2) => {
     if (f1.dates && f2.dates) {
       // sort descending
-      return getDate(cfg, f2, dateType)!.getTime() - getDate(cfg, f1, dateType)!.getTime()
+      return getDate(cfg, f2, pageListSortType)!.getTime() - getDate(cfg, f1, pageListSortType)!.getTime()
     } else if (f1.dates && !f2.dates) {
       // prioritize files with dates
       return -1
