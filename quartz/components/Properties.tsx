@@ -10,14 +10,14 @@ import { ComponentIds } from "./types"
 
 function createLinkedElement(fileData: any, opts: any, value: string) {
   // if there is an alias in the link like [[alias|link]] then we need to remove the alias
-  let cleanedValue;
+  let cleanedValue
   if (value.includes("|")) {
     cleanedValue = value.split("|")[1]
   } else {
     cleanedValue = value
   }
   cleanedValue = cleanedValue.replace(/['"\[\]]+/g, "")
-  
+
   let href = transformLink(fileData.slug!, cleanedValue, opts)
 
   // split cleanedValue to last part of the path
@@ -47,7 +47,8 @@ function createPropertyElement(key: string, value: any) {
 
   return (
     <div class="properties-row">
-      <span class="property-key">{capitalizedKey}:</span> <span class="property-value">{value}</span>
+      <span class="property-key">{capitalizedKey}:</span>{" "}
+      <span class="property-value">{value}</span>
     </div>
   )
 }
@@ -121,12 +122,16 @@ export default (() => {
     }
 
     return (
-      <div class="properties-container">
-        {/* {priorityPropertiesElements && (
+      <>
+        {propertiesElements.length > 0 && (
+          <div class="properties-container">
+            {/* {priorityPropertiesElements && (
           <div class="properties-container priority">{priorityPropertiesElements}</div>
         )} */}
-        {propertiesElements}
-      </div>
+            {propertiesElements}
+          </div>
+        )}
+      </>
     )
   }
 
