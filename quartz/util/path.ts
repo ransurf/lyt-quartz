@@ -8,6 +8,10 @@ export const clone = rfdc()
 
 export const QUARTZ = "quartz"
 
+export enum MainPaths {
+  WRITINGS = "essays",
+}
+
 /// Utility type to simulate nominal types in TypeScript
 type SlugLike<T> = string & { __brand: T }
 

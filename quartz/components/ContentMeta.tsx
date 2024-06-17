@@ -1,7 +1,7 @@
 import { formatDate, getDate } from "./Date"
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import readingTime from "reading-time"
-import { FullSlug, TransformOptions } from "../util/path"
+import { FullSlug, MainPaths, TransformOptions } from "../util/path"
 import { cleanedValue } from "../util/frontmatterLinks"
 import { i18n } from "../i18n"
 import { JSX } from "preact"
@@ -35,18 +35,17 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
 
     const renderAuthor = () => {
       if (options.showAuthor) {
-        const author = fileData.frontmatter?.author ?? "Nick Milo"
-        if (author) {
-          return (
-            <span>by {author}</span>
-          )
-        }
+        const author = fileData.frontmatter?.author
+        const authorText = author ? `by ${author}` : null
+        return (
+          <span>{authorText}</span>
+        )
       }
     }
 
     const renderReadingTime = () => {
-      // Display reading time if enabled
-      if (!text) {
+      // Display reading time only if essays and there is text
+      if (!text || !fileData.slug?.startsWith(`${MainPaths.WRITINGS}/`)) {
         return null;
       }
 

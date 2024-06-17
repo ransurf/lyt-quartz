@@ -1,6 +1,6 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
-import { SimpleSlug } from "./quartz/util/path"
+import { MainPaths, SimpleSlug } from "./quartz/util/path"
 import { byAlphabetical } from "./quartz/components/PageList"
 
 // components shared across all pages
@@ -52,12 +52,12 @@ export const defaultContentPageLayout: PageLayout = {
   afterBody: [
     Component.RelatedNotesContainer({
       title: "",
-      path: "essays",
+      path: MainPaths.WRITINGS,
       showForIndex: true,
       showForNotes: true,
       limit: 5,
       field: "",
-      linkToMore: "essays/" as SimpleSlug,
+      linkToMore: `${MainPaths.WRITINGS}/` as SimpleSlug,
       cta: "See all"
     }),
     Component.CallToAction(),
@@ -75,7 +75,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(
       Component.RelatedNotes({
         title: "Related Maps",
-        path: "essays",
+        path: MainPaths.WRITINGS,
         showForNotes: true,
         limit: 4,
         field: "up",
@@ -86,11 +86,11 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(
       Component.RelatedNotes({
         title: "Related Essays",
-        path: "essays",
+        path: MainPaths.WRITINGS,
         showForNotes: true,
         limit: 4,
         field: "related",
-        linkToMore: "essays/" as SimpleSlug,
+        linkToMore: `${MainPaths.WRITINGS}/` as SimpleSlug,
         cta: "See all →"
       }),
     ),
@@ -108,8 +108,8 @@ export const defaultContentPageLayout: PageLayout = {
         showDates: true,
         limit: 4,
         filter: (f) =>
-          f.slug!.startsWith("essays/") && f.slug! !== "essays/index" && !f.frontmatter?.noindex,
-        linkToMore: "essays/" as SimpleSlug,
+          f.slug!.startsWith(`${MainPaths.WRITINGS}/`) && f.slug! !== `${MainPaths.WRITINGS}/index` && !f.frontmatter?.noindex,
+        linkToMore: `${MainPaths.WRITINGS}/` as SimpleSlug,
       }),
     ),
     Component.DesktopOnly(
@@ -121,8 +121,8 @@ export const defaultContentPageLayout: PageLayout = {
     //     path: "maps",
     //     limit: 4,
     //     filter: (f) =>
-    //       Boolean(f.slug!.startsWith("essays/") && f.slug! !== "essays/index"),
-    //     linkToMore: "essays/" as SimpleSlug,
+    //       Boolean(f.slug!.startsWith(`${MainPaths.WRITINGS}/`) && f.slug! !== "essays/index"),
+    //     linkToMore: `${MainPaths.WRITINGS}/` as SimpleSlug,
     //   }),
     // ),
   // Component.DesktopOnly(

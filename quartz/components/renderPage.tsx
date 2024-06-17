@@ -3,7 +3,7 @@ import { QuartzComponent, QuartzComponentProps } from "./types"
 import HeaderConstructor from "./Header"
 import BodyConstructor from "./Body"
 import { JSResourceToScriptElement, StaticResources } from "../util/resources"
-import { clone, FullSlug, RelativeURL, joinSegments, normalizeHastElement } from "../util/path"
+import { clone, FullSlug, MainPaths, RelativeURL, joinSegments, normalizeHastElement } from "../util/path"
 import { visit } from "unist-util-visit"
 import { Root, Element, ElementContent } from "hast"
 import { GlobalConfiguration } from "../cfg"
@@ -213,7 +213,7 @@ export function renderPage(
 
   function conditionalFilterLeftComponent(BodyComponent: QuartzComponent) {
     if (BodyComponent.id === ComponentIds.TableOfContents) {
-      return !checkIsPathButNotIndex(slug, "essays") ? <BodyComponent {...componentData} /> : null
+      return !checkIsPathButNotIndex(slug, MainPaths.WRITINGS) ? <BodyComponent {...componentData} /> : null
     }
     
     return <BodyComponent {...componentData} />
@@ -221,30 +221,31 @@ export function renderPage(
 
   function conditionalFilterRightComponent(BodyComponent: QuartzComponent) {
   if (BodyComponent.id === ComponentIds.Graph) {
-    return !checkIsPathButNotIndex(slug, "essays") ? <BodyComponent {...componentData} /> : null
+    return !checkIsPathButNotIndex(slug, MainPaths.WRITINGS) ? <BodyComponent {...componentData} /> : null
   } else if (BodyComponent.id === ComponentIds.Backlinks) {
-      return !checkIsPathButNotIndex(slug, "essays") ? <BodyComponent {...componentData} /> : null
+      return !checkIsPathButNotIndex(slug, MainPaths.WRITINGS) ? <BodyComponent {...componentData} /> : null
   }
     return <BodyComponent {...componentData} />
   }
 
   function conditionalFilterBodyComponent(BodyComponent: QuartzComponent) {
-    if (BodyComponent.id === ComponentIds.ContentMeta) {
-      return checkIsPathButNotIndex(slug, "essays") && slug.split("/")?.[1] !== "index" ? <BodyComponent {...componentData} /> : null
-    }
+    // if (BodyComponent.id === ComponentIds.ContentMeta) {
+    //   return checkIsPathButNotIndex(slug, MainPaths.WRITINGS) && slug.split("/")?.[1] !== "index" ? <BodyComponent {...componentData} /> : null
+    // }
     
     //After body
     if (BodyComponent.id === ComponentIds.AboutAuthor) {
-      return checkIsPathButNotIndex(slug, "essays") ? <BodyComponent {...componentData} /> : null
+      return checkIsPathButNotIndex(slug, MainPaths.WRITINGS) ? <BodyComponent {...componentData} /> : null
     } else if (BodyComponent.id === ComponentIds.Backlinks) {
-      return checkIsPathButNotIndex(slug, "essays") ? <BodyComponent {...componentData} /> : null
+      return checkIsPathButNotIndex(slug, MainPaths.WRITINGS) ? <BodyComponent {...componentData} /> : null
     } else if (BodyComponent.id === ComponentIds.Properties) {
-      return !checkIsPathButNotIndex(slug, "essays") ? <BodyComponent {...componentData} /> : null
+      return !checkIsPathButNotIndex(slug, MainPaths.WRITINGS) ? <BodyComponent {...componentData} /> : null
     }
     return <BodyComponent {...componentData} />
   }
 
   const lang = componentData.fileData.frontmatter?.lang ?? cfg.locale?.split("-")[0] ?? "en"
+  const filteredAfterBodyComponents = afterBody?.map((BodyComponent) => conditionalFilterBodyComponent(BodyComponent)).filter(elem => !!elem)
   const doc = (
     <html lang={lang}>
       <Head {...componentData} />
@@ -263,12 +264,10 @@ export function renderPage(
           <Body {...componentData}>
             {LeftComponent}
             <div class="center">
-              {/* {beforeBody?.length > 0 && <hr/>} */}
               <Content {...componentData} />
-              {/* {afterBody?.length > 0 && <hr/>} */}
               <div class="page-after">
                 <div class="popover-hint">
-                  {afterBody?.map((BodyComponent) => conditionalFilterBodyComponent(BodyComponent))}
+                  {filteredAfterBodyComponents}
                 </div>
               </div>
             </div>
