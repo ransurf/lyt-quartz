@@ -20,28 +20,6 @@ type CrumbData = {
   path: string
 }
 
-function createLinkedElement(fileData: any, opts: any, value: string) {
-  // if there is an alias in the link like [[alias|link]] then we need to remove the alias
-  let cleanedValue;
-  if (value.includes("|")) {
-    cleanedValue = value.split("|")[1]
-  } else {
-    cleanedValue = value
-  }
-  cleanedValue = cleanedValue.replace(/['"\[\]]+/g, "")
-
-  let href = transformLink(fileData.slug!, cleanedValue, opts)
-
-  // split cleanedValue to last part of the path
-  let splitValue = cleanedValue.split("/")[cleanedValue.split("/").length - 1]
-
-  return (
-    <a href={href} className="internal no-background">
-      {splitValue}
-    </a>
-  )
-}
-
 interface BreadcrumbOptions {
   /**
    * Symbol between crumbs
