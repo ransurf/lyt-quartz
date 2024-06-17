@@ -1,5 +1,10 @@
 @use "./base.scss";
 
+.component-title {
+	margin: 0;
+	font-size: 1.25rem;
+}
+
 // For newsletter form
 $color_1: inherit;
 $color_2: #ffffff;
