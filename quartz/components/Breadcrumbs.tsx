@@ -57,7 +57,7 @@ function formatCrumb(
 ): CrumbData {
   return {
     displayName: formatName(displayName?.replaceAll("-", " "), isFolderPath),
-    path: resolveRelative(baseSlug, currentSlug)
+    path: resolveRelative(baseSlug, currentSlug),
   }
 }
 
@@ -133,27 +133,29 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
       allSlugs: allFiles.map((fp) => fp.slug as FullSlug),
     }
 
-    var propertiesElements = []
-    // var priorityPropertiesElements = []
-
     // const darkGrayColor = config.configuration.theme.colors.darkMode.darkgray;
 
     const noteState = fileData.frontmatter?.state as string
 
     return (
-      <nav class={classNames(displayClass, "breadcrumb-container")} aria-label="breadcrumbs">
-        {crumbs.map((crumb, index) => (
-          <div className="breadcrumb-element">
-            <a className="internal no-background" href={crumb.path}>
-              {crumb.displayName}
-            </a>
-          </div>
-        ))}
-        <Orbit className="breadcrumb-spacer" size={16} />
-        {noteState && <div class="breadcrumb-element">{noteState}</div>}
-      </nav>
+      <>
+        {crumbs.length > 0 && (
+          <nav class={classNames(displayClass, "breadcrumb-container")} aria-label="breadcrumbs">
+            {crumbs.map((crumb, index) => (
+              <div className="breadcrumb-element">
+                <a className="internal no-background" href={crumb.path}>
+                  {crumb.displayName}
+                </a>
+              </div>
+            ))}
+            <Orbit className="breadcrumb-spacer" size={16} />
+            {noteState && <div class="breadcrumb-element">{noteState}</div>}
+          </nav>
+        )}
+      </>
     )
   }
+
   Breadcrumbs.id = ComponentIds.Breadcrumbs
   Breadcrumbs.css = breadcrumbsStyle
 
