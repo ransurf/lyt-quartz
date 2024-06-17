@@ -1,6 +1,6 @@
 .content-meta {
   &-container {
-    margin-top: 0;
+    margin-top: 2rem;
     color: var(--gray);
   }
 
@@ -15,6 +15,7 @@
 
   &-element {
     display: flex;
+    max-width: 50%;
     align-items: center;
     
     &.horizontal {
@@ -23,6 +24,6 @@
   }
 
   &-divider {
-    margin: 0.125rem auto;
+    margin: 0.5rem auto;
   }
 }
