@@ -267,6 +267,7 @@ export function renderPage(
               <Content {...componentData} />
               <div class="page-after">
                 <div class="popover-hint">
+                  <hr/>
                   {filteredAfterBodyComponents}
                 </div>
               </div>
