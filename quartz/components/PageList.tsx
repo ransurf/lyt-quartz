@@ -1,16 +1,18 @@
-import { FullSlug, resolveRelative } from "../util/path"
+import { resolveRelative } from "../util/path"
 import { QuartzPluginData } from "../plugins/vfile"
 import { Date, getDate } from "./Date"
 import { QuartzComponent, QuartzComponentProps } from "./types"
 import { GlobalConfiguration } from "../cfg"
+import { DateType } from "./Date"
 
 export function byDateAndAlphabetical(
   cfg: GlobalConfiguration,
+  dateType: DateType = "created",
 ): (f1: QuartzPluginData, f2: QuartzPluginData) => number {
   return (f1, f2) => {
     if (f1.dates && f2.dates) {
       // sort descending
-      return getDate(cfg, f2)!.getTime() - getDate(cfg, f1)!.getTime()
+      return getDate(cfg, f2, dateType)!.getTime() - getDate(cfg, f1, dateType)!.getTime()
     } else if (f1.dates && !f2.dates) {
       // prioritize files with dates
       return -1
@@ -36,6 +38,7 @@ export function byAlphabetical(): (f1: QuartzPluginData, f2: QuartzPluginData) =
 
 type Props = {
   limit?: number
+  sortType?: DateType
 } & QuartzComponentProps
 
 export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit }: Props) => {

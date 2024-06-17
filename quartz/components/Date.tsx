@@ -8,15 +8,31 @@ interface Props {
   locale?: ValidLocale
 }
 
+export type DateType = "published" | "created" | "modified"
+
 export type ValidDateType = keyof Required<QuartzPluginData>["dates"]
 
-export function getDate(cfg: GlobalConfiguration, data: QuartzPluginData): Date | undefined {
+export function getDate(cfg: GlobalConfiguration, data: QuartzPluginData, overrideDate?: string): Date | undefined {
+  if (overrideDate) {
+    return data.dates?.[overrideDate as ValidDateType]
+  }
+  else {
+    if (!cfg.defaultDateType) {
+      throw new Error(
+        `Field 'defaultDateType' was not set in the configuration object of quartz.config.ts. See https://quartz.jzhao.xyz/configuration#general-configuration for more details.`,
+      )
+    }
+    return data.dates?.[cfg.defaultDateType]
+  }
+}
+
+export function getPublishDate(cfg: GlobalConfiguration, data: QuartzPluginData): Date | undefined {
   if (!cfg.defaultDateType) {
     throw new Error(
       `Field 'defaultDateType' was not set in the configuration object of quartz.config.ts. See https://quartz.jzhao.xyz/configuration#general-configuration for more details.`,
     )
   }
-  return data.dates?.[cfg.defaultDateType]
+  return data.dates?.["published"]
 }
 
 export function formatDate(d: Date, locale: ValidLocale = "en-US"): string {

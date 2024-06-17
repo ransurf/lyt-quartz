@@ -37,6 +37,7 @@ export default ((opts?: Partial<FolderContentOptions>) => {
     const classes = ["popover-hint", ...cssClasses].join(" ")
     const listProps = {
       ...props,
+      sortType: fileData.frontmatter?.pageSortType ?? "created",
       allFiles: allPagesInFolder,
     }
 
