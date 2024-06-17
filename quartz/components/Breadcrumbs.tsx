@@ -133,8 +133,6 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
       allSlugs: allFiles.map((fp) => fp.slug as FullSlug),
     }
 
-    // const darkGrayColor = config.configuration.theme.colors.darkMode.darkgray;
-
     const noteState = fileData.frontmatter?.state as string
 
     return (
@@ -148,7 +146,7 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
                 </a>
               </div>
             ))}
-            <Orbit className="breadcrumb-spacer" size={16} />
+            <Orbit className="breadcrumb-spacer" size={16} color={"#4e4e4e"} />
             {noteState && <div class="breadcrumb-element">{noteState}</div>}
           </nav>
         )}
