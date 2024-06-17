@@ -25,8 +25,8 @@ const CallToAction: QuartzComponent = ({ fileData, displayClass }: QuartzCompone
     const shouldRender = (cta || (ctaTitle && ctaButton && ctaFormId))
     return shouldRender && (
       <div class={classNames(displayClass, "cta")}>
-        {ctaTitle && <h1 className="cta-title">{ctaTitle || cta.defaultTitle as string}</h1>}
-        {ctaSubtitle && <p className="cta-subtitle">{ctaSubtitle || cta.defaultSubtitle as string}</p>}
+        {<h1 className="cta-title">{ctaTitle ?? cta.defaultTitle as string}</h1>}
+        {<p className="cta-subtitle">{ctaSubtitle  ?? cta.defaultSubtitle as string}</p>}
         <FooterNewsletter buttonText={ctaButton || cta.defaultButton as string} formId={ctaFormId || cta.formId as string}/>
       </div>
     )
