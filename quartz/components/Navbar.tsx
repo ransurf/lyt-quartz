@@ -72,7 +72,7 @@ export default (() => {
         </ul>
         <ul class="action-menu">
           <li class="action-menu-item">
-            <a href="/now" class="action-menu-link">
+            <a href="/about" class="action-menu-link">
               About
             </a>
           </li>
