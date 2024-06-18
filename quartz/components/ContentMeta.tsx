@@ -89,9 +89,9 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
           // Check if it's an array
           var entry = (value as Array<any>)[Number(index)]
           if (entry.includes("[[")) {
-            if (Number(index) > 0) {
-              linkedElements.push(", ")
-            }
+            // if (Number(index) > 0) {
+            //   linkedElements.push(" • ")
+            // }
             linkedElements.push(createLinkedElement(fileData, transformOpts, entry))
           } else {
             linkedElements.push(entry)
@@ -103,10 +103,12 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
         return (
           <>
             {linkedElements &&
-              <div className="content-meta-element horizontal">
-                <CircleArrowUp size={16} />
-                {linkedElements}
-              </div>}
+            <div className="content-meta-element up horizontal">
+              <CircleArrowUp style={{ marginTop: "0.125rem" }} size={16} />
+              <div className="content-meta-element">
+          {linkedElements}
+              </div>
+            </div>}
           </>
         )
       } else {
@@ -118,8 +120,13 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
     const renderDates = () => {
       if (fileData.dates && fileData.slug?.startsWith(`${MainPaths.WRITINGS}/`)) {
         const createdDate = displayRelativeDate(getDate(cfg, fileData)!)
+        const evolvedDate = displayRelativeDate(getDate(cfg, fileData, "modified")!)
+        const isSameDate = createdDate === evolvedDate
         return (
-          <span>emerged {createdDate}</span>
+          <div className="content-meta-element dates vertical">
+            {createdDate && <span>emerged {createdDate}</span>}
+            {!isSameDate && <span>evolved {evolvedDate}</span>}
+          </div>
         )
       } else {
         return <div></div>

@@ -8,19 +8,35 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
 
   &-element {
     display: flex;
-    max-width: 50%;
     align-items: center;
+    flex-flow: wrap;
+    gap: 0.25rem;
+
+    &.dates {
+      align-items: flex-end;
+      text-align: end;
+      min-width: 20%;
+    }
+
+    &.up {
+      align-items: flex-start;
+    }
+
+    &.vertical {
+      flex-direction: column;
+    }
     
     &.horizontal {
       flex-direction: row;
     }
+  
   }
 
   &-divider {
