@@ -90,7 +90,7 @@ const TagContent: QuartzComponent = (props: QuartzComponentProps) => {
     )
   } else {
     const pages = allPagesWithTag(tag)
-    const tagDescription = `If you want to dive deeper, you can visit the map on ${tag} in the notes`
+    // const tagDescription = `All pages tagged with "${tag}":`
     const listProps = {
       ...props,
       allFiles: pages,
@@ -100,7 +100,7 @@ const TagContent: QuartzComponent = (props: QuartzComponentProps) => {
       <div class={classes}>
         <article>{content}</article>
         <div class="page-listing">
-          {tagDescription}
+          {/* {tagDescription} */}
           <p>{i18n(cfg.locale).pages.tagContent.itemsUnderTag({ count: pages.length })}</p>
           <div>
             <PageList {...listProps} />
