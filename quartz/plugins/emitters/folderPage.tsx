@@ -9,6 +9,7 @@ import path from "path"
 import {
   FilePath,
   FullSlug,
+  MainPaths,
   SimpleSlug,
   stripSlashes,
   joinSegments,
@@ -20,6 +21,14 @@ import { FolderContent } from "../../components"
 import { write } from "./helpers"
 import { i18n } from "../../i18n"
 import DepGraph from "../../depgraph"
+
+const handleQueryOverrides = (slug: SimpleSlug): SimpleSlug => {
+  // if "blog" return "essays"
+  if (slug === "blog") {
+    return MainPaths.WRITINGS as SimpleSlug
+  }
+  return slug
+};
 
 export const FolderPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOpts) => {
   const opts: FullPageLayout = {
@@ -62,13 +71,15 @@ export const FolderPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOpt
       const fps: FilePath[] = []
       const allFiles = content.map((c) => c[1].data)
       const cfg = ctx.cfg.configuration
+      
 
       const folders: Set<SimpleSlug> = new Set(
         allFiles.flatMap((data) => {
           const slug = data.slug
           const folderName = path.dirname(slug ?? "") as SimpleSlug
           if (slug && folderName !== "." && folderName !== "tags") {
-            return [folderName]
+            const folderToSearch = handleQueryOverrides(folderName)
+            return [folderToSearch]
           }
           return []
         }),
@@ -122,3 +133,4 @@ export const FolderPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOpt
     },
   }
 }
+
