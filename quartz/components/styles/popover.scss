@@ -27,7 +27,7 @@
     padding: 0 1rem 1rem 1rem;
     font-weight: initial;
     font-style: initial;
-    line-height: normal;
+    line-height: 2.1rem;
     font-size: initial;
     font-family: var(--bodyFont);
     border: 1px solid var(--lightgray);
@@ -62,6 +62,10 @@
 
   h1 {
     font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
   }
 
   visibility: hidden;
