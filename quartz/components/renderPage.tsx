@@ -9,6 +9,7 @@ import { Root, Element, ElementContent } from "hast"
 import { GlobalConfiguration } from "../cfg"
 import { i18n } from "../i18n"
 import { ComponentIds } from "./types"
+import { checkIsPathButNotIndex } from "../util/path"
 
 interface RenderComponents {
   head: QuartzComponent
@@ -20,8 +21,6 @@ interface RenderComponents {
   right: QuartzComponent[]
   footer: QuartzComponent
 }
-
-const checkIsPathButNotIndex = (slug: FullSlug, path: string) => slug.startsWith(`${path}/`) && slug.split("/")?.[1] !== "index"
 
 const headerRegex = new RegExp(/h[1-6]/)
 export function pageResources(
