@@ -637,7 +637,7 @@ a {
 
   &.internal {
     text-decoration: none;
-    // background-color: var(--highlight);
+    // background-color: var(--highlight, 0.01);
     padding: 0 0.1rem;
     border-radius: 5px;
     line-height: 1.4rem;

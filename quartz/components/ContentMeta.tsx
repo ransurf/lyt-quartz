@@ -10,6 +10,7 @@ import { ComponentIds } from "./types"
 import { displayRelativeDate } from "./scripts/util"
 import { CircleArrowUp } from "lucide-preact"
 import { classNames } from "../util/lang"
+import { checkIsPathButNotIndex } from "../util/path"
 
 interface ContentMetaOptions {
   /**
@@ -44,7 +45,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
     }
 
     const renderReadingTime = () => {
-      if (!text || !fileData.slug?.startsWith(`${MainPaths.WRITINGS}/`)) {
+      if (!text || !checkIsPathButNotIndex(fileData.slug!, MainPaths.WRITINGS)) {
         return <div></div>;
       }
 
@@ -118,7 +119,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
     }
 
     const renderDates = () => {
-      if (fileData.dates && fileData.slug?.startsWith(`${MainPaths.WRITINGS}/`)) {
+      if (fileData.dates && checkIsPathButNotIndex(fileData.slug!, MainPaths.WRITINGS)) {
         const createdDate = displayRelativeDate(getDate(cfg, fileData)!)
         const evolvedDate = displayRelativeDate(getDate(cfg, fileData, "modified")!)
         const isSameDate = createdDate === evolvedDate

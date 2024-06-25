@@ -311,3 +311,6 @@ export function _stripSlashes(s: string, onlyStripPrefix?: boolean): string {
 
   return s
 }
+
+
+export const checkIsPathButNotIndex = (slug: FullSlug, path: string) => slug.startsWith(`${path}/`) && slug.split("/")?.[1] !== "index"
