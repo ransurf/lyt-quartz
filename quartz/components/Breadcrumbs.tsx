@@ -147,7 +147,7 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
               </div>
             ))}
             <Orbit className="breadcrumb-spacer" size={16} color={"#4e4e4e"} />
-            {noteState && <div class="breadcrumb-element">{noteState}</div>}
+            {noteState && <div class="breadcrumb-element breadcrumb-element-state">{noteState}</div>}
           </nav>
         )}
       </>
