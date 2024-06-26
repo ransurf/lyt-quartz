@@ -72,28 +72,24 @@ export const defaultContentPageLayout: PageLayout = {
         sort: byAlphabetical(),
       }),
     ),
-    Component.DesktopOnly(
-      Component.RelatedNotes({
-        title: "Related Maps",
-        path: MainPaths.WRITINGS,
-        showForNotes: true,
-        limit: 4,
-        field: "up",
-        linkToMore: "maps/" as SimpleSlug,
-        cta: "See all →"
-      }),
-    ),
-    Component.DesktopOnly(
-      Component.RelatedNotes({
-        title: "Related Essays",
-        path: MainPaths.WRITINGS,
-        showForNotes: true,
-        limit: 4,
-        field: "related",
-        linkToMore: `${MainPaths.WRITINGS}/` as SimpleSlug,
-        cta: "See all →"
-      }),
-    ),
+    Component.RelatedNotes({
+      title: "Related Maps",
+      path: MainPaths.WRITINGS,
+      showForNotes: true,
+      limit: 4,
+      field: "up",
+      linkToMore: "maps/" as SimpleSlug,
+      cta: "See all →"
+    }),
+    Component.RelatedNotes({
+      title: "Related Essays",
+      path: MainPaths.WRITINGS,
+      showForNotes: true,
+      limit: 4,
+      field: "related",
+      linkToMore: `${MainPaths.WRITINGS}/` as SimpleSlug,
+      cta: "See all →"
+    }),
     Component.Properties(),
     Component.Backlinks(),
   ],
