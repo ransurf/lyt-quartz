@@ -38,15 +38,13 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
       if (options.showAuthor) {
         const author = fileData.frontmatter?.author
         const authorText = author ? `by ${author}` : null
-        return (
-          <span>{authorText}</span>
-        )
+        return <span>{authorText}</span>
       }
     }
 
     const renderReadingTime = () => {
       if (!text || !checkIsPathButNotIndex(fileData.slug!, MainPaths.WRITINGS)) {
-        return <div></div>;
+        return <div></div>
       }
 
       if (options.showReadingTime) {
@@ -66,11 +64,8 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
 
       function createLinkedElement(fileData: any, opts: any, value: string) {
         // if there is an alias in the link like [[alias|link]] then we need to remove the alias
-        const {
-          href,
-          splitValue
-        } = cleanedValue(value, fileData, transformOpts)
-      
+        const { href, splitValue } = cleanedValue(value, fileData, transformOpts)
+
         return (
           <a href={href} class="internal no-background">
             {splitValue}
@@ -103,19 +98,17 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
       if (linkedElements.length > 0) {
         return (
           <>
-            {linkedElements &&
-            <div className="content-meta-element up horizontal">
-              <CircleArrowUp style={{ marginTop: "0.125rem" }} size={16} />
-              <div className="content-meta-element">
-          {linkedElements}
+            {linkedElements && (
+              <div className="content-meta-element up horizontal">
+                <CircleArrowUp style={{ marginTop: "0.125rem" }} size={16} />
+                <div className="content-meta-element">{linkedElements}</div>
               </div>
-            </div>}
+            )}
           </>
         )
       } else {
         return <div></div>
       }
-      
     }
 
     const renderDates = () => {
@@ -132,7 +125,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
       } else {
         return <div></div>
       }
-    };
+    }
 
     return (
       <div className={classNames(displayClass, "content-meta-container")}>
@@ -140,13 +133,12 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
           {renderAuthor()}
           {renderReadingTime()}
         </div>
-        <hr className="content-meta-divider"/>
+        <hr className="content-meta-divider" />
         <div className="content-meta-row">
           {renderUpLinks()}
           {renderDates()}
         </div>
       </div>
-      
     )
   }
 
