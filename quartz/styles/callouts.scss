@@ -17,8 +17,8 @@
   transition: max-height 0.3s ease;
   box-sizing: border-box;
 
-  & > ul {
-    padding-left: 1.25rem;
+  & > ul, & > li {
+    padding-left: 1.3125rem;
   }
 
   & > *:not(:first-child) {
