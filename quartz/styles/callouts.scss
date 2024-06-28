@@ -41,6 +41,145 @@
   --callout-icon-example: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg> ');
   --callout-icon-quote: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path></svg>');
   --callout-icon-fold: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpolyline points="6 9 12 15 18 9"%3E%3C/polyline%3E%3C/svg%3E');
+  --callout-icon-album: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-a-arrow-down lucide-icon customizable"><path d="M3.5 13h6"></path><path d="m2 16 4.5-9 4.5 9"></path><path d="M18 7v9"></path><path d="m14 12 4 4 4-4"></path></svg><!---->');
+  --callout-icon-ampersand: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-album lucide-icon customizable"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><polyline points="11 3 11 11 14 8 17 11 17 3"></polyline></svg><!---->');
+  --callout-icon-area-chart: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ampersand lucide-icon customizable"><path d="M17.5 12c0 4.4-3.6 8-8 8A4.5 4.5 0 0 1 5 15.5c0-6 8-4 8-8.5a3 3 0 1 0-6 0c0 3 2.5 8.5 12 13"></path><path d="M16 12h3"></path></svg><!---->');
+  --callout-icon-armchair: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-area-chart lucide-icon customizable"><path d="M3 3v18h18"></path><path d="M7 12v5h12V8l-5 5-4-4Z"></path></svg><!---->');
+  --callout-icon-apple: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-armchair lucide-icon customizable"><path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"></path><path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z"></path><path d="M5 18v2"></path><path d="M19 18v2"></path></svg><!---->');
+  --callout-icon-app: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-apple lucide-icon customizable"><path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"></path><path d="M10 2c1 .5 2 2 2 5"></path></svg><!---->');
+  --callout-icon-at-sign: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout-grid lucide-icon customizable"><rect width="7" height="7" x="3" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="14" rx="1"></rect><rect width="7" height="7" x="3" y="14" rx="1"></rect></svg><!---->');
+  --callout-icon-alarm-clock: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-at-sign lucide-icon customizable"><circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8"></path></svg><!---->');
+  --callout-icon-banknote: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-alarm-clock lucide-icon customizable"><circle cx="12" cy="13" r="8"></circle><path d="M12 9v4l2 2"></path><path d="M5 3 2 6"></path><path d="m22 6-3-3"></path><path d="M6.38 18.7 4 21"></path><path d="M17.64 18.67 20 21"></path></svg><!---->');
+  --callout-icon-bird: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-banknote lucide-icon customizable"><rect width="20" height="12" x="2" y="6" rx="2"></rect><circle cx="12" cy="12" r="2"></circle><path d="M6 12h.01M18 12h.01"></path></svg><!---->');
+  --callout-icon-bookmark: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bird lucide-icon customizable"><path d="M16 7h.01"></path><path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20"></path><path d="m20 7 2 .5-2 .5"></path><path d="M10 18v3"></path><path d="M14 17.75V21"></path><path d="M7 18a6 6 0 0 0 3.84-10.61"></path></svg><!---->');
+  --callout-icon-brush: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bookmark lucide-icon customizable"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path></svg><!---->');
+  --callout-icon-aperture: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brush lucide-icon customizable"><path d="m9.06 11.9 8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08"></path><path d="M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z"></path></svg><!---->');
+  --callout-icon-atom: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-aperture lucide-icon customizable"><circle cx="12" cy="12" r="10"></circle><path d="m14.31 8 5.74 9.94"></path><path d="M9.69 8h11.48"></path><path d="m7.38 12 5.74-9.94"></path><path d="M9.69 16 3.95 6.06"></path><path d="M14.31 16H2.83"></path><path d="m16.62 12-5.74 9.94"></path></svg><!---->');
+  --callout-icon-axe: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-atom lucide-icon customizable"><circle cx="12" cy="12" r="1"></circle><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"></path><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"></path></svg><!---->');
+  --callout-icon-banana: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-axe lucide-icon customizable"><path d="m14 12-8.5 8.5a2.12 2.12 0 1 1-3-3L11 9"></path><path d="M15 13 9 7l4-4 6 6h3a8 8 0 0 1-7 7z"></path></svg><!---->');
+  --callout-icon-cake: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-banana lucide-icon customizable"><path d="M4 13c3.5-2 8-2 10 2a5.5 5.5 0 0 1 8 5"></path><path d="M5.15 17.89c5.52-1.52 8.65-6.89 7-12C11.55 4 11.5 2 13 2c3.22 0 5 5.5 5 8 0 6.5-4.2 12-10.49 12C5.11 22 2 22 2 20c0-1.5 1.14-1.55 3.15-2.11Z"></path></svg><!---->');
+  --callout-icon-chef-hat: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cake lucide-icon customizable"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"></path><path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1"></path><path d="M2 21h20"></path><path d="M7 8v3"></path><path d="M12 8v3"></path><path d="M17 8v3"></path><path d="M7 4h.01"></path><path d="M12 4h.01"></path><path d="M17 4h.01"></path></svg><!---->');
+  --callout-icon-codesandbox: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chef-hat lucide-icon customizable"><path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"></path><path d="M6 17h12"></path></svg><!---->');
+  --callout-icon-cog: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-codesandbox lucide-icon customizable"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline><polyline points="7.5 19.79 7.5 14.6 3 12"></polyline><polyline points="21 12 16.5 14.6 16.5 19.79"></polyline><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" x2="12" y1="22.08" y2="12"></line></svg><!---->');
+  --callout-icon-drama: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cog lucide-icon customizable"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"></path><path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"></path><path d="M12 2v2"></path><path d="M12 22v-2"></path><path d="m17 20.66-1-1.73"></path><path d="M11 10.27 7 3.34"></path><path d="m20.66 17-1.73-1"></path><path d="m3.34 7 1.73 1"></path><path d="M14 12h8"></path><path d="M2 12h2"></path><path d="m20.66 7-1.73 1"></path><path d="m3.34 17 1.73-1"></path><path d="m17 3.34-1 1.73"></path><path d="m11 13.73-4 6.93"></path></svg><!---->');
+  --callout-icon-ferris-wheel: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-drama lucide-icon customizable"><path d="M10 11h.01"></path><path d="M14 6h.01"></path><path d="M18 6h.01"></path><path d="M6.5 13.1h.01"></path><path d="M22 5c0 9-4 12-6 12s-6-3-6-12c0-2 2-3 6-3s6 1 6 3"></path><path d="M17.4 9.9c-.8.8-2 .8-2.8 0"></path><path d="M10.1 7.1C9 7.2 7.7 7.7 6 8.6c-3.5 2-4.7 3.9-3.7 5.6 4.5 7.8 9.5 8.4 11.2 7.4.9-.5 1.9-2.1 1.9-4.7"></path><path d="M9.1 16.5c.3-1.1 1.4-1.7 2.4-1.4"></path></svg><!---->');
+  --callout-icon-film: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ferris-wheel lucide-icon customizable"><circle cx="12" cy="12" r="2"></circle><path d="M12 2v4"></path><path d="m6.8 15-3.5 2"></path><path d="m20.7 7-3.5 2"></path><path d="M6.8 9 3.3 7"></path><path d="m20.7 17-3.5-2"></path><path d="m9 22 3-8 3 8"></path><path d="M8 22h8"></path><path d="M18 18.7a9 9 0 1 0-12 0"></path></svg><!---->');
+  --callout-icon-fish: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-film lucide-icon customizable"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M7 3v18"></path><path d="M3 7.5h4"></path><path d="M3 12h18"></path><path d="M3 16.5h4"></path><path d="M17 3v18"></path><path d="M17 7.5h4"></path><path d="M17 16.5h4"></path></svg><!---->');
+  --callout-icon-gem: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-fish lucide-icon customizable"><path d="M6.5 12c.94-3.46 4.94-6 8.5-6 3.56 0 6.06 2.54 7 6-.94 3.47-3.44 6-7 6s-7.56-2.53-8.5-6Z"></path><path d="M18 12v.5"></path><path d="M16 17.93a9.77 9.77 0 0 1 0-11.86"></path><path d="M7 10.67C7 8 5.58 5.97 2.73 5.5c-1 1.5-1 5 .23 6.5-1.24 1.5-1.24 5-.23 6.5C5.58 18.03 7 16 7 13.33"></path><path d="M10.46 7.26C10.2 5.88 9.17 4.24 8 3h5.8a2 2 0 0 1 1.98 1.67l.23 1.4"></path><path d="m16.01 17.93-.23 1.4A2 2 0 0 1 13.8 21H9.5a5.96 5.96 0 0 0 1.49-3.98"></path></svg><!---->');
+  --callout-icon-ghost: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gem lucide-icon customizable"><path d="M6 3h12l4 6-10 13L2 9Z"></path><path d="M11 3 8 9l4 13 4-13-3-6"></path><path d="M2 9h20"></path></svg><!---->');
+  --callout-icon-highlighter: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ghost lucide-icon customizable"><path d="M9 10h.01"></path><path d="M15 10h.01"></path><path d="M12 2a8 8 0 0 0-8 8v12l3-3 2.5 2.5L12 19l2.5 2.5L17 19l3 3V10a8 8 0 0 0-8-8z"></path></svg><!---->');
+  --callout-icon-lamp-desk: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-highlighter lucide-icon customizable"><path d="m9 11-6 6v3h9l3-3"></path><path d="m22 12-4.6 4.6a2 2 0 0 1-2.8 0l-5.2-5.2a2 2 0 0 1 0-2.8L14 4"></path></svg><!---->');
+  --callout-icon-layers: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lamp-desk lucide-icon customizable"><path d="m14 5-3 3 2 7 8-8-7-2Z"></path><path d="m14 5-3 3-3-3 3-3 3 3Z"></path><path d="M9.5 6.5 4 12l3 6"></path><path d="M3 22v-2c0-1.1.9-2 2-2h4a2 2 0 0 1 2 2v2H3Z"></path></svg><!---->');
+  --callout-icon-lightbulb: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers lucide-icon customizable"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"></path><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"></path><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"></path></svg><!---->');
+  --callout-icon-key-square: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb lucide-icon customizable"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg><!---->');
+  --callout-icon-magnet: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-key-square lucide-icon customizable"><path d="M12.4 2.7c.9-.9 2.5-.9 3.4 0l5.5 5.5c.9.9.9 2.5 0 3.4l-3.7 3.7c-.9.9-2.5.9-3.4 0L8.7 9.8c-.9-.9-.9-2.5 0-3.4Z"></path><path d="m14 7 3 3"></path><path d="M9.4 10.6 2 18v3c0 .6.4 1 1 1h4v-3h3v-3h2l1.4-1.4"></path></svg><!---->');
+  --callout-icon-mail: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-magnet lucide-icon customizable"><path d="m6 15-4-4 6.75-6.77a7.79 7.79 0 0 1 11 11L13 22l-4-4 6.39-6.36a2.14 2.14 0 0 0-3-3L6 15"></path><path d="m5 8 4 4"></path><path d="m12 15 4 4"></path></svg><!---->');
+  --callout-icon-maximize: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail lucide-icon customizable"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg><!---->');
+  --callout-icon-message-square: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-maximize lucide-icon customizable"><path d="M8 3H5a2 2 0 0 0-2 2v3"></path><path d="M21 8V5a2 2 0 0 0-2-2h-3"></path><path d="M3 16v3a2 2 0 0 0 2 2h3"></path><path d="M16 21h3a2 2 0 0 0 2-2v-3"></path></svg><!---->');
+  --callout-icon-message-circle: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square lucide-icon customizable"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg><!---->');
+  --callout-icon-mic: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle lucide-icon customizable"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg><!---->');
+  --callout-icon-music: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mic lucide-icon customizable"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" x2="12" y1="19" y2="22"></line></svg><!---->');
+  --callout-icon-music-4: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music lucide-icon customizable"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg><!---->');
+  --callout-icon-newspaper: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music-4 lucide-icon customizable"><path d="M9 18V5l12-2v13"></path><path d="m9 9 12-2"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg><!---->');
+  --callout-icon-paperclip: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-newspaper lucide-icon customizable"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path><path d="M18 14h-8"></path><path d="M15 18h-5"></path><path d="M10 6h8v4h-8V6Z"></path></svg><!---->');
+  --calout-icon-parking-square: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-parking"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></svg>');
+  --callout-icon-party-popper: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-paperclip lucide-icon customizable"><path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg><!---->');
+  --callout-icon-pen-tool: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-party-popper lucide-icon customizable"><path d="M5.8 11.3 2 22l10.7-3.79"></path><path d="M4 3h.01"></path><path d="M22 8h.01"></path><path d="M15 2h.01"></path><path d="M22 20h.01"></path><path d="m22 2-2.24.75a2.9 2.9 0 0 0-1.96 3.12c.1.86-.57 1.63-1.45 1.63h-.38c-.86 0-1.6.6-1.76 1.44L14 10"></path><path d="m22 13-.82-.33c-.86-.34-1.82.2-1.98 1.11c-.11.7-.72 1.22-1.43 1.22H17"></path><path d="m11 2 .33.82c.34.86-.2 1.82-1.11 1.98C9.52 4.9 9 5.52 9 6.23V7"></path><path d="M11 13c1.93 1.93 2.83 4.17 2 5-.83.83-3.07-.07-5-2-1.93-1.93-2.83-4.17-2-5 .83-.83 3.07.07 5 2Z"></path></svg><!---->');
+  --callout-icon-plane: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pen-tool lucide-icon customizable"><path d="M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z"></path><path d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18"></path><path d="m2.3 2.3 7.286 7.286"></path><circle cx="11" cy="11" r="2"></circle></svg><!---->');
+  --callout-icon-paw-print: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plane lucide-icon customizable"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"></path></svg><!---->');
+  --callout-icon-home: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-paw-print lucide-icon customizable"><circle cx="11" cy="4" r="2"></circle><circle cx="18" cy="8" r="2"></circle><circle cx="20" cy="16" r="2"></circle><path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z"></path></svg><!---->');
+  --callout-icon-projector: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-blinds lucide-icon customizable"><path d="M3 3h18"></path><path d="M20 7H8"></path><path d="M20 11H8"></path><path d="M10 19h10"></path><path d="M8 15h12"></path><path d="M4 3v14"></path><circle cx="4" cy="19" r="2"></circle></svg><!---->');
+  --callout-icon-pyramid: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-projector lucide-icon customizable"><path d="M5 7 3 5"></path><path d="M9 6V3"></path><path d="m13 7 2-2"></path><circle cx="9" cy="13" r="3"></circle><path d="M11.83 12H20a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h2.17"></path><path d="M16 16h2"></path></svg><!---->');
+  --callout-icon-rabbit: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pyramid lucide-icon customizable"><path d="M2.5 16.88a1 1 0 0 1-.32-1.43l9-13.02a1 1 0 0 1 1.64 0l9 13.01a1 1 0 0 1-.32 1.44l-8.51 4.86a2 2 0 0 1-1.98 0Z"></path><path d="M12 2v20"></path></svg><!---->');
+  --callout-icon-rotate-3d: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rabbit lucide-icon customizable"><path d="M13 16a3 3 0 0 1 2.24 5"></path><path d="M18 12h.01"></path><path d="M18 21h-8a4 4 0 0 1-4-4 7 7 0 0 1 7-7h.2L9.6 6.4a1 1 0 1 1 2.8-2.8L15.8 7h.2c3.3 0 6 2.7 6 6v1a2 2 0 0 1-2 2h-1a3 3 0 0 0-3 3"></path><path d="M20 8.54V4a2 2 0 1 0-4 0v3"></path><path d="M7.612 12.524a3 3 0 1 0-1.6 4.3"></path></svg><!---->');
+  --callout-icon-roller-coaster: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rotate-3d lucide-icon customizable"><path d="M16.466 7.5C15.643 4.237 13.952 2 12 2 9.239 2 7 6.477 7 12s2.239 10 5 10c.342 0 .677-.069 1-.2"></path><path d="m15.194 13.707 3.814 1.86-1.86 3.814"></path><path d="M19 15.57c-1.804.885-4.274 1.43-7 1.43-5.523 0-10-2.239-10-5s4.477-5 10-5c4.838 0 8.873 1.718 9.8 4"></path></svg><!---->');
+  --callout-icon-scale: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-roller-coaster lucide-icon customizable"><path d="M6 19V5"></path><path d="M10 19V6.8"></path><path d="M14 19v-7.8"></path><path d="M18 5v4"></path><path d="M18 19v-6"></path><path d="M22 19V9"></path><path d="M2 19V9a4 4 0 0 1 4-4c2 0 4 1.33 6 4s4 4 6 4a4 4 0 1 0-3-6.65"></path></svg><!---->');
+  --callout-icon-scatter-chart: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scale lucide-icon customizable"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="M7 21h10"></path><path d="M12 3v18"></path><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path></svg><!---->');
+  --callout-icon-scissors: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scatter-chart lucide-icon customizable"><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle><circle cx="18.5" cy="5.5" r=".5" fill="currentColor"></circle><circle cx="11.5" cy="11.5" r=".5" fill="currentColor"></circle><circle cx="7.5" cy="16.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="14.5" r=".5" fill="currentColor"></circle><path d="M3 3v18h18"></path></svg><!---->');
+  --callout-icon-send: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scissors lucide-icon customizable"><circle cx="6" cy="6" r="3"></circle><path d="M8.12 8.12 12 12"></path><path d="M20 4 8.12 15.88"></path><circle cx="6" cy="18" r="3"></circle><path d="M14.8 14.8 20 20"></path></svg><!---->');
+  --callout-icon-settings: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send lucide-icon customizable"><path d="m22 2-7 20-4-9-9-4Z"></path><path d="M22 2 11 13"></path></svg><!---->');
+  --callout-icon-shapes: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings lucide-icon customizable"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg><!---->');
+  --callout-icon-snail: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shapes lucide-icon customizable"><path d="M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z"></path><rect x="3" y="14" width="7" height="7" rx="1"></rect><circle cx="17.5" cy="17.5" r="3.5"></circle></svg><!---->');
+  --callout-icon-shrink: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-snail lucide-icon customizable"><path d="M2 13a6 6 0 1 0 12 0 4 4 0 1 0-8 0 2 2 0 0 0 4 0"></path><circle cx="10" cy="13" r="8"></circle><path d="M2 21h12c4.4 0 8-3.6 8-8V7a2 2 0 1 0-4 0v6"></path><path d="M18 3 19.1 5.2"></path><path d="M22 3 20.9 5.2"></path></svg><!---->');
+  --callout-icon-sliders: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shrink lucide-icon customizable"><path d="m15 15 6 6m-6-6v4.8m0-4.8h4.8"></path><path d="M9 19.8V15m0 0H4.2M9 15l-6 6"></path><path d="M15 4.2V9m0 0h4.8M15 9l6-6"></path><path d="M9 4.2V9m0 0H4.2M9 9 3 3"></path></svg><!---->');
+  --callout-icon-sliders-horizontal: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sliders-horizontal lucide-icon customizable"><line x1="21" x2="14" y1="4" y2="4"></line><line x1="10" x2="3" y1="4" y2="4"></line><line x1="21" x2="12" y1="12" y2="12"></line><line x1="8" x2="3" y1="12" y2="12"></line><line x1="21" x2="16" y1="20" y2="20"></line><line x1="12" x2="3" y1="20" y2="20"></line><line x1="14" x2="14" y1="2" y2="6"></line><line x1="8" x2="8" y1="10" y2="14"></line><line x1="16" x2="16" y1="18" y2="22"></line></svg><!---->');
+  --callout-icon-soup: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sliders-horizontal lucide-icon customizable"><line x1="21" x2="14" y1="4" y2="4"></line><line x1="10" x2="3" y1="4" y2="4"></line><line x1="21" x2="12" y1="12" y2="12"></line><line x1="8" x2="3" y1="12" y2="12"></line><line x1="21" x2="16" y1="20" y2="20"></line><line x1="12" x2="3" y1="20" y2="20"></line><line x1="14" x2="14" y1="2" y2="6"></line><line x1="8" x2="8" y1="10" y2="14"></line><line x1="16" x2="16" y1="18" y2="22"></line></svg><!---->');
+  --callout-icon-star: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-soup lucide-icon customizable"><path d="M12 21a9 9 0 0 0 9-9H3a9 9 0 0 0 9 9Z"></path><path d="M7 21h10"></path><path d="M19.5 12 22 6"></path><path d="M16.25 3c.27.1.8.53.75 1.36-.06.83-.93 1.2-1 2.02-.05.78.34 1.24.73 1.62"></path><path d="M11.25 3c.27.1.8.53.74 1.36-.05.83-.93 1.2-.98 2.02-.06.78.33 1.24.72 1.62"></path><path d="M6.25 3c.27.1.8.53.75 1.36-.06.83-.93 1.2-1 2.02-.05.78.34 1.24.74 1.62"></path></svg><!---->');
+  --callout-icon-tangent: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star lucide-icon customizable"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><!---->');
+  --callout-icon-target: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tangent lucide-icon customizable"><circle cx="17" cy="4" r="2"></circle><path d="M15.59 5.41 5.41 15.59"></path><circle cx="4" cy="17" r="2"></circle><path d="M12 22s-4-9-1.5-11.5S22 12 22 12"></path></svg><!---->');
+  --callout-icon-tent-tree: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target lucide-icon customizable"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg><!---->');
+  --callout-icon-train-track: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tent-tree lucide-icon customizable"><circle cx="4" cy="4" r="2"></circle><path d="m14 5 3-3 3 3"></path><path d="m14 10 3-3 3 3"></path><path d="M17 14V2"></path><path d="M17 14H7l-5 8h20Z"></path><path d="M8 14v8"></path><path d="m9 14 5 8"></path></svg><!---->');
+  --callout-icon-trending-down: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-train-track lucide-icon customizable"><path d="M2 17 17 2"></path><path d="m2 14 8 8"></path><path d="m5 11 8 8"></path><path d="m8 8 8 8"></path><path d="m11 5 8 8"></path><path d="m14 2 8 8"></path><path d="M7 22 22 7"></path></svg><!---->');
+  --callout-icon-trending-up: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-down lucide-icon customizable"><polyline points="22 17 13.5 8.5 8.5 13.5 2 7"></polyline><polyline points="16 17 22 17 22 11"></polyline></svg><!---->');
+  --callout-icon-turtle: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up lucide-icon customizable"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg><!---->');
+  --callout-icon-wand: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-turtle lucide-icon customizable"><path d="m12 10 2 4v3a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-3a8 8 0 1 0-16 0v3a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-3l2-4h4Z"></path><path d="M4.82 7.9 8 10"></path><path d="M15.18 7.9 12 10"></path><path d="M16.93 10H20a2 2 0 0 1 0 4H2"></path></svg><!---->');
+  --callout-icon-wand-2: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wand lucide-icon customizable"><path d="M15 4V2"></path><path d="M15 16v-2"></path><path d="M8 9h2"></path><path d="M20 9h2"></path><path d="M17.8 11.8 19 13"></path><path d="M15 9h.01"></path><path d="M17.8 6.2 19 5"></path><path d="m3 21 9-9"></path><path d="M12.2 6.2 11 5"></path></svg><!---->');
+  --callout-icon-waves: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wand-sparkles lucide-icon customizable"><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72"></path><path d="m14 7 3 3"></path><path d="M5 6v4"></path><path d="M19 14v4"></path><path d="M10 2v2"></path><path d="M7 8H3"></path><path d="M21 16h-4"></path><path d="M11 3H9"></path></svg><!---->');
+  --callout-icon-waypoints: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-waves lucide-icon customizable"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path></svg><!---->');
+  --callout-icon-wrench: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-waypoints lucide-icon customizable"><circle cx="12" cy="4.5" r="2.5"></circle><path d="m10.2 6.3-3.9 3.9"></path><circle cx="4.5" cy="12" r="2.5"></circle><path d="M7 12h10"></path><circle cx="19.5" cy="12" r="2.5"></circle><path d="m13.8 17.7 3.9-3.9"></path><circle cx="12" cy="19.5" r="2.5"></circle></svg><!---->');
+  --callout-icon-pencil: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wrench lucide-icon customizable"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg><!---->');
+  --callout-icon-youtube: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pencil lucide-icon customizable"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path><path d="m15 5 4 4"></path></svg><!---->');
+  --callout-icon-zap: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube lucide-icon customizable"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg><!---->');
+  --callout-icon-activity: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap lucide-icon customizable"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg><!---->');
+  --callout-icon-anchor: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity lucide-icon customizable"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path></svg><!---->');
+  --callout-icon-award: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-anchor lucide-icon customizable"><path d="M12 22V8"></path><path d="M5 12H2a10 10 0 0 0 20 0h-3"></path><circle cx="12" cy="5" r="3"></circle></svg><!---->');
+  --callout-icon-bike: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award lucide-icon customizable"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg><!---->');
+  --callout-icon-blocks: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bike lucide-icon customizable"><circle cx="18.5" cy="17.5" r="3.5"></circle><circle cx="5.5" cy="17.5" r="3.5"></circle><circle cx="15" cy="5" r="1"></circle><path d="M12 17.5V14l-3-3 4-3 2 3h2"></path></svg><!---->');
+  --callout-icon-book: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-blocks lucide-icon customizable"><rect width="7" height="7" x="14" y="3" rx="1"></rect><path d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3"></path></svg><!---->');
+  --callout-icon-box: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book lucide-icon customizable"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg><!---->');
+  --callout-icon-boxes: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-box lucide-icon customizable"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.3 7 8.7 5 8.7-5"></path><path d="M12 22V12"></path></svg><!---->');
+  --callout-icon-cable-car: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-boxes lucide-icon customizable"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"></path><path d="m7 16.5-4.74-2.85"></path><path d="m7 16.5 5-3"></path><path d="M7 16.5v5.17"></path><path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"></path><path d="m17 16.5-5-3"></path><path d="m17 16.5 4.74-2.85"></path><path d="M17 16.5v5.17"></path><path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"></path><path d="M12 8 7.26 5.15"></path><path d="m12 8 4.74-2.85"></path><path d="M12 13.5V8"></path></svg><!---->');
+  --callout-icon-calendar-days: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cable-car lucide-icon customizable"><path d="M10 3h.01"></path><path d="M14 2h.01"></path><path d="m2 9 20-5"></path><path d="M12 12V6.5"></path><rect width="16" height="10" x="4" y="12" rx="3"></rect><path d="M9 12v5"></path><path d="M15 12v5"></path><path d="M4 17h16"></path></svg><!---->');
+  --callout-icon-camera: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days lucide-icon customizable"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 14h.01"></path><path d="M12 14h.01"></path><path d="M16 14h.01"></path><path d="M8 18h.01"></path><path d="M12 18h.01"></path><path d="M16 18h.01"></path></svg><!---->');
+  --callout-icon-castle: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera lucide-icon customizable"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path><circle cx="12" cy="13" r="3"></circle></svg><!---->');
+  --callout-icon-combine: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-castle lucide-icon customizable"><path d="M22 20v-9H2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2Z"></path><path d="M18 11V4H6v7"></path><path d="M15 22v-4a3 3 0 0 0-3-3a3 3 0 0 0-3 3v4"></path><path d="M22 11V9"></path><path d="M2 11V9"></path><path d="M6 4V2"></path><path d="M18 4V2"></path><path d="M10 4V2"></path><path d="M14 4V2"></path></svg><!---->');
+  --callout-icon-gamepad: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-combine lucide-icon customizable"><rect width="8" height="8" x="2" y="2" rx="2"></rect><path d="M14 2c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2"></path><path d="M20 2c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2"></path><path d="M10 18H5c-1.7 0-3-1.3-3-3v-1"></path><polyline points="7 21 10 18 7 15"></polyline><rect width="8" height="8" x="14" y="14" rx="2"></rect></svg><!---->');
+  --callout-icon-command: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad lucide-icon customizable"><line x1="6" x2="10" y1="12" y2="12"></line><line x1="8" x2="8" y1="10" y2="14"></line><line x1="15" x2="15.01" y1="13" y2="13"></line><line x1="18" x2="18.01" y1="11" y2="11"></line><rect width="20" height="12" x="2" y="6" rx="2"></rect></svg><!---->');
+  --callout-icon-compass: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-command lucide-icon customizable"><path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3"></path></svg><!---->');
+  --callout-icon-traffic-cone: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-compass lucide-icon customizable"><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"></path><circle cx="12" cy="12" r="10"></circle></svg><!---->');
+  --callout-icon-share-2: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-traffic-cone lucide-icon customizable"><path d="M9.3 6.2a4.55 4.55 0 0 0 5.4 0"></path><path d="M7.9 10.7c.9.8 2.4 1.3 4.1 1.3s3.2-.5 4.1-1.3"></path><path d="M13.9 3.5a1.93 1.93 0 0 0-3.8-.1l-3 10c-.1.2-.1.4-.1.6 0 1.7 2.2 3 5 3s5-1.3 5-3c0-.2 0-.4-.1-.5Z"></path><path d="m7.5 12.2-4.7 2.7c-.5.3-.8.7-.8 1.1s.3.8.8 1.1l7.6 4.5c.9.5 2.1.5 3 0l7.6-4.5c.7-.3 1-.7 1-1.1s-.3-.8-.8-1.1l-4.7-2.8"></path></svg><!---->');
+  --callout-icon-contact: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-share-2 lucide-icon customizable"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line></svg><!---->');
+  --callout-icon-cross: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-contact lucide-icon customizable"><path d="M17 18a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><circle cx="12" cy="10" r="2"></circle><line x1="8" x2="8" y1="2" y2="4"></line><line x1="16" x2="16" y1="2" y2="4"></line></svg><!---->');
+  --callout-icon-fingerprint: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cross lucide-icon customizable"><path d="M11 2a2 2 0 0 0-2 2v5H4a2 2 0 0 0-2 2v2c0 1.1.9 2 2 2h5v5c0 1.1.9 2 2 2h2a2 2 0 0 0 2-2v-5h5a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-5V4a2 2 0 0 0-2-2h-2z"></path></svg><!---->');
+  --callout-icon-globe: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-fingerprint lucide-icon customizable"><path d="M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4"></path><path d="M14 13.12c0 2.38 0 6.38-1 8.88"></path><path d="M17.29 21.02c.12-.6.43-2.3.5-3.02"></path><path d="M2 12a10 10 0 0 1 18-6"></path><path d="M2 16h.01"></path><path d="M21.8 16c.2-2 .131-5.354 0-6"></path><path d="M5 19.5C5.5 18 6 15 6 12a6 6 0 0 1 .34-2"></path><path d="M8.65 22c.21-.66.45-1.32.57-2"></path><path d="M9 6.8a6 6 0 0 1 9 5.2v2"></path></svg><!---->');
+  --callout-icon-hexagon: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe lucide-icon customizable"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg><!---->');
+  --callout-icon-building-2: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hexagon lucide-icon customizable"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg><!---->');
+  --callout-icon-joystick: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building-2 lucide-icon customizable"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path><path d="M10 6h4"></path><path d="M10 10h4"></path><path d="M10 14h4"></path><path d="M10 18h4"></path></svg><!---->');
+  --callout-icon-quote: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-joystick lucide-icon customizable"><path d="M21 17a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-2Z"></path><path d="M6 15v-2"></path><path d="M12 15V9"></path><circle cx="12" cy="6" r="3"></circle></svg><!---->');
+  --callout-icon-leaf: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote lucide-icon customizable"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg><!---->');
+  --callout-icon-link: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-leaf lucide-icon customizable"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg><!---->');
+  --callout-icon-locate-fixed: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link lucide-icon customizable"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg><!---->');
+  --callout-icon-map: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-locate-fixed lucide-icon customizable"><line x1="2" x2="5" y1="12" y2="12"></line><line x1="19" x2="22" y1="12" y2="12"></line><line x1="12" x2="12" y1="2" y2="5"></line><line x1="12" x2="12" y1="19" y2="22"></line><circle cx="12" cy="12" r="7"></circle><circle cx="12" cy="12" r="3"></circle></svg><!---->');
+  --callout-icon-milestone: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map lucide-icon customizable"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"></path><path d="M15 5.764v15"></path><path d="M9 3.236v15"></path></svg><!---->');
+  --callout-icon-network: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-milestone lucide-icon customizable"><path d="M18 6H5a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h13l4-3.5L18 6Z"></path><path d="M12 13v8"></path><path d="M12 3v3"></path></svg><!---->');
+  --callout-icon-file-text: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-network lucide-icon customizable"><rect x="16" y="16" width="6" height="6" rx="1"></rect><rect x="2" y="16" width="6" height="6" rx="1"></rect><rect x="9" y="2" width="6" height="6" rx="1"></rect><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path><path d="M12 12V8"></path></svg><!---->');
+  --callout-icon-orbit: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text lucide-icon customizable"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg><!---->');
+  --callout-icon-globe-2: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-orbit lucide-icon customizable"><circle cx="12" cy="12" r="3"></circle><circle cx="19" cy="5" r="2"></circle><circle cx="5" cy="19" r="2"></circle><path d="M10.4 21.9a10 10 0 0 0 9.941-15.416"></path><path d="M13.5 2.1a10 10 0 0 0-9.841 15.416"></path></svg><!---->');
+  --callout-icon-gamepad-2: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe-lock lucide-icon customizable"><path d="M15.686 15A14.5 14.5 0 0 1 12 22a14.5 14.5 0 0 1 0-20 10 10 0 1 0 9.542 13"></path><path d="M2 12h8.5"></path><path d="M20 6V4a2 2 0 1 0-4 0v2"></path><rect width="8" height="5" x="14" y="6" rx="1"></rect></svg><!---->');
+  --callout-icon-puzzle: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad-2 lucide-icon customizable"><line x1="6" x2="10" y1="11" y2="11"></line><line x1="8" x2="8" y1="9" y2="13"></line><line x1="15" x2="15.01" y1="12" y2="12"></line><line x1="18" x2="18.01" y1="10" y2="10"></line><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"></path></svg><!---->');
+  --callout-icon-radar: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-puzzle lucide-icon customizable"><path d="M19.439 7.85c-.049.322.059.648.289.878l1.568 1.568c.47.47.706 1.087.706 1.704s-.235 1.233-.706 1.704l-1.611 1.611a.98.98 0 0 1-.837.276c-.47-.07-.802-.48-.968-.925a2.501 2.501 0 1 0-3.214 3.214c.446.166.855.497.925.968a.979.979 0 0 1-.276.837l-1.61 1.61a2.404 2.404 0 0 1-1.705.707 2.402 2.402 0 0 1-1.704-.706l-1.568-1.568a1.026 1.026 0 0 0-.877-.29c-.493.074-.84.504-1.02.968a2.5 2.5 0 1 1-3.237-3.237c.464-.18.894-.527.967-1.02a1.026 1.026 0 0 0-.289-.877l-1.568-1.568A2.402 2.402 0 0 1 1.998 12c0-.617.236-1.234.706-1.704L4.23 8.77c.24-.24.581-.353.917-.303.515.077.877.528 1.073 1.01a2.5 2.5 0 1 0 3.259-3.259c-.482-.196-.933-.558-1.01-1.073-.05-.336.062-.676.303-.917l1.525-1.525A2.402 2.402 0 0 1 12 1.998c.617 0 1.234.236 1.704.706l1.568 1.568c.23.23.556.338.877.29.493-.074.84-.504 1.02-.968a2.5 2.5 0 1 1 3.237 3.237c-.464.18-.894.527-.967 1.02Z"></path></svg><!---->');
+  --callout-icon-rainbow: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-radar lucide-icon customizable"><path d="M19.07 4.93A10 10 0 0 0 6.99 3.34"></path><path d="M4 6h.01"></path><path d="M2.29 9.62A10 10 0 1 0 21.31 8.35"></path><path d="M16.24 7.76A6 6 0 1 0 8.23 16.67"></path><path d="M12 18h.01"></path><path d="M17.99 11.66A6 6 0 0 1 15.77 16.67"></path><circle cx="12" cy="12" r="2"></circle><path d="m13.41 10.59 5.66-5.66"></path></svg><!---->');
+  --callout-icon-refresh-ccw: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rainbow lucide-icon customizable"><path d="M22 17a10 10 0 0 0-20 0"></path><path d="M6 17a6 6 0 0 1 12 0"></path><path d="M10 17a2 2 0 0 1 4 0"></path></svg><!---->');
+  --callout-icon-rocket: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-refresh-ccw lucide-icon customizable"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"></path><path d="M16 16h5v5"></path></svg><!---->');
+  --callout-icon-sailboat: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket lucide-icon customizable"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg><!---->');
+  --callout-icon-scroll: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sailboat lucide-icon customizable"><path d="M22 18H2a4 4 0 0 0 4 4h12a4 4 0 0 0 4-4Z"></path><path d="M21 14 10 2 3 14h18Z"></path><path d="M10 2v16"></path></svg><!---->');
+  --callout-icon-shell: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scroll lucide-icon customizable"><path d="M19 17V5a2 2 0 0 0-2-2H4"></path><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"></path></svg><!---->');
+  --callout-icon-ship: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shell lucide-icon customizable"><path d="M14 11a2 2 0 1 1-4 0 4 4 0 0 1 8 0 6 6 0 0 1-12 0 8 8 0 0 1 16 0 10 10 0 1 1-20 0 11.93 11.93 0 0 1 2.42-7.22 2 2 0 1 1 3.16 2.44"></path></svg><!---->');
+  --callout-icon-shipwheel: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ship lucide-icon customizable"><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1 .6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path><path d="M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.76"></path><path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"></path><path d="M12 10v4"></path><path d="M12 2v3"></path></svg><!---->');
+  --callout-icon-snowflake: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ship-wheel lucide-icon customizable"><circle cx="12" cy="12" r="8"></circle><path d="M12 2v7.5"></path><path d="m19 5-5.23 5.23"></path><path d="M22 12h-7.5"></path><path d="m19 19-5.23-5.23"></path><path d="M12 14.5V22"></path><path d="M10.23 13.77 5 19"></path><path d="M9.5 12H2"></path><path d="M10.23 10.23 5 5"></path><circle cx="12" cy="12" r="2.5"></circle></svg><!---->');
+  --callout-icon-sparkle: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-snowflake lucide-icon customizable"><line x1="2" x2="22" y1="12" y2="12"></line><line x1="12" x2="12" y1="2" y2="22"></line><path d="m20 16-4-4 4-4"></path><path d="m4 8 4 4-4 4"></path><path d="m16 4-4 4-4-4"></path><path d="m8 20 4-4 4 4"></path></svg><!---->');
+  --callout-icon-sprout: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkle lucide-icon customizable"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path></svg><!---->');
+  --callout-icon-sun: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sprout lucide-icon customizable"><path d="M7 20h10"></path><path d="M10 20c5.5-2.5.8-6.4 3-10"></path><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"></path><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"></path></svg><!---->');
+  --callout-icon-train: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun lucide-icon customizable"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><!---->');
+  --callout-icon-dumbbell: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rail-symbol lucide-icon customizable"><path d="M5 15h14"></path><path d="M5 9h14"></path><path d="m14 20-5-5 6-6-5-5"></path></svg><!---->');
+  --callout-icon-tram-front: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dumbbell lucide-icon customizable"><path d="M14.4 14.4 9.6 9.6"></path><path d="M18.657 21.485a2 2 0 1 1-2.829-2.828l-1.767 1.768a2 2 0 1 1-2.829-2.829l6.364-6.364a2 2 0 1 1 2.829 2.829l-1.768 1.767a2 2 0 1 1 2.828 2.829z"></path><path d="m21.5 21.5-1.4-1.4"></path><path d="M3.9 3.9 2.5 2.5"></path><path d="M6.404 12.768a2 2 0 1 1-2.829-2.829l1.768-1.767a2 2 0 1 1-2.828-2.829l2.828-2.828a2 2 0 1 1 2.829 2.828l1.767-1.768a2 2 0 1 1 2.829 2.829z"></path></svg><!---->');
+  --callout-icon-trees: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tram-front lucide-icon customizable"><rect width="16" height="16" x="4" y="3" rx="2"></rect><path d="M4 11h16"></path><path d="M12 3v8"></path><path d="m8 19-2 3"></path><path d="m18 22-2-3"></path><path d="M8 15h.01"></path><path d="M16 15h.01"></path></svg><!---->');
+  --callout-icon-tower-control: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trees lucide-icon customizable"><path d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z"></path><path d="M7 16v6"></path><path d="M13 19v3"></path><path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5"></path></svg><!---->');
+  --callout-icon-user: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tower-control lucide-icon customizable"><path d="M18.2 12.27 20 6H4l1.8 6.27a1 1 0 0 0 .95.73h10.5a1 1 0 0 0 .96-.73Z"></path><path d="M8 13v9"></path><path d="M16 22v-9"></path><path d="m9 6 1 7"></path><path d="m15 6-1 7"></path><path d="M12 6V2"></path><path d="M13 2h-2"></path></svg><!---->');
+  --callout-icon-venetian-mask: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user lucide-icon customizable"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg><!---->');
+  --callout-icon-clapperboard: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-venetian-mask lucide-icon customizable"><path d="M2 12a5 5 0 0 0 5 5 8 8 0 0 1 5 2 8 8 0 0 1 5-2 5 5 0 0 0 5-5V7h-5a8 8 0 0 0-5 2 8 8 0 0 0-5-2H2Z"></path><path d="M6 11c1.5 0 3 .5 3 2-2 0-3 0-3-2Z"></path><path d="M18 11c-1.5 0-3 .5-3 2 2 0 3 0 3-2Z"></path></svg><!---->');
+  --callout-icon-watch: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clapperboard lucide-icon customizable"><path d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3Z"></path><path d="m6.2 5.3 3.1 3.9"></path><path d="m12.4 3.4 3.1 4"></path><path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"></path></svg><!---->');
+  --callout-icon-moon: url('data:image/svg+xml; utf8,<svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-watch lucide-icon customizable"><circle cx="12" cy="12" r="6"></circle><polyline points="12 10 12 12 13 13"></polyline><path d="m16.13 7.66-.81-4.05a2 2 0 0 0-2-1.61h-2.68a2 2 0 0 0-2 1.61l-.78 4.05"></path><path d="m7.88 16.36.8 4a2 2 0 0 0 2 1.61h2.72a2 2 0 0 0 2-1.61l.81-4.05"></path></svg><!---->');
 
   &[data-callout] {
     --color: #448aff;
@@ -140,6 +279,7 @@
 
   &.is-collapsed > .callout-title > .fold-callout-icon {
     transform: rotateZ(-90deg);
+    align-self: center;
   }
 }
 
@@ -217,7 +357,7 @@ RED: Award, Cone, Fingerprint, Watch
 */
 
 .callout[data-callout="album"] {
-  --callout-icon: album;
+  --callout-icon: var(--callout-icon-album);
   --callout-color: 151, 117, 250;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -225,7 +365,7 @@ RED: Award, Cone, Fingerprint, Watch
 }
 
 .callout[data-callout="ampersand"] {
-  --callout-icon: ampersand;
+  --callout-icon: var(--callout-icon-ampersand);
   --callout-color: 134, 142, 150;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -233,7 +373,7 @@ RED: Award, Cone, Fingerprint, Watch
 }
 
 .callout[data-callout="areachart"] {
-  --callout-icon: area-chart;
+  --callout-icon: var(--callout-icon-area-chart);
   --callout-color: 77, 171, 247;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -241,7 +381,7 @@ RED: Award, Cone, Fingerprint, Watch
 }
 
 .callout[data-callout="armchair"] {
-  --callout-icon: armchair;
+  --callout-icon: var(--callout-icon-armchair);
   --callout-color: 34, 184, 207;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -249,7 +389,7 @@ RED: Award, Cone, Fingerprint, Watch
 }
 
 .callout[data-callout="apple"] {
-  --callout-icon: apple;
+  --callout-icon: var(--callout-icon-apple);
   --callout-color: 64, 192, 87;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -257,11 +397,11 @@ RED: Award, Cone, Fingerprint, Watch
 }
 
 .callout[data-callout="app"] {
-  --callout-icon: app;
+  --callout-icon: var(--callout-icon-app);
 }
 
 .callout[data-callout="@"] {
-  --callout-icon: at-sign;
+  --callout-icon: var(--callout-icon-at-sign);
   --callout-color: 233, 124, 238;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -269,7 +409,7 @@ RED: Award, Cone, Fingerprint, Watch
 }
 
 .callout[data-callout="alarm"] {
-  --callout-icon: alarm-clock;
+  --callout-icon: var(--callout-icon-alarm-clock);
   --callout-color: 250, 82, 82;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -277,7 +417,7 @@ RED: Award, Cone, Fingerprint, Watch
 }
 
 .callout[data-callout="banknote"] {
-  --callout-icon: banknote;
+  --callout-icon: var(--callout-icon-banknote);
   --callout-color: 18, 184, 134;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -285,7 +425,7 @@ RED: Award, Cone, Fingerprint, Watch
 }
 
 .callout[data-callout="bird"] {
-  --callout-icon: bird;
+  --callout-icon: var(--callout-icon-bird);
   --callout-color: 77, 171, 247;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -293,7 +433,7 @@ RED: Award, Cone, Fingerprint, Watch
 }
 
 .callout[data-callout="bookmark"] {
-  --callout-icon: bookmark;
+  --callout-icon: var(--callout-icon-bookmark);
   --callout-color: 199, 196, 0;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -301,7 +441,7 @@ RED: Award, Cone, Fingerprint, Watch
 }
 
 .callout[data-callout="brush"] {
-  --callout-icon: brush;
+  --callout-icon: var(--callout-icon-brush);
   --callout-color: 151, 117, 250;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -311,7 +451,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* aperture */
 
 .callout[data-callout="aperture"] {
-  --callout-icon: aperture;
+  --callout-icon: var(--callout-icon-aperture);
   --callout-color: 34, 184, 207;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -321,7 +461,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* atom */
 
 .callout[data-callout="atom"] {
-  --callout-icon: atom;
+  --callout-icon: var(--callout-icon-atom);
   --callout-color: 255, 146, 43;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -331,7 +471,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* axe */
 
 .callout[data-callout="axe"] {
-  --callout-icon: axe;
+  --callout-icon: var(--callout-icon-axe);
   --callout-color: 255, 146, 43;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -341,7 +481,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* banana */
 
 .callout[data-callout="banana"] {
-  --callout-icon: banana;
+  --callout-icon: var(--callout-icon-banana);
   --callout-color: 199, 196, 0;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -351,7 +491,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* cake */
 
 .callout[data-callout="cake"] {
-  --callout-icon: cake;
+  --callout-icon: var(--callout-icon-cake);
   --callout-color: 255, 146, 43;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -361,7 +501,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* chef-hat */
 
 .callout[data-callout="chef"] {
-  --callout-icon: chef-hat;
+  --callout-icon: var(--callout-icon-chef-hat);
   --callout-color: 255, 146, 43;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -371,7 +511,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* codesandbox */
 
 .callout[data-callout="codesandbox"] {
-  --callout-icon: codesandbox;
+  --callout-icon: var(--callout-icon-codesandbox);
   --callout-color: 233, 124, 238;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -381,7 +521,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* cog */
 
 .callout[data-callout="cog"] {
-  --callout-icon: cog;
+  --callout-icon: var(--callout-icon-cog);
   --callout-color: 134, 142, 150;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -391,7 +531,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* drama */
 
 .callout[data-callout="drama"] {
-  --callout-icon: drama;
+  --callout-icon: var(--callout-icon-drama);
   --callout-color: 250, 82, 82;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -401,7 +541,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* ferris-wheel */
 
 .callout[data-callout="ferris"] {
-  --callout-icon: ferris-wheel;
+  --callout-icon: var(--callout-icon-ferris-wheel);
   --callout-color: 199, 196, 0;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -411,7 +551,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* film */
 
 .callout[data-callout="film"] {
-  --callout-icon: film;
+  --callout-icon: var(--callout-icon-film);
   --callout-color: 255, 146, 43;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -421,7 +561,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* fish */
 
 .callout[data-callout="fish"] {
-  --callout-icon: fish;
+  --callout-icon: var(--callout-icon-fish);
   --callout-color: 77, 171, 247;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -431,7 +571,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* gem */
 
 .callout[data-callout="gem"] {
-  --callout-icon: gem;
+  --callout-icon: var(--callout-icon-gem);
   --callout-color: 233, 124, 238;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -441,7 +581,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* ghost */
 
 .callout[data-callout="ghost"] {
-  --callout-icon: ghost;
+  --callout-icon: var(--callout-icon-ghost);
   --callout-color: 151, 117, 250;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -451,7 +591,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* highlighter */
 
 .callout[data-callout="highlighter"] {
-  --callout-icon: highlighter;
+  --callout-icon: var(--callout-icon-highlighter);
   --callout-color: 199, 196, 0;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -461,7 +601,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* lamp-desk */
 
 .callout[data-callout="lamp"] {
-  --callout-icon: lamp-desk;
+  --callout-icon: var(--callout-icon-lamp-desk);
   --callout-color: 18, 184, 134;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -471,7 +611,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* layers */
 
 .callout[data-callout="layers"] {
-  --callout-icon: layers;
+  --callout-icon: var(--callout-icon-layers);
   --callout-color: 64, 192, 87;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -481,7 +621,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* lightbulb */
 
 .callout[data-callout="lightbulb"] {
-  --callout-icon: lightbulb;
+  --callout-icon: var(--callout-icon-lightbulb);
   --callout-color: 199, 196, 0;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -491,7 +631,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* key-square */
 
 .callout[data-callout="key"] {
-  --callout-icon: key-square;
+  --callout-icon: var(--callout-icon-key-square);
   --callout-color: 134, 142, 150;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -501,7 +641,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* magnet */
 
 .callout[data-callout="magnet"] {
-  --callout-icon: magnet;
+  --callout-icon: var(--callout-icon-magnet);
   --callout-color: 250, 82, 82;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -511,7 +651,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* mail */
 
 .callout[data-callout="mail"] {
-  --callout-icon: mail;
+  --callout-icon: var(--callout-icon-mail);
   --callout-color: 77, 171, 247;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -521,7 +661,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* maximize */
 
 .callout[data-callout="maximize"] {
-  --callout-icon: maximize;
+  --callout-icon: var(--callout-icon-maximize);
   --callout-color: 18, 184, 134;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -531,7 +671,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* message-square */
 
 .callout[data-callout="messages"] {
-  --callout-icon: message-square;
+  --callout-icon: var(--callout-icon-message-square);
   --callout-color: 77, 171, 247;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -541,7 +681,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* message-circle */
 
 .callout[data-callout="message"] {
-  --callout-icon: message-circle;
+  --callout-icon: var(--callout-icon-message-circle);
   --callout-color: 64, 192, 87;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -551,7 +691,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* mic */
 
 .callout[data-callout="mic"] {
-  --callout-icon: mic;
+  --callout-icon: var(--callout-icon-mic);
   --callout-color: 250, 82, 82;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -561,7 +701,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* music */
 
 .callout[data-callout="song"] {
-  --callout-icon: music;
+  --callout-icon: var(--callout-icon-music);
   --callout-color: 199, 196, 0;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -571,7 +711,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* music-4 */
 
 .callout[data-callout="music"] {
-  --callout-icon: music-4;
+  --callout-icon: var(--callout-icon-music-4);
   --callout-color: 250, 82, 82;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -581,7 +721,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* newspaper */
 
 .callout[data-callout="newspaper"] {
-  --callout-icon: newspaper;
+  --callout-icon: var(--callout-icon-newspaper);
   --callout-color: 134, 142, 150;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -591,7 +731,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* paperclip */
 
 .callout[data-callout="paperclip"] {
-  --callout-icon: paperclip;
+  --callout-icon: var(--callout-icon-paperclip);
   --callout-color: 233, 124, 238;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -601,7 +741,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* party-popper */
 
 .callout[data-callout="party"] {
-  --callout-icon: party-popper;
+  --callout-icon: var(--callout-icon-party-popper);
   --callout-color: 151, 117, 250;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -611,7 +751,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* pen */
 
 .callout[data-callout="pen"] {
-  --callout-icon: pen-tool;
+  --callout-icon: var(--callout-icon-pen-tool);
   --callout-color: 255, 146, 43;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -621,7 +761,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* plane */
 
 .callout[data-callout="plane"] {
-  --callout-icon: plane;
+  --callout-icon: var(--callout-icon-plane);
   --callout-color: 77, 171, 247;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -631,7 +771,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* paw-print */
 
 .callout[data-callout="pawprint"] {
-  --callout-icon: paw-print;
+  --callout-icon: var(--callout-icon-paw-print);
   --callout-color: 151, 117, 250;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -641,7 +781,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* home */
 
 .callout[data-callout="home"] {
-  --callout-icon: home;
+  --callout-icon: var(--callout-icon-home);
   --callout-color: 64, 192, 87;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -651,7 +791,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* projector */
 
 .callout[data-callout="projector"] {
-  --callout-icon: projector;
+  --callout-icon: var(--callout-icon-projector);
   --callout-color: 151, 117, 250;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -661,7 +801,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* pyramid */
 
 .callout[data-callout="pyramid"] {
-  --callout-icon: pyramid;
+  --callout-icon: var(--callout-icon-pyramid);
   --callout-color: 18, 184, 134;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -671,7 +811,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* rabbit */
 
 .callout[data-callout="rabbit"] {
-  --callout-icon: rabbit;
+  --callout-icon: var(--callout-icon-rabbit);
   --callout-color: 199, 196, 0;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -681,7 +821,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* rotate-3d */
 
 .callout[data-callout="revolve"] {
-  --callout-icon: rotate-3d;
+  --callout-icon: var(--callout-icon-rotate-3d);
   --callout-color: 18, 184, 134;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -691,7 +831,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* rollercoaster */
 
 .callout[data-callout="rollercoaster"] {
-  --callout-icon: roller-coaster;
+  --callout-icon: var(--callout-icon-roller-coaster);
   --callout-color: 233, 124, 238;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -701,7 +841,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* scale */
 
 .callout[data-callout="scale"] {
-  --callout-icon: scale;
+  --callout-icon: var(--callout-icon-scale);
   --callout-color: 77, 171, 247;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -711,7 +851,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* scatter-chart */
 
 .callout[data-callout="scatterchart"] {
-  --callout-icon: scatter-chart;
+  --callout-icon: var(--callout-icon-scatter-chart);
   --callout-color: 64, 192, 87;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -721,7 +861,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* scissors */
 
 .callout[data-callout="scissors"] {
-  --callout-icon: scissors;
+  --callout-icon: var(--callout-icon-scissors);
   --callout-color: 233, 124, 238;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -731,7 +871,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* send */
 
 .callout[data-callout="send"] {
-  --callout-icon: send;
+  --callout-icon: var(--callout-icon-send);
   --callout-color: 233, 124, 238;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -741,7 +881,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* settings */
 
 .callout[data-callout="settings"] {
-  --callout-icon: settings;
+  --callout-icon: var(--callout-icon-settings);
   --callout-color: 134, 142, 150;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -751,7 +891,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* shapes */
 
 .callout[data-callout="shapes"] {
-  --callout-icon: shapes;
+  --callout-icon: var(--callout-icon-shapes);
   --callout-color: 233, 124, 238;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -761,7 +901,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* snail */
 
 .callout[data-callout="snail"] {
-  --callout-icon: snail;
+  --callout-icon: var(--callout-icon-snail);
   --callout-color: 255, 146, 43;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -771,7 +911,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* shrink */
 
 .callout[data-callout="shrink"] {
-  --callout-icon: shrink;
+  --callout-icon: var(--callout-icon-shrink);
   --callout-color: 134, 142, 150;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -781,7 +921,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* sliders */
 
 .callout[data-callout="sliders"] {
-  --callout-icon: sliders;
+  --callout-icon: var(--callout-icon-sliders);
   --callout-color: 199, 196, 0;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -791,7 +931,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* sliders-horizontal */
 
 .callout[data-callout="slider"] {
-  --callout-icon: sliders-horizontal;
+  --callout-icon: var(--callout-icon-sliders-horizontal);
   --callout-color: 18, 184, 134;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -801,7 +941,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* soup */
 
 .callout[data-callout="soup"] {
-  --callout-icon: soup;
+  --callout-icon: var(--callout-icon-soup);
   --callout-color: 18, 184, 134;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -811,7 +951,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* star */
 
 .callout[data-callout="star"] {
-  --callout-icon: star;
+  --callout-icon: var(--callout-icon-star);
   --callout-color: 34, 184, 207;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -821,7 +961,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* tangent */
 
 .callout[data-callout="tangent"] {
-  --callout-icon: tangent;
+  --callout-icon: var(--callout-icon-tangent);
   --callout-color: 199, 196, 0;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -831,7 +971,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* target */
 
 .callout[data-callout="target"] {
-  --callout-icon: target;
+  --callout-icon: var(--callout-icon-target);
   --callout-color: 250, 82, 82;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -841,7 +981,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* tent-tree */
 
 .callout[data-callout="tent"] {
-  --callout-icon: tent-tree;
+  --callout-icon: var(--callout-icon-tent-tree);
   --callout-color: 64, 192, 87;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -851,7 +991,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* train-track */
 
 .callout[data-callout="tracks"] {
-  --callout-icon: train-track;
+  --callout-icon: var(--callout-icon-train-track);
   --callout-color: 134, 142, 150;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -861,7 +1001,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* trending-down */
 
 .callout[data-callout="trendingdown"] {
-  --callout-icon: trending-down;
+  --callout-icon: var(--callout-icon-trending-down);
   --callout-color: 250, 82, 82;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -871,7 +1011,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* trending-up */
 
 .callout[data-callout="trendingup"] {
-  --callout-icon: trending-up;
+  --callout-icon: var(--callout-icon-trending-up);
   --callout-color: 64, 192, 87;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -881,7 +1021,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* turtle */
 
 .callout[data-callout="turtle"] {
-  --callout-icon: turtle;
+  --callout-icon: var(--callout-icon-turtle);
   --callout-color: 18, 184, 134;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -891,7 +1031,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* wand */
 
 .callout[data-callout="wand"] {
-  --callout-icon: wand;
+  --callout-icon: var(--callout-icon-wand);
   --callout-color: 151, 117, 250;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -901,7 +1041,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* wand-2 */
 
 .callout[data-callout="wandy"] {
-  --callout-icon: wand-2;
+  --callout-icon: var(--callout-icon-wand-2);
   --callout-color: 34, 184, 207;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -911,7 +1051,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* waves */
 
 .callout[data-callout="waves"] {
-  --callout-icon: waves;
+  --callout-icon: var(--callout-icon-waves);
   --callout-color: 34, 184, 207;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -921,7 +1061,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* waypoints */
 
 .callout[data-callout="waypoints"] {
-  --callout-icon: waypoints;
+  --callout-icon: var(--callout-icon-waypoints);
   --callout-color: 34, 184, 207;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -931,7 +1071,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* wrench */
 
 .callout[data-callout="wrench"] {
-  --callout-icon: wrench;
+  --callout-icon: var(--callout-icon-wrench);
   --callout-color: 134, 142, 150;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -942,7 +1082,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="write"] {
   --callout-color: 34, 184, 207;
-  --callout-icon: pencil;
+  --callout-icon: var(--callout-icon-pencil);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -951,7 +1091,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* youtube */
 
 .callout[data-callout="youtube"] {
-  --callout-icon: youtube;
+  --callout-icon: var(--callout-icon-youtube);
   --callout-color: 250, 82, 82;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -962,7 +1102,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="zap"] {
   --callout-color: 233, 124, 238;
-  --callout-icon: zap;
+  --callout-icon: var(--callout-icon-zap);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -972,7 +1112,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* activity */
 
 .callout[data-callout="activity"] {
-  --callout-icon: activity;
+  --callout-icon: var(--callout-icon-activity);
   --callout-color: 233, 124, 238;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -982,7 +1122,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* anchor */
 
 .callout[data-callout="anchor"] {
-  --callout-icon: anchor;
+  --callout-icon: var(--callout-icon-anchor);
   --callout-color: 77, 171, 247;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -992,7 +1132,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* award */
 
 .callout[data-callout="award"] {
-  --callout-icon: award;
+  --callout-icon: var(--callout-icon-award);
   --callout-color: 250, 82, 82;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -1001,7 +1141,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 /* bike */
 .callout[data-callout="bike"] {
-  --callout-icon: bike;
+  --callout-icon: var(--callout-icon-bike);
   --callout-color: 64, 192, 87;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -1010,7 +1150,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 /* blocks */
 .callout[data-callout="blocks"] {
-  --callout-icon: blocks;
+  --callout-icon: var(--callout-icon-blocks);
   --callout-color: 34, 184, 207;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -1020,7 +1160,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* book */
 
 .callout[data-callout="book"] {
-  --callout-icon: book;
+  --callout-icon: var(--callout-icon-book);
   --callout-color: 255, 146, 43;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -1030,7 +1170,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* box */
 
 .callout[data-callout="box"] {
-  --callout-icon: box;
+  --callout-icon: var(--callout-icon-box);
   --callout-color: 134, 142, 150;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -1041,7 +1181,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="boxes"] {
   --callout-color: 255, 146, 43;
-  --callout-icon: boxes;
+  --callout-icon: var(--callout-icon-boxes);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1051,7 +1191,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="boxescyan"] {
   --callout-color: 255, 146, 43;
-  --callout-icon: boxes;
+  --callout-icon: var(--callout-icon-boxes);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1061,7 +1201,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="cable-car"] {
   --callout-color: 18, 184, 134;
-  --callout-icon: cable-car;
+  --callout-icon: var(--callout-icon-cable-car);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1070,7 +1210,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* calendar */
 
 .callout[data-callout="calendar"] {
-  --callout-icon: calendar-days;
+  --callout-icon: var(--callout-icon-calendar-days);
   --callout-color: 151, 117, 250;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -1080,7 +1220,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* camera */
 
 .callout[data-callout="camera"] {
-  --callout-icon: camera;
+  --callout-icon: var(--callout-icon-camera);
   --callout-color: 18, 184, 134;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -1090,7 +1230,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* castle mint */
 .callout[data-callout="castle"] {
   --callout-color: 18, 184, 134;
-  --callout-icon: castle;
+  --callout-icon: var(--callout-icon-castle);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1099,7 +1239,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* castle orange */
 .callout[data-callout="castleo"] {
   --callout-color: 255, 146, 43;
-  --callout-icon: castle;
+  --callout-icon: var(--callout-icon-castle);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1109,7 +1249,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="combine"] {
   --callout-color: 34, 184, 207;
-  --callout-icon: combine;
+  --callout-icon: var(--callout-icon-combine);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1119,7 +1259,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="combo"] {
   --callout-color: 18, 184, 134;
-  --callout-icon: gamepad;
+  --callout-icon: var(--callout-icon-gamepad);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1129,7 +1269,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="command"] {
   --callout-color: 134, 142, 150;
-  --callout-icon: command;
+  --callout-icon: var(--callout-icon-command);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1139,7 +1279,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="compass"] {
   --callout-color: 255, 146, 43;
-  --callout-icon: compass;
+  --callout-icon: var(--callout-icon-compass);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1148,7 +1288,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* cone */
 
 .callout[data-callout="cone"] {
-  --callout-icon: traffic-cone;
+  --callout-icon: var(--callout-icon-traffic-cone);
   --callout-color: 250, 82, 82;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -1158,7 +1298,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* connect */
 
 .callout[data-callout="connect"] {
-  --callout-icon: share-2;
+  --callout-icon: var(--callout-icon-share-2);
   --callout-color: 199, 196, 0;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -1169,7 +1309,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="contact"] {
   --callout-color: 64, 192, 87;
-  --callout-icon: contact;
+  --callout-icon: var(--callout-icon-contact);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1178,7 +1318,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* cross */
 
 .callout[data-callout="cross"] {
-  --callout-icon: cross;
+  --callout-icon: var(--callout-icon-cross);
   --callout-color: 250, 82, 82;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -1189,7 +1329,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="fingerprint"] {
   --callout-color: 250, 82, 82;
-  --callout-icon: fingerprint;
+  --callout-icon: var(--callout-icon-fingerprint);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1199,7 +1339,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="globe"] {
   --callout-color: 151, 117, 250;
-  --callout-icon: globe;
+  --callout-icon: var(--callout-icon-globe);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1209,7 +1349,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="hexagon"] {
   --callout-color: 134, 142, 150;
-  --callout-icon: hexagon;
+  --callout-icon: var(--callout-icon-hexagon);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1219,7 +1359,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="industry"] {
   --callout-color: 151, 117, 250;
-  --callout-icon: building-2;
+  --callout-icon: var(--callout-icon-building-2);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1229,7 +1369,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="joystick"] {
   --callout-color: 233, 124, 238;
-  --callout-icon: joystick;
+  --callout-icon: var(--callout-icon-joystick);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1239,7 +1379,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="keaton"] {
   --callout-color: 255, 146, 43;
-  --callout-icon: quote;
+  --callout-icon: var(--callout-icon-quote);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1249,7 +1389,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="quotes"] {
   --callout-color: 255, 146, 43;
-  --callout-icon: quote;
+  --callout-icon: var(--callout-icon-quote);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1259,7 +1399,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="leaf"] {
   --callout-color: 64, 192, 87;
-  --callout-icon: leaf;
+  --callout-icon: var(--callout-icon-leaf);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1269,7 +1409,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="link"] {
   --callout-color: 134, 142, 150;
-  --callout-icon: link;
+  --callout-icon: var(--callout-icon-link);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1279,7 +1419,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="locate"] {
   --callout-color: 77, 171, 247;
-  --callout-icon: locate-fixed;
+  --callout-icon: var(--callout-icon-locate-fixed);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1289,7 +1429,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="map"] {
   --callout-color: 34, 184, 207;
-  --callout-icon: map;
+  --callout-icon: var(--callout-icon-map);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1299,7 +1439,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="milestone"] {
   --callout-color: 233, 124, 238;
-  --callout-icon: milestone;
+  --callout-icon: var(--callout-icon-milestone);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1309,7 +1449,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="network"] {
   --callout-color: 151, 117, 250;
-  --callout-icon: network;
+  --callout-icon: var(--callout-icon-network);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1319,7 +1459,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="notes"] {
   --callout-color: 134, 142, 150;
-  --callout-icon: file-text;
+  --callout-icon: var(--callout-icon-file-text);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1329,7 +1469,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="orbit"] {
   --callout-color: 151, 117, 250;
-  --callout-icon: orbit;
+  --callout-icon: var(--callout-icon-orbit);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1339,7 +1479,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="parking"] {
   --callout-color: 77, 171, 247;
-  --callout-icon: parking-square;
+  --callout-icon: var(--callout-icon-parking-square);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1349,7 +1489,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="planet"] {
   --callout-color: 34, 184, 207;
-  --callout-icon: globe-2;
+  --callout-icon: var(--callout-icon-globe-2);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1359,7 +1499,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="play"] {
   --callout-color: 18, 184, 134;
-  --callout-icon: gamepad-2;
+  --callout-icon: var(--callout-icon-gamepad-2);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1369,7 +1509,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="puzzle"] {
   --callout-color: 199, 196, 0;
-  --callout-icon: puzzle;
+  --callout-icon: var(--callout-icon-puzzle);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1379,7 +1519,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="radar"] {
   --callout-color: 34, 184, 207;
-  --callout-icon: radar;
+  --callout-icon: var(--callout-icon-radar);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1388,7 +1528,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* rainbow */
 
 .callout[data-callout="rainbow"] {
-  --callout-icon: rainbow;
+  --callout-icon: var(--callout-icon-rainbow);
   --callout-color: 233, 124, 238;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -1399,7 +1539,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="recycle"] {
   --callout-color: 18, 184, 134;
-  --callout-icon: refresh-ccw;
+  --callout-icon: var(--callout-icon-refresh-ccw);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1409,7 +1549,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="rocket"] {
   --callout-color: 34, 184, 207;
-  --callout-icon: rocket;
+  --callout-icon: var(--callout-icon-rocket);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1419,7 +1559,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="sailboat"] {
   --callout-color: 77, 171, 247;
-  --callout-icon: sailboat;
+  --callout-icon: var(--callout-icon-sailboat);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1429,7 +1569,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="script"] {
   --callout-color: 134, 142, 150;
-  --callout-icon: scroll;
+  --callout-icon: var(--callout-icon-scroll);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1439,7 +1579,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="shell"] {
   --callout-color: 233, 124, 238;
-  --callout-icon: shell;
+  --callout-icon: var(--callout-icon-shell);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1449,7 +1589,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="ship"] {
   --callout-color: 77, 171, 247;
-  --callout-icon: ship;
+  --callout-icon: var(--callout-icon-ship);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1459,7 +1599,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="shipwheel"] {
   --callout-color: 64, 192, 87;
-  --callout-icon: shipwheel;
+  --callout-icon: var(--callout-icon-shipwheel);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1469,7 +1609,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="snowflake"] {
   --callout-color: 77, 171, 247;
-  --callout-icon: snowflake;
+  --callout-icon: var(--callout-icon-snowflake);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1478,7 +1618,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* sparkles */
 
 .callout[data-callout="sparkles"] {
-  --callout-icon: sparkle;
+  --callout-icon: var(--callout-icon-sparkle);
   --callout-color: 199, 196, 0;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -1489,7 +1629,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="sprout"] {
   --callout-color: 64, 192, 87;
-  --callout-icon: sprout;
+  --callout-icon: var(--callout-icon-sprout);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1499,7 +1639,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="sun"] {
   --callout-color: 199, 196, 0;
-  --callout-icon: sun;
+  --callout-icon: var(--callout-icon-sun);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1509,7 +1649,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="train"] {
   --callout-color: 64, 192, 87;
-  --callout-icon: train;
+  --callout-icon: var(--callout-icon-train);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1519,7 +1659,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="training"] {
   --callout-color: 64, 192, 87;
-  --callout-icon: dumbbell;
+  --callout-icon: var(--callout-icon-dumbbell);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1529,7 +1669,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="tram"] {
   --callout-color: 255, 146, 43;
-  --callout-icon: tram-front;
+  --callout-icon: var(--callout-icon-tram-front);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1539,7 +1679,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="trees"] {
   --callout-color: 64, 192, 87;
-  --callout-icon: trees;
+  --callout-icon: var(--callout-icon-trees);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1549,7 +1689,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="tower"] {
   --callout-color: 233, 124, 238;
-  --callout-icon: tower-control;
+  --callout-icon: var(--callout-icon-tower-control);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1559,7 +1699,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="user"] {
   --callout-color: 34, 184, 207;
-  --callout-icon: user;
+  --callout-icon: var(--callout-icon-user);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1568,7 +1708,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* venetian */
 
 .callout[data-callout="venetian"] {
-  --callout-icon: venetian-mask;
+  --callout-icon: var(--callout-icon-venetian-mask);
   --callout-color: 151, 117, 250;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
@@ -1579,7 +1719,7 @@ RED: Award, Cone, Fingerprint, Watch
 
 .callout[data-callout="video"] {
   --callout-color: 151, 117, 250;
-  --callout-icon: clapperboard;
+  --callout-icon: var(--callout-icon-clapperboard);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1588,7 +1728,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* watch */
 .callout[data-callout="watch"] {
   --callout-color: 250, 82, 82;
-  --callout-icon: watch;
+  --callout-icon: var(--callout-icon-watch);
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
   --bg: rgba(var(--callout-color), 0.3);
@@ -1597,7 +1737,7 @@ RED: Award, Cone, Fingerprint, Watch
 /* moon */
 
 .callout[data-callout="moon"] {
-  --callout-icon: moon;
+  --callout-icon: var(--callout-icon-moon);
   --callout-color: 151, 117, 250;
   --color: rgb(var(--callout-color));
   --border: rgb(var(--callout-color));
