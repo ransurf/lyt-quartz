@@ -118,13 +118,23 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
         const includeTrailingSlash = !isTagPath || i < 1
 
         // Format and add current crumb
-        const crumb = formatCrumb(
-          curPathSegment,
-          fileData.slug!,
-          (currentPath + (includeTrailingSlash ? "/" : "")) as SimpleSlug,
-          i !== slugParts.length - 1,
-        )
-        crumbs.push(crumb)
+
+        if (fileData.frontmatter?.breadcrumbLabel) {
+          const crumb = {
+            displayName: fileData.frontmatter?.breadcrumbLabel as string,
+            path: "/" + fileData.frontmatter?.breadcrumbPath as FullSlug,
+          }
+
+          crumbs.push(crumb)
+        } else {
+          const crumb = formatCrumb(
+            curPathSegment,
+            fileData.slug!,
+            (currentPath + (includeTrailingSlash ? "/" : "")) as SimpleSlug,
+            i !== slugParts.length - 1,
+          )
+          crumbs.push(crumb)
+        }
       }
     }
 
