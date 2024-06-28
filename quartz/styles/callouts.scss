@@ -21,7 +21,7 @@
     padding-left: 1.3125rem;
   }
 
-  & > *:not(:first-child) {
+  & > .callout-content > :first-child {
     margin-top: 0;
     font-size: 16px;
     line-height: 1.6rem;

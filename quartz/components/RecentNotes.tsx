@@ -16,6 +16,7 @@ interface Options {
   limit: number
   showDates?: boolean
   linkToMore: SimpleSlug | false
+  showTags: boolean
   filter: (f: QuartzPluginData) => boolean
   sort: (f1: QuartzPluginData, f2: QuartzPluginData) => number
 }
@@ -24,6 +25,7 @@ const defaultOptions = (cfg: GlobalConfiguration): Options => ({
   limit: 3,
   linkToMore: false,
   showDates: false,
+  showTags: true,
   filter: () => true,
   sort: byDateAndAlphabetical(cfg),
 })
