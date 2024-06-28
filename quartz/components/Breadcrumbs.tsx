@@ -122,7 +122,7 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
         if (fileData.frontmatter?.breadcrumbLabel) {
           const crumb = {
             displayName: fileData.frontmatter?.breadcrumbLabel as string,
-            path: "/" + fileData.frontmatter?.breadcrumbPath as FullSlug,
+            path: fileData.frontmatter?.breadcrumbPath as FullSlug,
           }
 
           crumbs.push(crumb)
