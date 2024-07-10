@@ -8,7 +8,7 @@ const actions: Record<string, any> = {
     defaultTitle: "Start Linking Your Thinking!",
     defaultSubtitle: `Get our email course "The Ultimate Primer to Linking Your Thinking" to start creating an ideaverse that can support and power a lifetime of memories & ideas.`,
     defaultButton: "Get the Ultimate Primer",
-    formId: "6589197"
+    formId: "5686139"
   }
 };
 
