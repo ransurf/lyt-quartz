@@ -9,7 +9,7 @@ export const clone = rfdc()
 export const QUARTZ = "quartz"
 
 export enum MainPaths {
-  WRITINGS = "essays",
+  ESSAYS = "essays",
 }
 
 /// Utility type to simulate nominal types in TypeScript

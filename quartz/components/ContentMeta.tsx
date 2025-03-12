@@ -43,7 +43,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
     }
 
     const renderReadingTime = () => {
-      if (!text || !checkIsPathButNotIndex(fileData.slug!, MainPaths.WRITINGS)) {
+      if (!text || !checkIsPathButNotIndex(fileData.slug!, MainPaths.ESSAYS)) {
         return <div></div>
       }
 
@@ -112,7 +112,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
     }
 
     const renderDates = () => {
-      if (fileData.dates && checkIsPathButNotIndex(fileData.slug!, MainPaths.WRITINGS)) {
+      if (fileData.dates && checkIsPathButNotIndex(fileData.slug!, MainPaths.ESSAYS)) {
         const createdDate = displayRelativeDate(getDate(cfg, fileData)!)
         const evolvedDate = displayRelativeDate(getDate(cfg, fileData, "modified")!)
         const isSameDate = createdDate === evolvedDate

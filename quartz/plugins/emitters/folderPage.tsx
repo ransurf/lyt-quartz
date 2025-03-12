@@ -25,10 +25,10 @@ import DepGraph from "../../depgraph"
 const handleQueryOverrides = (slug: SimpleSlug): SimpleSlug => {
   // if "blog" return "essays"
   if (slug === "blog") {
-    return MainPaths.WRITINGS as SimpleSlug
+    return MainPaths.ESSAYS as SimpleSlug
   }
   return slug
-};
+}
 
 export const FolderPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOpts) => {
   const opts: FullPageLayout = {
@@ -49,7 +49,18 @@ export const FolderPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOpt
   return {
     name: "FolderPage",
     getQuartzComponents() {
-      return [Head, Header, Body, ...header, ...beforeBody, ...afterBody, pageBody, ...left, ...right, Footer]
+      return [
+        Head,
+        Header,
+        Body,
+        ...header,
+        ...beforeBody,
+        ...afterBody,
+        pageBody,
+        ...left,
+        ...right,
+        Footer,
+      ]
     },
     async getDependencyGraph(_ctx, content, _resources) {
       // Example graph:
@@ -71,7 +82,6 @@ export const FolderPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOpt
       const fps: FilePath[] = []
       const allFiles = content.map((c) => c[1].data)
       const cfg = ctx.cfg.configuration
-      
 
       const folders: Set<SimpleSlug> = new Set(
         allFiles.flatMap((data) => {
@@ -133,4 +143,3 @@ export const FolderPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOpt
     },
   }
 }
-

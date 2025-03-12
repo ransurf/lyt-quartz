@@ -12,32 +12,32 @@ export const sharedPageComponents: SharedLayout = {
   ],
   footer: Component.Footer({
     columns: [
-    {
-      title: "Resources",
-      links: [
-        { title: "Ideaverse", link: "https://start.linkingyourthinking.com/ideaverse-for-obsidian" },
-        { title: "Obsidian Flight School", link: "https://www.linkingyourthinking.com/obsidian-flight-school" },
-        { title: "How to Work a Book", link: "https://www.linkingyourthinking.com/how-to-work-a-book" },
-        { title: "LYT Workshop", link: "https://www.linkingyourthinking.com/workshop" },
-        { title: "Writing Original Works", link: "https://www.linkingyourthinking.com/wow-workshop" },
-      ]
-    },
-    {
-      title: "Socials",
-      links: [
-        { title: "Youtube", link: "https://linkingyourthinking.com/youtube" },
-        { title: "Podcast", link: "https://podcast.linkingyourthinking.com/" },
-        { title: "Twitter", link: "https://twitter.com/the_LYT_way" },
-      ]
-    },
-    {
-      title: "Company",
-      links: [
-        { title: "Contact Us", link: "contact" },
-        { title: "About LYT", link: "about" },
-      ]
-    }
-  ]
+      {
+        title: "Resources",
+        links: [
+          { title: "Ideaverse", link: "https://start.linkingyourthinking.com/ideaverse-for-obsidian" },
+          { title: "Obsidian Flight School", link: "https://www.linkingyourthinking.com/obsidian-flight-school" },
+          { title: "How to Work a Book", link: "https://www.linkingyourthinking.com/how-to-work-a-book" },
+          { title: "LYT Workshop", link: "https://www.linkingyourthinking.com/workshop" },
+          { title: "Writing Original Works", link: "https://www.linkingyourthinking.com/wow-workshop" },
+        ]
+      },
+      {
+        title: "Socials",
+        links: [
+          { title: "Youtube", link: "https://linkingyourthinking.com/youtube" },
+          { title: "Podcast", link: "https://podcast.linkingyourthinking.com/" },
+          { title: "Twitter", link: "https://twitter.com/the_LYT_way" },
+        ]
+      },
+      {
+        title: "Company",
+        links: [
+          { title: "Contact Us", link: "contact" },
+          { title: "About LYT", link: "about" },
+        ]
+      }
+    ]
   }),
 }
 
@@ -52,12 +52,12 @@ export const defaultContentPageLayout: PageLayout = {
   afterBody: [
     Component.RelatedNotesContainer({
       title: "",
-      path: MainPaths.WRITINGS,
+      path: MainPaths.ESSAYS,
       showForIndex: true,
       showForNotes: true,
       limit: 5,
       field: "",
-      linkToMore: `${MainPaths.WRITINGS}/` as SimpleSlug,
+      linkToMore: `${MainPaths.ESSAYS}/` as SimpleSlug,
       cta: "See all"
     }),
     Component.CallToAction(),
@@ -74,7 +74,7 @@ export const defaultContentPageLayout: PageLayout = {
     ),
     Component.RelatedNotes({
       title: "Related Maps",
-      path: MainPaths.WRITINGS,
+      path: MainPaths.ESSAYS,
       showForNotes: true,
       limit: 4,
       field: "up",
@@ -83,11 +83,11 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.RelatedNotes({
       title: "Related Essays",
-      path: MainPaths.WRITINGS,
+      path: MainPaths.ESSAYS,
       showForNotes: true,
       limit: 4,
       field: "related",
-      linkToMore: `${MainPaths.WRITINGS}/` as SimpleSlug,
+      linkToMore: `${MainPaths.ESSAYS}/` as SimpleSlug,
       cta: "See all →"
     }),
     Component.Properties(),
@@ -104,8 +104,8 @@ export const defaultContentPageLayout: PageLayout = {
         showDates: true,
         limit: 4,
         filter: (f) =>
-          f.slug!.startsWith(`${MainPaths.WRITINGS}/`) && f.slug! !== `${MainPaths.WRITINGS}/index` && !f.frontmatter?.noindex,
-        linkToMore: `${MainPaths.WRITINGS}/` as SimpleSlug,
+          f.slug!.startsWith(`${MainPaths.ESSAYS}/`) && f.slug! !== `${MainPaths.ESSAYS}/index` && !f.frontmatter?.noindex,
+        linkToMore: `${MainPaths.ESSAYS}/` as SimpleSlug,
       }),
     ),
     Component.DesktopOnly(
@@ -117,19 +117,19 @@ export const defaultContentPageLayout: PageLayout = {
     //     path: "maps",
     //     limit: 4,
     //     filter: (f) =>
-    //       Boolean(f.slug!.startsWith(`${MainPaths.WRITINGS}/`) && f.slug! !== "essays/index"),
-    //     linkToMore: `${MainPaths.WRITINGS}/` as SimpleSlug,
+    //       Boolean(f.slug!.startsWith(`${MainPaths.ESSAYS}/`) && f.slug! !== "essays/index"),
+    //     linkToMore: `${MainPaths.ESSAYS}/` as SimpleSlug,
     //   }),
     // ),
-  // Component.DesktopOnly(
-  //   Component.RecentNotes({
-  //     title: "Recent Notes",
-  //     showDates: true,
-  //     limit: 2,
-  //     filter: (f) => f.slug!.startsWith("notes/"),
-  //     linkToMore: "notes/" as SimpleSlug,
-  //   }),
-  // ),
+    // Component.DesktopOnly(
+    //   Component.RecentNotes({
+    //     title: "Recent Notes",
+    //     showDates: true,
+    //     limit: 2,
+    //     filter: (f) => f.slug!.startsWith("notes/"),
+    //     linkToMore: "notes/" as SimpleSlug,
+    //   }),
+    // ),
   ],
   right: [
     Component.Graph(),
