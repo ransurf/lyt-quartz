@@ -19,7 +19,12 @@ li.section-li {
       }
     }
 
-    & > .desc > h3 > a {
+    & > .desc 
+    {
+      align-self: center;
+    }
+
+    & > h3 > a {
       background-color: transparent;
     }
 
