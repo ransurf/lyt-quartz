@@ -10,18 +10,15 @@ li.section-li {
   margin-bottom: 1em;
 
   & > .section {
-    display: grid;
-    grid-template-columns: fit-content(8em) 3fr 1fr;
+    // display: grid;
+    // grid-template-columns: fit-content(8em) 3fr 1fr;
+    display: flex;
+    flex-direction: column;
 
     @media all and (max-width: $mobileBreakpoint) {
       & > .tags {
         display: none;
       }
-    }
-
-    & > .desc 
-    {
-      align-self: center;
     }
 
     & > h3 > a {
