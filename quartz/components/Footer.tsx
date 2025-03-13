@@ -29,7 +29,9 @@ export default ((opts?: Options) => {
                 <h3 className="component-title">{column.title}</h3>
                 {column.links.map((link, linkIndex) => (
                   <li key={linkIndex}>
-                    <a href={link.link}>{link.title}</a>
+                    <a style={{ color: "#FFFFFF" }} href={link.link}>
+                      {link.title}
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -37,10 +39,14 @@ export default ((opts?: Options) => {
           </div>
           <div className="footer-credits">
             <p>
+              {i18n(cfg.locale).components.footer.workOf}{" "}
+              <a href="https://linkingyourthinking.com/">Nick Milo</a>.
+            </p>
+            <p>
               {i18n(cfg.locale).components.footer.madeBy}{" "}
               <a href="https://notes.johnmavrick.com/">John Mavrick</a>{" "}
               {i18n(cfg.locale).components.footer.createdWith}{" "}
-              <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a>
+              <a href="https://quartz.jzhao.xyz/">Quartz v4</a>.
             </p>
             <p>© Linking Your Thinking {year}</p>
           </div>

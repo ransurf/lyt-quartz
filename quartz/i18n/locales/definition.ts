@@ -36,6 +36,7 @@ export interface Translation {
     }
     footer: {
       createdWith: string
+      workOf: string
       madeBy: string
     }
     graph: {

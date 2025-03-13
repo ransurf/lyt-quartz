@@ -34,7 +34,8 @@ export default {
     },
     footer: {
       createdWith: "using",
-      madeBy: "Made by ",
+      workOf: "The Ideaverse Blog is the work of",
+      madeBy: "Designed by",
     },
     graph: {
       title: "Graph View",
