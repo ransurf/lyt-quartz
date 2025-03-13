@@ -1,7 +1,9 @@
 export interface ColorScheme {
   light: string
   lightgray: string
+  lightNavbar: string
   gray: string
+  grayFooter: string
   medgray: string
   darkgray: string
   dark: string
@@ -43,7 +45,9 @@ ${stylesheet.join("\n\n")}
 
 :root {
   --light: ${theme.colors.lightMode.light};
+  --lightNavbar: ${theme.colors.lightMode.lightNavbar};
   --lightgray: ${theme.colors.lightMode.lightgray};
+  --grayFooter: ${theme.colors.lightMode.grayFooter};
   --gray: ${theme.colors.lightMode.gray};
   --medgray: ${theme.colors.lightMode.medgray};
   --darkgray: ${theme.colors.lightMode.darkgray};
@@ -60,6 +64,7 @@ ${stylesheet.join("\n\n")}
 :root[saved-theme="dark"] {
   --light: ${theme.colors.darkMode.light};
   --lightgray: ${theme.colors.darkMode.lightgray};
+  --grayFooter: ${theme.colors.lightMode.grayFooter};
   --gray: ${theme.colors.darkMode.gray};
   --medgray: ${theme.colors.darkMode.medgray};
   --darkgray: ${theme.colors.darkMode.darkgray};

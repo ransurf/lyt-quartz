@@ -15,6 +15,10 @@ footer {
     margin: 0 auto;
   }
 
+  & .footer-column-link {
+    color: var(--grayFooter);
+  }
+
   & .footer-columns {
     display: flex;
     flex-direction: row;
@@ -35,6 +39,7 @@ footer {
     & .footer-column {
       margin-bottom: 1rem;
     }
+
   }
 
   & h3 {

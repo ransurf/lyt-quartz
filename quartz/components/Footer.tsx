@@ -29,7 +29,7 @@ export default ((opts?: Options) => {
                 <h3 className="component-title">{column.title}</h3>
                 {column.links.map((link, linkIndex) => (
                   <li key={linkIndex}>
-                    <a style={{ color: "#FFFFFF" }} href={link.link}>
+                    <a className="footer-column-link" href={link.link}>
                       {link.title}
                     </a>
                   </li>

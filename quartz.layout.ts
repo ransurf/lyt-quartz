@@ -109,7 +109,11 @@ export const defaultContentPageLayout: PageLayout = {
       }),
     ),
     Component.DesktopOnly(
-      Component.Search()
+      Component.Search(
+        {
+          hideIcon: true
+        }
+      )
     ),
     // Component.DesktopOnly(
     //   Component.RecentNotes({

@@ -7,10 +7,12 @@ import { i18n } from "../i18n"
 
 export interface SearchOptions {
   enablePreview: boolean
+  hideIcon: boolean
 }
 
 const defaultOptions: SearchOptions = {
   enablePreview: true,
+  hideIcon: false,
 }
 
 export default ((userOpts?: Partial<SearchOptions>) => {
@@ -19,7 +21,7 @@ export default ((userOpts?: Partial<SearchOptions>) => {
     const searchPlaceholder = i18n(cfg.locale).components.search.searchBarPlaceholder
     return (
       <div class={classNames(displayClass, "search")}>
-        <div id="search-icon">
+        <div id="search-icon" style={opts.hideIcon ? { display: "none" } : {}}>
           <div></div>
           <svg
             tabIndex={0}

@@ -16,7 +16,7 @@ export default (() => {
     // Define navigation items with label and optional custom href
     let navItems = [
       { label: "Entrance", href: "/index.html" },
-      { label: "Essays", href: "/essays" },
+      { label: "Blog", href: "/blog" },
       { label: "Newsletter", href: "/newsletter" },
     ]
 

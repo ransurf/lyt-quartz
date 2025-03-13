@@ -24,7 +24,7 @@ import DepGraph from "../../depgraph"
 
 const handleQueryOverrides = (slug: SimpleSlug): SimpleSlug => {
   // if "blog" return "essays"
-  if (slug === "essays") {
+  if (slug === "blog") {
     return MainPaths.ESSAYS as SimpleSlug
   }
   return slug
