@@ -13,18 +13,35 @@ export default (() => {
     // const RSSComponent = Component.RSS();
     const { slug } = fileData
 
-    let titles = null
-    let navTitle = "LYT Ideaverse"
-    titles = ["Blog", "Newsletter", "Resources", "Contact"]
+    // Define navigation items with label and optional custom href
+    let navItems = [
+      { label: "Entrance", href: "/index.html" },
+      { label: "Essays", href: "/essays" },
+      { label: "Newsletter", href: "/newsletter" },
+    ]
 
+    // Previously commented code with titles array could be updated similarly if needed
     // if (slug) {
     //     if (slug.startsWith("garden")) {
-    //         titles = ["Notes", "Essays", "MOCs", "Contributions"]
+    //         navItems = [
+    //             { label: "Notes", href: "/notes" },
+    //             { label: "Essays", href: "/essays" },
+    //             { label: "MOCs", href: "/mocs" },
+    //             { label: "Contributions", href: "/contributions" }
+    //         ]
     //     } else if (slug.startsWith("now")) {
-    //         titles = ["Garden", "Blogroll", "About"]
+    //         navItems = [
+    //             { label: "Garden", href: "/garden" },
+    //             { label: "Blogroll", href: "/blogroll" },
+    //             { label: "About", href: "/about" }
+    //         ]
     //     }
     //     else {
-    //         titles = ["Garden", "Now", "About"]
+    //         navItems = [
+    //             { label: "Garden", href: "/garden" },
+    //             { label: "Now", href: "/now" },
+    //             { label: "About", href: "/about" }
+    //         ]
     //     }
     // }
 
@@ -32,7 +49,7 @@ export default (() => {
       <nav class="navbar">
         <div class="navbrand">
           <h1>
-            <a href={"/index.html"} class="brand">
+            <a href={"https://linkingyourthinking.com"} class="brand">
               <img className="lyt-logo" src={`/static/lyt-navbar-logo.png`} alt={`LYT Home`} />
             </a>
           </h1>
@@ -54,28 +71,25 @@ export default (() => {
           </div>
         </div>
         <ul class={`menu ${slug?.startsWith("garden") ? "garden" : "index"}`} id="menu">
-          {titles &&
-            titles.map((title: string) => {
+          {navItems &&
+            navItems.map((item) => {
+              // Use the provided href if available, otherwise default to lowercase label
+              const targetHref = item.href || `/${item.label.toLowerCase()}`
               return (
                 <li class="menu-item">
-                  <a
-                    href={`/${
-                      slug?.startsWith("garden") ? "garden/" : ""
-                    }${title.toLocaleLowerCase()}`}
-                    class="menu-link"
-                  >
-                    {title}
+                  <a href={targetHref} class="menu-link">
+                    {item.label}
                   </a>
                 </li>
               )
             })}
         </ul>
         <ul class="action-menu">
-          <li class="action-menu-item">
+          {/* <li class="action-menu-item">
             <a href="/about" class="action-menu-link">
               About
             </a>
-          </li>
+          </li> */}
           <li class="action-menu-item">
             <SearchComponent {...componentData} />
           </li>
