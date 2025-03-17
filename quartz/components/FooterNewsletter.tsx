@@ -44,7 +44,7 @@ export const FooterNewsletter = (props: {
                 <div></div>
                 <div></div>
               </div>
-              <span class="">e{buttonText}</span>
+              <span class="">{buttonText}</span>
             </button>
           </div>
         </div>
