@@ -60,7 +60,7 @@ nav.navbar a.brand {
 
 // Navbar
 nav.navbar {
-  width: 100%;
+  max-width: 1160px;
   height: auto;
   color: var(--light);
   background: var(--dark);
@@ -208,7 +208,6 @@ nav.navbar {
       justify-content: flex-end;
       align-items: center;
       height: auto;
-      max-width: 1160px;
 
       &-item {
         margin: 0 0.5rem;
